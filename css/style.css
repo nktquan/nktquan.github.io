@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../font/material-design-icons/Material-Design-Icons.ttf) format('ttf'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+}
+
+body strong {
+    font-weight: bold;
+}
+
+.material-icons {
+    font-family: 'Material Icons', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    background-image: url("../images/crossword.png");
+}
+
+.container-fluid{
+    margin: 0 auto;
+    position: relative;
+}
+
+svg{
+    -webkit-transition: all, 0.5s, ease-in;
+    transition: all, 0.5s, ease-in;
+    transform: scale(2);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.svg-end{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transform: scale(1);
+}
+
+.box{
+    height: 1000px;
+    width: 90%;
+    border: 1px solid #000;
+    opacity: 0;
+    margin: auto;
+    -webkit-transition: all, 2s, ease-in;
+    transition: all, 1s, ease-in;
+}
+
+.end{
+    opacity: 1;
+}
+
+nav{
+    opacity: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.nav-wrapper a{
+    color: #000;
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 600px) and (max-width: 991px){
+    .svg-end{
+        position: absolute;
+        top:10px;
+        left: 40%;
+    }
+}
