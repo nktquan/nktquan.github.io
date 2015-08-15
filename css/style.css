@@ -5,6 +5,11 @@
     src: local('Material Icons'), local('MaterialIcons-Regular'), url(../font/material-design-icons/Material-Design-Icons.ttf) format('ttf'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: 'MostlyMono';
+    src: url(../font/MostlyMono.ttf);
+}
+
 body strong {
     font-weight: bold;
 }
@@ -39,6 +44,7 @@ svg{
     position: absolute;
     top: 40%;
     left: 40%;
+    z-index: 999;
 }
 
 .svg-end{
@@ -51,9 +57,9 @@ svg{
 .box{
     height: 1000px;
     width: 90%;
-    border: 1px solid #000;
     opacity: 0;
     margin: auto;
+    padding-top: 60px;
     -webkit-transition: all, 2s, ease-in;
     transition: all, 1s, ease-in;
 }
@@ -72,11 +78,23 @@ nav{
     color: #000;
 }
 
+.title{
+    font-family: 'MostlyMono';
+    font-size: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+.title-2{
+    font-family: 'MostlyMono';
+    margin: 20px 0 0 0;
+}
+
 @media (min-width: 992px){
 
 }
 
-@media (min-width: 600px) and (max-width: 991px){
+@media (min-width: 300px) and (max-width: 991px){
     .svg-end{
         position: absolute;
         top:10px;

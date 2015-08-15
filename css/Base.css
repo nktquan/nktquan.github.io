@@ -529,3 +529,12 @@
 .cpoint{
     cursor: pointer;
 }
+
+.right-margin-15{
+    margin-right: 15px;
+}
+
+
+.left-margin-15{
+    margin-left: 15px;
+}

@@ -159,32 +159,40 @@
 		<div  class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper">
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul class="right hide-on-med-and-down">
-						<li><a href="sass.html">Sass</a></li>
-						<li><a href="badges.html">Components</a></li>
-						<li><a href="collapsible.html">Javascript</a></li>
-						<li><a href="mobile.html">Mobile</a></li>
+					<a href="#" data-activates="mobile-demo" class="button-collapse left-margin-15"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down right-margin-15">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="experience.html">EXPERIENCE</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
 					</ul>
 					<ul class="side-nav" id="mobile-demo">
-						<li><a href="sass.html">Sass</a></li>
-						<li><a href="badges.html">Components</a></li>
-						<li><a href="collapsible.html">Javascript</a></li>
-						<li><a href="mobile.html">Mobile</a></li>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="experience.html">EXPERIENCE</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
-		<div class="box"></div>
+		<div class="box">
+			<h1 class="title">HI THERE</h1>
+				<img alt="" src="./images/workspace.png" width="100%"/>
+			<h1 class="title-2 center-align">What does a designer look like ?</h1>
+			<div class="center-align">
+				<img alt="" src="./images/designer.png"/>
+			</div>
+		</div>
     </div>
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/vivus.min.js"></script>
     <script type="text/javascript">
-        var hi = new Vivus('logo', {type: 'scenario-sync', duration: 20, start: 'autostart', dashGap: 20, forceRender: false},
+        var hi = new Vivus('logo', {type: 'scenario-sync', duration: 7, start: 'autostart', dashGap: 20, forceRender: false},
                 function () {
                     $('svg').attr("class", "svg-end")
 					$('nav').addClass('end');
+					$('.box').addClass('end');
                 });
 		$(".button-collapse").sideNav();
     </script>
