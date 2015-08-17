@@ -111,26 +111,50 @@ nav{
 
 .facebook:hover{
     border-color: #3b5998;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .facebook:hover a i{
     color: #3b5998;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .google:hover{
     border-color: #D50F25;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .google:hover a i{
     color: #D50F25;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .twitter:hover{
     border-color: #55acee;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .twitter:hover a i{
     color: #55acee;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 footer{
@@ -139,6 +163,36 @@ footer{
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+
+.avatar{
+    width: 300px;
+    height: 300px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.avatar:hover{
+    border-color: #1de9b6;
+}
+
+.introduce{
+    font-family: Comic Sans MS, "Comic Sans MS", Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+.whatcando{
+    font-family: Comic Sans MS, "Comic Sans MS", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 2;
 }
 
 @media (min-width: 992px){

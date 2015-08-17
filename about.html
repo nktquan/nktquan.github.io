@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="svg-end" version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="200px" height="100px" viewBox="0 0 200 100" enable-background="new 0 0 200 100" xml:space="preserve">
 <g id="Expanded">
 	<g>
@@ -163,7 +163,7 @@
 
 	<div class="container-fluid">
 		<div  class="navbar-fixed">
-			<nav>
+			<nav class="end">
 				<div class="nav-wrapper">
 					<a href="#" data-activates="mobile-demo" class="button-collapse left-margin-15"><i class="material-icons">menu</i></a>
 					<ul class="right hide-on-med-and-down right-margin-15">
@@ -181,22 +181,31 @@
 				</div>
 			</nav>
 		</div>
-		<div class="box">
-			<h1 class="title">HI THERE !</h1>
-				<div class="center-align wow bounceInLeft center animated" data-wow-delay="2s">
-					<img alt="" src="./images/workspace.png" width="95%"/>
+		<div class="box end">
+			<h1 class="title">ABOUT ME</h1>
+				<div class="center-align">
+					<div class="avatar wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;">
+						<img alt="" src="./images/avatar.png" width="100%"/>
+					</div>
 				</div>
-			<h1 class="title-2 center-align">What does a designer look like ?</h1>
-			<div class="center-align wow bounceInUp">
-				<img alt="" src="./images/designer.png" width="85%"/>
+			<div class="container">
+				<div class="row">
+					<div class="col l10 m10 s10 offset-l1 offset-m1 offset-s1 introduce left-align">
+						My name is Nguyen Kieu Trung Quan and I am a web designer and front-end developer based in Hanoi, Vietnam. I completed education in FPT Polytechnic collage.<br/><br/>
+						I love creating user-friendly digital designs ranging from web to mobile.I like to resolve design problems, create smart user interfaces and imagine useful interactions.<br/><br/>
+						I hope you’ll enjoy my portfolio !
+					</div>
+				</div>
 			</div>
-			<h1 class="title-2 center-align">Creative in each idea !</h1>
-			<div class="center-align wow bounceInDown">
-				<img alt="" src="./images/ted.png" width="90%"/>
-			</div>
-			<h1 class="title-2 center-align">Fully responsive web design .</h1>
-			<div class="center-align wow bounceInRight center animated">
-				<img alt="" src="./images/responsive.png" width="95%"/>
+			<h1 class="title-2">What can I do for you</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col l10 m10 s10 offset-l1 offset-m1 offset-s1 whatcando left-align">
+						I’ d love to bring your design ideas to life. I have a passion for creating beautiful, intuitive responsive websites for projects both large and small that work on any type and size of device.<br/><br/>
+						If you need interface design I can deliver complete digital products from start to finish. I can also help with branding and print needs such as logo design and business cards or stationery.<br/><br/>
+						Whatever project you have in mind do get in touch and we will work on it together. I am available for freelance, contract or direct client projects, so do drop me a message.
+					</div>
+				</div>
 			</div>
 			<div class="container">
 				<div class="row">
@@ -227,12 +236,6 @@
 	<script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/vivus.min.js"></script>
     <script type="text/javascript">
-        var hi = new Vivus('logo', {type: 'scenario-sync', start: 'autostart', dashGap: 20, forceRender: false},
-                function () {
-                    $('svg').attr("class", "svg-end")
-					$('nav').addClass('end');
-					$('.box').addClass('end');
-                });
 		$(".button-collapse").sideNav();
 		new WOW().init();
     </script>
