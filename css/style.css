@@ -87,7 +87,7 @@ nav{
 
 .title-2{
     font-family: 'MostlyMono';
-    margin: 20px 0 0 0;
+    margin: 50px;
 }
 
 .social-box{
@@ -135,9 +135,10 @@ nav{
 
 footer{
     text-align: center;
-    font-family: 'MostlyMono';
+    font-family: Comic Sans MS, "Comic Sans MS", Arial, sans-serif;
     font-size: 20px;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 992px){
