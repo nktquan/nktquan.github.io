@@ -176,10 +176,14 @@ footer{
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
+    background-image: url("./../images/avatar.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .avatar:hover{
     border-color: #1de9b6;
+    background-image: url("./../images/avatar2.png");
 }
 
 .introduce{
@@ -193,6 +197,10 @@ footer{
     font-family: Comic Sans MS, "Comic Sans MS", Arial, sans-serif;
     font-size: 20px;
     line-height: 2;
+}
+
+#HCB_comment_box h3{
+    display: none;
 }
 
 @media (min-width: 992px){
