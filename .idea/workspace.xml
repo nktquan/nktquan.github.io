@@ -2,7 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a747b9b-0d68-4dec-898c-4d109095fecc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/._avatar2.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/._slider1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/._slider2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/._slider3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/._slider4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/font-awesome/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-GO.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-MBOX2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-MOBIPHONE2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-SOHA.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-TINH-VAN-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-TOC-DO-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-VCcorporation2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-VINAPHONE2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/LOGO-Viettel-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/material-design-icons/Material-Design-Icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/material-design-icons/Material-Design-Icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/material-design-icons/Material-Design-Icons.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/material-design-icons/Material-Design-Icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Bold.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Light.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Light.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Medium.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Medium.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Thin.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Thin.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/roboto/Roboto-Thin.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/UTM-American-Sans.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/apple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/ava1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/ava2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/ava3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/ava4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/ava5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/font-awesome/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/font-awesome/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/font-awesome/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/font-awesome/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/gviet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/hand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/htc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/ibet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/ionline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/java.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/news.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/nokia.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/product1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/product2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/product4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/slider1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/slider1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/slider2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/slider3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/slider4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/images/social.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/thudo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/css/Base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/material-design-icons/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/material-design-icons/Material-Design-Icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/font/font-awesome/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/js/jquery-2.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/js/jquery.scrolly.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/css/materialize.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/js/materialize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thudo/js/wow.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experience.html" afterPath="$PROJECT_DIR$/experience.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nktquan.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,17 +107,17 @@
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="175" column="26" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
+              <caret line="210" column="25" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/about.html">
+      <file leaf-file-name="experience.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experience.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4652908">
-              <caret line="178" column="67" selection-start-line="178" selection-start-column="67" selection-end-line="178" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.5197629">
+              <caret line="224" column="81" selection-start-line="224" selection-start-column="81" selection-end-line="224" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -54,10 +134,10 @@
         <option value="$PROJECT_DIR$/css/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/Base.css" />
-        <option value="$PROJECT_DIR$/experience.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/experience.html" />
       </list>
     </option>
   </component>
@@ -125,20 +205,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nktquan.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nktquan.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -157,11 +223,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/thudo" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -259,6 +325,22 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="178" column="67" selection-start-line="178" selection-start-column="67" selection-end-line="178" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding />
         </state>
@@ -268,7 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -440,17 +521,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experience.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4934334">
-          <caret line="214" column="50" selection-start-line="214" selection-start-column="50" selection-end-line="214" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.375">
           <caret line="187" column="76" selection-start-line="187" selection-start-column="76" selection-end-line="187" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="178" column="67" selection-start-line="178" selection-start-column="67" selection-end-line="178" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -458,15 +539,23 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="175" column="26" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
+          <caret line="210" column="25" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
+    <entry file="file://$PROJECT_DIR$/thudo/css/Base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4652908">
-          <caret line="178" column="67" selection-start-line="178" selection-start-column="67" selection-end-line="178" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experience.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5197629">
+          <caret line="224" column="81" selection-start-line="224" selection-start-column="81" selection-end-line="224" selection-end-column="81" />
           <folding />
         </state>
       </provider>

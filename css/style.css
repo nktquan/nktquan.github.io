@@ -199,6 +199,18 @@ footer{
     line-height: 2;
 }
 
+.product{
+    border: 2px solid #ccc;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    margin: auto;
+}
+
+.product:hover{
+    border-color: #0089ec;
+}
+
 #HCB_comment_box h3{
     display: none;
 }
