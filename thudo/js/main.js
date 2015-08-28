@@ -15,6 +15,10 @@ $(function(){
 $(document).ready(function(){
     $('.slider').slider({full_width: true});
     $('.scrolly').scrolly();
+    $('.modal-trigger').leanModal();
+    $('#modal1').openModal();
+    $('#modal1').closeModal();
+    $('.fixed-action-btn').openFAB();
+    $('.fixed-action-btn').closeFAB();
+    $('.parallax').parallax();
 });
-$('.fixed-action-btn').openFAB();
-$('.fixed-action-btn').closeFAB();
