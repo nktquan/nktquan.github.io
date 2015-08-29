@@ -22,3 +22,7 @@ $(document).ready(function(){
     $('.fixed-action-btn').closeFAB();
     $('.parallax').parallax();
 });
+$(window).load(function(){
+    $('.loader').css('display', 'none');
+    $('.container-fluid').css('opacity',1);
+});
