@@ -205,6 +205,7 @@ footer{
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     margin: auto;
+    margin-top: 20px;
 }
 
 .product:hover{
