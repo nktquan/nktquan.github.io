@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile</title>
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/Base.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/main.css"/>
+</head>
+
+<body>
+<div class="navbar-fixed">
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="login"><a href=""><i class="fa fa-user fleft login-icon"></i><span class="fleft">Đăng nhập</span></a></li>
+                <li class="register"><a href=""><i class="fa fa-user-plus fleft register-icon"></i><span class="fleft">Đăng ký</span></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="">Đăng nhập<i class="fa fa-user fleft login-icon"></i></a></li>
+                <li><a href="">Đăng ký<i class="fa fa-user-plus fleft register-icon"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="row container">
+    <div class="col l12 m12 s12 center-align">
+        <div class="avatar mauto">
+            <img src="./images/profile.jpg" width="100%"/>
+            <a type="file" class="upload white-text">Tải ảnh</a>
+        </div>
+        <div class="profile">
+            <table class="responsive-table bordered">
+                <colgroup>
+                    <col width="30%"/>
+                    <col width="70%"/>
+                </colgroup>
+                <tr>
+                    <td><strong>Họ và tên</strong></td>
+                    <td>Nguyễn Kiều Trung Quân</td>
+                </tr>
+                <tr>
+                    <td><strong>Ngày sinh</strong></td>
+                    <td>30/07/1994</td>
+                </tr>
+                <tr>
+                    <td><strong>Giới tính</strong></td>
+                    <td>Nam</td>
+                </tr>
+                <tr>
+                    <td><strong>Tình trạng hôn nhân</strong></td>
+                    <td>Chưa kết hôn</td>
+                </tr>
+                <tr>
+                    <td><strong>Địa chỉ</strong></td>
+                    <td>Long Biên</td>
+                </tr>
+                <tr>
+                    <td><strong>Thành phố</strong></td>
+                    <td>Hà Nội</td>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td>nktquan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><strong>Số điện thoại</strong></td>
+                    <td>0168 730 2873</td>
+                </tr>
+                <tr>
+                    <td><strong>Hồ sơ của bạn</strong></td>
+                    <td><a href="">CV.pdf</a></td>
+                </tr>
+            </table>
+        </div>
+        <a href="#edit" class="waves-effect waves-light btn btn-large light-blue lighten-2 modal-trigger"><i class="material-icons left">settings</i>Sửa</a>
+    </div>
+</div>
+<div id="edit" class="modal">
+    <div class="modal-content">
+        <h4>Sửa thông tin</h4>
+        <form method="post" action="#">
+            <div class="row">
+                <div class="col s12 input-field">
+                    <input placeholder="" value="Nguyễn Kiều Trung Quân" id="fname" type="text" class="validate" length="150">
+                    <label for="fname" class="size-15">Họ và tên</label>
+                </div>
+                <div class="col s12 input-field">
+                    <lable for="Date">Ngày sinh</lable>
+                    <input type="text" id="Date" class="datepicker" />
+                </div>
+                <div class="col s12 input-field">
+                    <lable>Giới tính</lable><br>
+                    <input name="group1" type="radio" id="male" />
+                    <label for="male">Nam</label>
+                    <input name="group1" type="radio" id="female" />
+                    <label for="female">Nữ</label>
+                    <input name="group1" type="radio" id="unknow" />
+                    <label for="unknow">Khác</label><br><br>
+                </div>
+                <div class="col s12 input-field">
+                    <select>
+                        <option value="" disabled selected>Lựa chọn</option>
+                        <option value="1">Độc thân</option>
+                        <option value="2">Đã kết hôn</option>
+                        <option value="3">Đã ly dị</option>
+                    </select>
+                    <label class="size-15">Tình trạng hôn nhân</label>
+                </div>
+                <div class="col s12 input-field">
+                    <input placeholder="" value="Long Biên" id="address" type="text" class="validate" length="200">
+                    <label for="address" class="size-15">Địa chỉ</label>
+                </div>
+                <div class="col s12 input-field">
+                    <select>
+                        <option value="" disabled selected>Lựa chọn</option>
+                        <option value="1">Hà Nội</option>
+                        <option value="2">Hồ Chí Minh</option>
+                        <option value="3">Đà Nẵng</option>
+                    </select>
+                    <label class="size-15">Thành phố</label>
+                </div>
+                <div class="col s12 input-field">
+                    <input placeholder="" value="nktquan@gmail.com" id="email" type="text" class="validate" length="100">
+                    <label for="email" class="size-15">Email</label>
+                </div>
+                <div class="col s12 input-field">
+                    <input placeholder="" value="0168 730 2873" id="phone" type="text" class="validate" length="15">
+                    <label for="phone" class="size-15">Số điện thoại</label>
+                </div>
+                <div class="col s12 input-field file-field">
+                    <input class="file-path validate" type="text" value="Chưa có tệp"/>
+                    <div class="btn light-blue lighten-2">
+                        <span>Tải lên</span>
+                        <input type="file" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat">Lưu</a>
+        <a href="#" class=" modal-action modal-close waves-effect waves-grey btn-flat">Hủy bỏ</a>
+    </div>
+</div>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="row none-margin">
+        <div class="col l12 m12 s12 none-padding">
+            <footer class="page-footer light-blue lighten-1">
+                <div class="row container">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Company Bio</h5>
+                        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's
+                            our full time job. Any amount would help support and continue development on this project and is
+                            greatly appreciated.</p>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Settings</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Link 1</a></li>
+                            <li><a class="white-text" href="#!">Link 2</a></li>
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Link 1</a></li>
+                            <li><a class="white-text" href="#!">Link 2</a></li>
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                    <a class="btn-floating btn-large blue darken-2">
+                        <i class="material-icons floating-button">add</i>
+                    </a>
+                    <ul>
+                        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></i></a></li>
+                        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <div class="row container">
+                        <div class="col l12 s12 m12">
+                            Made by <a class="indigo-text text-darken-4" href="#"><strong>HJSC</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('select').material_select();
+        $(".button-collapse").sideNav();
+        $('.fixed-action-btn').openFAB();
+        $('.fixed-action-btn').closeFAB();
+        $('.modal-trigger').leanModal();
+        $('#edit').openModal();
+        $('#edit').closeModal();
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 100 // Creates a dropdown of 15 years to control year
+        });
+        $('input#input_text, textarea#textarea1').characterCounter();
+    });
+</script>
+</body>
+</html>

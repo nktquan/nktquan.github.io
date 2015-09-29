@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Việc làm sinh viên Hà Nội</title>
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/Base.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/main.css"/>
+</head>
+
+<body>
+<div class="navbar-fixed">
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="login"><a href=""><i class="fa fa-user fleft login-icon"></i><span class="fleft">Admin</span></a></li>
+                <li class="register"><a href=""><i class="material-icons fleft register-icon">input</i><span class="fleft">Thoát</span></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="">Đăng nhập<i class="fa fa-user fleft login-icon"></i></a></li>
+                <li><a href="">Đăng ký<i class="fa fa-user-plus fleft register-icon"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="row none-margin">
+        <div class="col l12 m12 s12 none-padding">
+            <div class="row">
+                <div class="col l6 m6 s12">
+                <div class="card category">
+                    <div class="card-action light-blue lighten-1">
+                        <a href="#"><span class="card-title"><i class="fa fa-users category-icon"></i>Quản lý user<i class="fa fa-arrow-right right"></i></span></a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#" class="light-blue-text lighten-1">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+                <div class="col l6 m6 s12">
+                    <div class="card category">
+                        <div class="card-action light-blue lighten-1">
+                            <a href="#"><span class="card-title"><i class="fa fa-user category-icon"></i>Quản lý việc làm<i class="fa fa-arrow-right right"></i></span></a>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action center">
+                            <a href="#" class="light-blue-text lighten-1">XEM THÊM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('select').material_select();
+        $(".button-collapse").sideNav();
+        $('.fixed-action-btn').openFAB();
+        $('.fixed-action-btn').closeFAB();
+    });
+</script>
+</body>
+</html>

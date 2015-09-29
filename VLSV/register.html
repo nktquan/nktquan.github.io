@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Việc làm sinh viên Hà Nội</title>
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/Base.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/main.css"/>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col l6 m8 s12 offset-l3 offset-m2">
+            <div class="col l12 m12 s12">
+                <div class="card category register-box">
+                    <div class="card-action light-blue lighten-1 center-align">
+                        <span class="card-title">ĐĂNG KÝ</span>
+                    </div>
+                    <div class="card-content">
+                        <form action="#">
+                            <div class="row none-margin">
+                                <div class="input-field col s12">
+                                    <input id="fullname" type="text" class="validate">
+                                    <label for="fullname">Họ và tên</label>
+                                </div>
+                            </div>
+                            <div class="row none-margin">
+                                <div class="input-field col s12">
+                                    <input id="email" type="text" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row none-margin">
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Mật khẩu</label>
+                                </div>
+                            </div>
+                            <div class="row none-margin">
+                                <div class="input-field col s12">
+                                    <div class="g-recaptcha" data-sitekey="6LeSjgwTAAAAADHEuaeTltbUasU70GgrXS8Vbw7v"></div>
+                                </div>
+                                <p class="center-align"><a href="#">Quên mật khẩu ?</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-action center-align">
+                        <button type="submit" class="waves-effect waves-light btn light-blue lighten-1">Đăng ký</button>
+                        <button type="submit" class="waves-effect waves-light btn light-blue lighten-1 left-margin-15">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script src='//www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('select').material_select();
+        $(".button-collapse").sideNav();
+    });
+</script>
+</body>
+</html>
