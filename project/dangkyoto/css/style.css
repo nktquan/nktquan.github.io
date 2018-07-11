@@ -1,0 +1,1240 @@
+/*Created by nktquan@gmail.com on 4/29/16.*/
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    background: #fef5f1;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.btn{
+    background: #ffe401;
+    border: 1px solid #ffe401;
+    box-shadow: 2px 2px 3px #666;
+    padding: 10px 15px;
+    font-weight: 700;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.btn:hover{
+    background: #fff;
+}
+
+.container{
+    width: 1028px;
+    margin: auto;
+    padding: 0px;
+}
+.container:after,
+.row:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.row{
+    margin: 0 -15px;
+}
+.col-50{
+    width: 50%;
+    float: left;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.col-33{
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.col-66{
+    width: 66.66%;
+    float: left;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.text-red{
+    color: #cc0000;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+}
+.form-group .form-control{
+    width: 100%;
+    padding: 6px 10px;
+    height: 33px;
+    border-radius: 0;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-group .form-control option{
+    padding: 6px 12px;
+}
+.form-group .validate-text{
+    font-size: 12px;
+    display: block;
+    height: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+    color: #cc0000;
+}
+.form-group .validate-text i{
+    display: none;
+    font-style: normal;
+}
+.form-group.invalid .validate-text i{
+    display: block;
+}
+.form-group.invalid .form-control{
+    border-color: #cc0000;
+}
+.form-group.invalid label{
+    color: #cc0000;
+}
+.form-group .radio{}
+.form-group .radio label{
+    display: inline-block;
+}
+
+header{
+    background: #026ab3;
+}
+.logo{
+    width: 240px;
+    padding: 10px 0;
+    float: left;
+}
+.logo img{
+    width: 100%;
+}
+.navbar{
+    float: right;
+}
+.navbar ul{
+    padding-left: 0;
+    margin: 0;
+}
+.navbar ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar ul li{
+    list-style: none;
+    float: left;
+    position: relative;
+}
+.navbar ul li a{
+    color: #fff;
+    display: block;
+    padding: 43px 18px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.navbar ul li a .fa{
+    margin-left: 5px;
+}
+.navbar ul li.active a,
+.navbar ul li:hover a,
+.navbar ul li:focus a{
+    color: #ffe401;
+}
+.navbar ul li .dropdown{
+    background: #ffffff;
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 85px;
+    right: 0px;
+}
+.navbar ul li .dropdown ul{
+    padding: 10px 0;
+}
+.navbar ul li .dropdown ul li{
+    float: none;
+}
+.navbar ul li .dropdown ul li a{
+    text-transform: inherit;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #000;
+}
+.navbar ul li .dropdown ul li a:hover{
+    background: #026ab3;
+    color: #fff;
+}
+.navbar ul li:hover .dropdown{
+    display: block;
+}
+.big-banner{
+    height: 350px;
+    padding: 50px 0;
+    background: url("../images/big-banner.jpg") no-repeat center;
+    background-size: cover;
+    text-transform: uppercase;
+}
+.big-banner h2{
+    color: #026ab3;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+.big-banner h3{
+    color: #026ab3;
+    font-size: 24px;
+    font-weight: 400;
+}
+.big-banner .button{
+    margin-top: 50px;
+}
+.big-banner .button .btn{
+    margin-right: 10px;
+}
+.step{
+    margin-top: -60px;
+}
+.step ul{
+    height: 117px;
+    background: url("../images/step.png") no-repeat;
+    background-size: contain;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.step ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.step ul li{
+    list-style: none;
+    display: block;
+    width: 20%;
+    height: 117px;
+    padding: 11px 82px 30px 22px;
+    box-sizing: border-box;
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    text-align: right;
+}
+.register-list{
+    margin-top: 40px;
+}
+.register-list .register-box{
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    margin: 0 15px;
+}
+.register-list .register-box .title{
+    color: #14acde;
+    border-bottom: 2px solid #14acde;
+    text-align: center;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+.register-list .register-box ul{
+    padding-left: 0;
+    margin: 0;
+}
+.register-list .register-box ul li{
+    list-style: none;
+}
+.register-list .register-box ul li a{
+    display: block;
+    padding: 10px 10px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.register-list .register-box ul li a:hover,
+.register-list .register-box ul li a:focus{
+    color: #026ab3;
+}
+.register-list .register-box ul li:last-child a{
+    border-bottom: none;
+}
+.register-list .register-box ul li a span{
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.register-list .register-box ul li a:hover span{
+    padding-left: 10px;
+}
+.register-list .register-box .register-ico{
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.register-list .register-box .register-ico.car{
+    background: url("../images/icon-car.png") no-repeat;
+}
+.register-list .register-box ul li a:hover .register-ico.car{
+    background: url("../images/icon-car-active.png") no-repeat;
+}
+.register-list .register-box .register-ico.bike{
+    background: url("../images/icon-bike.png") no-repeat;
+}
+.register-list .register-box ul li a:hover .register-ico.bike{
+    background: url("../images/icon-bike-active.png") no-repeat;
+}
+.register-list .register-box .question-ico{
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url("../images/question-ico.png") no-repeat;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+}
+.register-list .register-box .question-ico .tooltip{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-transform: inherit;
+    font-style: normal;
+    font-size: 13px;
+    display: none;
+    z-index: 9;
+}
+.register-list .register-box .question-ico .tooltip:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 15px 6px;
+    border-color: transparent transparent rgba(0,0,0,0.7) transparent;
+    position: absolute;
+    top: -15px;
+    right: 13px;
+}
+.register-list .register-box .question-ico:hover .tooltip{
+    display: block;
+}
+.nav-toggle{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 14px 20px;
+    text-align: center;
+    margin: 0 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    display: none;
+}
+.nav-toggle .fa{
+    float: right;
+}
+.register-content{
+    padding: 30px 0;
+}
+.register-content .title{
+    text-transform: uppercase;
+    color: #026ab3;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.register-content .time-line{
+    margin-top: 50px;
+    text-align: center;
+}
+.register-content .time-line .line{
+    content: '';
+    display: block;
+    height: 10px;
+    width: 1000px;
+    margin: auto;
+    background: #f5f5f5;
+    box-shadow: inset 0 0 2px #ccc;
+    border-radius: 20px;
+}
+.register-content .time-line ul{
+    padding-left: 0;
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: -10px;
+}
+.register-content .time-line ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.register-content .time-line ul li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    height: 10px;
+    border-radius: 20px;
+}
+.register-content .time-line ul li.active{
+    background: #3fad4e;
+    box-shadow: inset 0 0 2px #ccc;
+}
+.register-content .time-line ul li .number{
+    background: #f5f5f5;
+    box-shadow: inset 0 0 2px #ccc;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -12px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.register-content .time-line ul li .number span{
+    display: block;
+}
+.register-content .time-line ul li .number span i{
+    display: inline-block;
+    margin: auto;
+    font-style: normal;
+    margin-top: 4px;
+}
+.register-content .time-line ul li .number span{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    margin-top: 1px;
+}
+.register-content .time-line ul li.active .number span{
+    border: 2px solid #fff;
+}
+.register-content .time-line ul li.active .number{
+    background: #3fad4e;
+    color: #fff;
+    box-shadow: none;
+}
+.register-content .time-line ul li .text{
+    margin-top: 10px;
+    color: #666666;
+}
+.register-content .box-title{
+	background: #106cb1;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 17px;
+	padding: 10px 20px;
+	margin-top: 80px;
+	font-weight: 300;
+}
+.register-content .box-register{
+    border: 1px solid #cccccc;
+    background: #fff;
+    padding: 15px 20px;
+    margin-top: 80px;
+    position: relative;
+}
+.register-content .box-register.step-2{
+    margin-top: 0;
+}
+.register-content .title-box{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #106cb1;
+    border-bottom: 1px solid #ababab;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+}
+.register-content .title-box .edit{
+    float: right;
+    color: #026ab3;
+}
+.register-content .box-register .form-box{
+    margin: 25px 0 30px;
+}
+.register-content .box-register .form-box .box{
+    margin: 0 15px;
+}
+.register-content .box-register .form-group .radio label{
+    margin-right: 15px;
+}
+.box-register .print{
+    display: inline-block;
+    padding: 6px 17px;
+    background: #eeeeee;
+    text-transform: uppercase;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+.box-register .print:hover{
+    color: #106cb0;
+}
+.box-register .print .fa{
+    font-size: 20px;
+    color: #106cb0;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.box-register .print span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.register-content .add-profile{
+    display: block;
+    border: 1px solid #e2dfdd;
+    color: #666666;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.register-content .add-profile .fa{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.register-content .add-profile span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.register-content .add-profile:hover{
+    color: #106cb0;
+}
+.register-content  .button-box{
+    margin: 60px 0 0;
+    text-align: center;
+}
+.register-content .button-box .btn{
+    padding: 13px 35px;
+    margin-right: 10px;
+}
+.register-content .button-box .fa{
+    font-size: 20px;
+}
+.register-content .button-box .btn-cancel .fa{
+    margin-right: 10px;
+}
+.register-content .button-box .btn-green .fa{
+    margin-left: 10px;
+}
+.btn-green{
+    background: #32a32d;
+    color: #fff;
+    border-color: #32a32d;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+.btn-green:hover{
+    background: transparent;
+    color: #32a32d;
+}
+.btn-cancel{
+    background: #999999;
+    color: #fff;
+    border-color: #999999;
+    box-shadow: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.btn-cancel:hover{
+    background: transparent;
+    color: #999999;
+}
+.register-content .box-register .info-list{
+    margin: 0 15px 20px;
+}
+.register-content .box-register .info-list:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.register-content .box-register .info-list .left{
+    width: 30%;
+    float: left;
+    color: #666666;
+}
+.register-content .box-register .info-list .right{
+    width: 70%;
+    float: left;
+    padding-left: 10px;
+    font-weight: 700;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.guide-box{
+    border: 1px solid #efe9e7;
+    background: #fff;
+    margin-top: 30px;
+    box-shadow: 0 0 2px #ccc;
+}
+.guide-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.guide-box .sidebar{
+    width: 25%;
+    float: left;
+    padding: 30px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.guide-box .sidebar .cate-title{
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.guide-box .sidebar .cate-title .cate-ico{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 30px;
+}
+.guide-box .sidebar .cate-title .cate-ico.car{
+    background: url("../images/icon-car-active.png") no-repeat;
+}
+.guide-box .sidebar .cate-title .cate-ico.bike{
+    background: url("../images/icon-bike-active.png") no-repeat;
+}
+.guide-box .sidebar ul{
+    margin:  10px 0 30px;
+    padding-left: 0;
+}
+.guide-box .sidebar ul li{
+    list-style: none;
+}
+.guide-box .sidebar ul li a{
+    display: block;
+    padding: 10px 20px 10px 63px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.guide-box .sidebar ul li a:hover,
+.guide-box .sidebar ul li.active a:hover{
+    color: #fff;
+    background: #026ab3;
+}
+.guide-box .sidebar ul li.active a{
+    color: #f07545;
+}
+.guide-box .content{
+    border-left: 1px solid #efe9e7;
+    width: 75%;
+    float: left;
+    padding: 30px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+.guide-box .content .guide-title{
+    color: #666666;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ababab;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.guide-box .content .guide-content{}
+.guide-box .content .guide-content:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.guide-box .content .guide-content .left{
+    width: 65%;
+    float: left;
+    line-height: 1.4;
+}
+.guide-box .content .guide-content .right{
+    width: 35%;
+    float: left; text-align:right
+}
+.guide-box .content .guide-content .right img{
+    margin-top: -50px;
+    width: 50%;
+}
+.guide-box .content .question-title{
+    font-size: 20px;
+    color: #666666;
+    margin-top: 30px;
+}
+.guide-box .content .question-list{}
+.guide-box .content .question-list ul{
+    padding-left: inherit;
+    margin: 0;
+}
+.guide-box .content .question-list ul li{
+    list-style: none;
+    border-bottom: 1px solid #ababab;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.guide-box .content .question-list ul li:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.guide-box .content .question-list ul li .thumb{
+    width: 70px;
+    float: left;
+}
+.guide-box .content .question-list ul li .thumb img{
+    width: 100%;
+}
+.guide-box .content .question-list ul li .info{
+    margin-left: 80px;
+}
+.guide-box .content .question-list ul li .info .name{
+    display: block;
+    color: #026ab3;
+    font-weight: bold;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.guide-box .content .question-list ul li .info .desc{
+    height: 34px;
+    overflow: hidden;
+}
+.paginator{
+    border-bottom: 1px solid #c9c9c9;
+    padding: 10px 0; font-size:13px
+}
+.paginator .home-ico{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/paging-home.png") no-repeat 1px 2px;
+}
+.paginator ul{
+    padding-left: 0;
+    margin: 0;
+}
+.paginator ul li{
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0px;
+}
+.paginator ul li:after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background: url("../images/paging-arrow.png") no-repeat 3px 2px;
+    margin-left: 0px;
+}
+.paginator ul li:last-child::after{
+    display: none;
+}
+.paginator ul li a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.box-register.step-1{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.box-register .step-box{
+    margin-bottom: 40px;
+}
+.box-register .step-box .step-title{
+
+}
+.box-register .step-box p{
+    font-weight: 300;
+    margin: 25px 0 0;
+}
+.text-center{
+    text-align: center;
+}
+.step-btn{
+    margin-top: 50px;
+}
+.step-btn .btn{
+    padding: 12px 40px;
+    margin-right: 10px;
+}
+.work-time{
+}
+.graybg {     background: #F5F5F5;
+    padding: 8px;
+    border: 1px solid #ececec;
+}
+.graybg .work-time { background:#f8f8f8}
+.work-time .table-responsive{}
+.work-time .table-responsive table{
+    width: 100%;
+    text-align: left;
+    line-height: 1.4;
+    font-weight: 300;
+    border-left: 1px solid #d5d5d5;
+}
+.work-time .table-responsive table > thead > tr > th{
+    border-top: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #026ab3;
+    padding: 10px 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.work-time .table-responsive table > tbody > tr > td{
+    border-bottom: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    padding: 8px 13px;
+}
+.work-time .table-responsive table > tfoot > tr > td{
+    padding: 8px 13px;
+}
+.work-time .table-responsive table > tfoot > tr > td:nth-child(2){
+    text-transform: uppercase;
+}
+.work-time .table-responsive table > thead > tr > th:nth-child(1),
+.work-time .table-responsive table > tbody > tr > td:nth-child(1){
+    text-transform: uppercase;
+}
+.work-calendar{
+    border: 1px solid #000000;
+    padding: 15px;
+    position: relative;
+}
+.work-calendar label{
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    font-size: 12px;
+    padding: 0 5px;
+}
+.work-calendar ul{
+    padding: 0;
+    margin: 0;
+}
+.work-calendar ul li{
+    padding: 5px 0;
+    list-style: none;
+    border-bottom: 1px solid #666;
+}
+.work-calendar ul li:last-child{
+    border-bottom: none;
+}
+.mm-menu.mm-offcanvas{
+    z-index: 999;
+}
+.menu-toggle{
+    color: #fff;
+    font-size: 32px;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+footer{
+    background: #026ab3;
+    padding: 20px 0 15px;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px; font-size:13px;
+}
+footer .title{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+footer p{
+    margin: 0 0 5px;
+}
+/*responsive*/
+@media (max-width: 1199px){
+}
+@media (max-width: 991px){
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .logo{
+        float: none;
+        text-align: center;
+    }
+    .navbar {
+        float: none;
+        text-align: center;
+    }
+    .navbar ul li {
+        float: none;
+        display: inline-block;
+    }
+    .navbar ul li .dropdown ul li{
+        width: 100%;
+        text-align: left;
+    }
+    .big-banner h2,
+    .big-banner h3,
+    .big-banner .button{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .step{
+        margin-top: 20px;
+    }
+    .step ul{
+        background: transparent;
+        height: auto;
+    }
+    .step ul li{
+        width: calc(50% - 30px);
+        margin: 10px 15px;
+        float: left;
+        height: 70px;
+        padding: 15px;
+        text-align: left;
+        border: 0px solid #ffffff;
+        background-color: #fff;
+        color: #000;
+    }
+    .step ul li:last-child{
+        width: calc(100% - 30px);
+    }
+    .step ul li span{
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 60px);
+    }
+    .step ul li .numb{
+        width: 32px;
+        height: 32px;
+        border: 2px solid #ffffff;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 15px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .col-33{
+        width: 100%;
+    }
+    .col-66{
+        width: 100%;
+    }
+    .register-list .register-box{
+        margin: 0 30px 50px;
+    }
+    .register-content{
+        margin: 0 15px;
+    }
+    .guide-box .sidebar{
+        width: 30%;
+    }
+    .guide-box .content{
+        width: 70%;
+    }
+    .register-content .time-line .line,
+    .register-content .time-line ul{
+        width: 850px;
+    }
+    .paginator{
+        padding: 10px 15px;
+    }
+    .work-time .table-responsive table > thead > tr > th,
+    .work-time .table-responsive table > tbody > tr > td{
+        white-space: nowrap;
+    }
+    .table-responsive{
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+    .logo{
+        margin: auto;
+    }
+}
+@media (max-width: 800px){
+    .register-content .time-line .line,
+    .register-content .time-line ul{
+        width: 600px;
+    }
+}
+@media (max-width: 767px){
+    header{
+        padding-bottom: 15px;
+    }
+    .navbar{
+        border: 1px solid #fff;
+        margin: 0 15px;
+        display: none;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar ul li a{
+        padding: 14px 20px;
+        border-bottom: 1px solid #fff;
+    }
+    .navbar ul li a .fa{
+        display: none;
+    }
+    .navbar ul li:last-child a{
+        border-bottom: 0;
+    }
+    .navbar ul li:hover .dropdown{
+        display: none;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .big-banner{
+        text-align: center;
+    }
+    .guide-box .sidebar{
+        width: 100%;
+        float: none;
+    }
+    .guide-box .content{
+        width: 100%;
+        float: none;
+    }
+    .guide-box .content .guide-content .left{
+        width: 100%;
+        float: none;
+    }
+    .guide-box .content .guide-content .right{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+}
+@media (max-width: 736px){
+}
+@media (max-width: 676px){
+}
+@media (max-width: 640px){
+    .register-list .register-box ul li a span{
+        width: auto;
+    }
+    .step ul li{
+        height: 84px;
+    }
+}
+@media (max-width: 533px){
+    .logo{
+        height: 80px;
+    }
+    .big-banner h2{
+        font-size: 48px;
+    }
+    .big-banner h3{
+        font-size: 20px;
+    }
+    .register-list .register-box ul li a span{
+        width: 380px;
+    }
+    .register-content .box-register .info-list .left{
+        float: none;
+        width: 100%;
+    }
+    .register-content .box-register .info-list .right{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    .register-content .time-line .line{
+        display: none;
+    }
+    .register-content .time-line ul{
+        width: auto;
+        margin-top: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .register-content .time-line ul li{
+        float: none;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .register-content .time-line ul li .number{
+        margin: inherit;
+        margin-top: 0;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .register-content .time-line ul li .text{
+        margin: inherit;
+        margin-top: 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .register-content .time-line ul li.step-1.active,
+    .register-content .time-line ul li.step-2.active,
+    .register-content .time-line ul li.step-3.active{
+        background: transparent;
+        box-shadow: none;
+    }
+    .register-content .time-line ul li.active{
+        background: transparent;
+        box-shadow: none;
+    }
+    .step ul li{
+        height: 100px;
+    }
+}
+@media (max-width: 480px){
+    .register-list .register-box ul li a span{
+        width: 330px;
+    }
+}
+@media (max-width: 414px){
+    .big-banner h2{
+        font-size: 36px;
+    }
+    .big-banner h3{
+        font-size: 16px;
+    }
+    .register-list .register-box ul li a span{
+        width: 270px;
+    }
+    .step ul li{
+        width: calc(100% - 30px);
+        height: auto;
+    }
+}
+@media (max-width: 375px){
+    .register-list .register-box ul li a span{
+        width: 230px;
+    }
+    .register-content .button-box .btn{
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 360px){
+    .big-banner{
+        height: 350px;
+    }
+    .big-banner h2{
+        font-size: 36px;
+    }
+    .big-banner h3{
+        font-size: 14px;
+    }
+    .register-list .register-box ul li a span{
+        width: 220px;
+    }
+    .logo{
+        padding-top: 20px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+    }
+    .logo img {
+        width: 150px;
+    }
+}
+@media (max-width: 320px){
+    .big-banner .button .btn{
+        width: 200px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .register-list .register-box ul li a span{
+        width: 180px;
+    }
+    .register-content .box-register .button-box .btn{
+        width: 100%;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+.text-danger { color:#BC0003}
+@media (max-width: 991px){
+.step ul li.step1,.step ul li.step2,.step ul li.step3,.step ul li.step4,.step ul li.step5 { color:#ffffff}
+.step ul li.step1 { background:#026ab3}
+.step ul li.step2 { background:#14acde}
+.step ul li.step3 { background:#07a09b}
+.step ul li.step4 { background:#32a32d}
+.step ul li.step5 { background:#b4cb01}
+}
+.mm-panel.mm-hasnavbar .mm-navbar{
+    display: none;
+}
+.mm-panels > .mm-panel.mm-hasnavbar{
+    padding-top: 0;
+}

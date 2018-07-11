@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký Ô tô, Mô tô</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="" title=""/></a>
+            </div>
+            <div class="nav-toggle" onclick="$('.navbar').slideToggle();">
+                <span>Trang chủ</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Hướng dẫn</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Đăng ký ô tô <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Đăng ký mới Ôtô</a></li>
+                                <li><a href="#">Đăng ký sang tên trong tỉnh</a></li>
+                                <li><a href="#">Đăng ký sang tên/Di chuyển ngoài tỉnh</a></li>
+                                <li><a href="#">Đăng ký xe từ tỉnh khác chuyển đến</a></li>
+                                <li><a href="#">Cải tạo, cấp, đăng ký xe</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Đăng ký mô tô <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Đăng ký mới Môtô</a></li>
+                                <li><a href="#">Đăng ký sang tên trong tỉnh</a></li>
+                                <li><a href="#">Đăng ký sang tên/Di chuyển ngoài tỉnh</a></li>
+                                <li><a href="#">Đăng ký xe từ tỉnh khác chuyển đến</a></li>
+                                <li><a href="#">Cải tạo, cấp, đăng ký xe</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Tìm hồ sơ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="paginator">
+                <ul>
+                    <li><a href="#"><i class="home-ico"></i></a></li>
+                    <li><span>Đăng ký ôtô</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="register-content">
+            <div class="container">
+                <div class="title">Đăng ký Ô tô</div>
+                <div class="time-line">
+                    <div class="line"></div>
+                    <ul>
+                        <li>
+                            <div class="number"><span><i>1</i></span></div>
+                            <div class="text">Hướng dẫn</div>
+                        </li>
+                        <li>
+                            <div class="number"><span><i>2</i></span></div>
+                            <div class="text">Khai báo thông tin đăng ký</div>
+                        </li>
+                        <li class="active">
+                            <div class="number"><span><i>3</i></span></div>
+                            <div class="text">Chọn điểm đăng ký & lấy lịch hẹn</div>
+                        </li>
+                        <li>
+                            <div class="number"><span><i>4</i></span></div>
+                            <div class="text">Lấy mã hồ sơ</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-title">Chọn điểm đăng ký và lấy lịch hẹn</div>
+                <div class="box-register step-2">
+                    <div class="infomation-box">
+                    	<div class="title-box">
+                            <span class="text">Chọn điểm đăng ký</span>
+                        </div>
+                        <div class="form-box">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Vui lòng chọn điểm đăng ký <span class="text-danger">*</span></label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chọn điểm đăng ký </option>
+                                            <option>Điểm đăng ký 1</option>
+                                            <option>Điểm đăng ký 1</option>
+                                            <option>Điểm đăng ký 1</option>
+                                            <option>Điểm đăng ký 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ngày đăng ký <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Thời gian đăng ký <span class="text-danger">*</span></label>
+                                        <select class="form-control">
+                                            <option selected disabled>Thời gian đăng ký </option>
+                                            <option>Sáng</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-66">
+                                	<div class="graybg">
+                                        <p align="center">Lịch làm việc: Sáng: từ 8H-12h, Chiều: Từ 1h30-17h00 (từ thứ 2 - thứ 6)</p>
+                                        <div class="work-time">
+                                            <div class="table table-responsive">
+                                                <table class="table" cellpadding="0" cellspacing="0">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STT</th>
+                                                        <th>Ngày nghỉ</th>
+                                                        <th>Diễn giải</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>30/4</td>
+                                                        <td>Ngày giải phóng miền Nam</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>01/5</td>
+                                                        <td>Ngày quốc tế lao động</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>30/4</td>
+                                                        <td>Ngày giải phóng miền Nam</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>30/4</td>
+                                                        <td>Ngày giải phóng miền Nam</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infomation-box">
+                    	<div class="title-box">
+                            <span class="text">Danh mục phí</span>
+                        </div>
+                        <div class="form-box">
+                            <div class="form-group work-time">
+                                <div class="table table-responsive">
+                                    <table class="table" cellpadding="0" cellspacing="0">
+                                        <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Loại phí</th>
+                                            <th align="right">Số tiền</th>
+                                            <th>Ghi chú</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Tên phí 1</td>
+                                            <td align="right">100.000đ</td>
+                                            <td>Nội dung ghi chú</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Tên phí 1</td>
+                                            <td align="right">100.000đ</td>
+                                            <td>Nội dung ghi chú</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Tên phí 1</td>
+                                            <td align="right">100.000đ</td>
+                                            <td>Nội dung ghi chú</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" align="right"><strong>TỔNG TIỀN</strong></td>
+                                            <td align="right"><strong class="text-danger">100.000đ</strong></td>
+                                            <td>Nội dung ghi chú</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-box">
+                    <a href="#" class="btn btn-cancel"><i class="fa fa-angle-double-left"></i> Quay lại</a>
+                    <a href="#" class="btn btn-green">Gửi hồ sơ <i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="title">Cục cảnh sát giao thông</div>
+            <p>Địa chỉ liên hệ: Lô D20 - Khu Đô thị Cầu Giấy - Hà Nội</p>
+            <p>Điện thoại (Tel.): 84-4 385 714 44; Fax: 84-4 385 714 40</p>
+            <p>Email: dichvucong_gplx@drvn.gov.vn</p>
+        </div>
+    </footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

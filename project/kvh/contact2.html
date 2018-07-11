@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KVH</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contact">
+        <map>
+       		<div id='tranadobe'></div>
+        </map>
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <div class="text1">CONTACT</div>
+                    <div class="title">Us</div>
+                    <div class="text2">
+                        <p><strong>KVH Digital & Interactive Communication Ltd</strong><p>
+                        <p>30-32 Hoa Ma street,<br/>
+                        Hai Ba Trung district, Hanoi<br/>
+                        (+84) 436 330 352</p>
+                        <p><a href="#">contact@kvh.vn</a></p>
+                        <p><a href="#">Facebook</a></p>
+                    </div>
+                    <span class="bottom-after"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="contact-foot" style="margin-top:300px">
+        <div class="container">
+            <div class="footer-logo"><a href="#"><img src="images/logo.png" alt="" title=""/></a></div>
+            <div class="footer-info">
+                <p>KVH Digital & Interactive Communication Ltd</p>
+                <p>30-32 Hoa Ma street, Hai Ba Trung district, Hanoi</p>
+                <p class="phone">(+84) 436 330 352</p>
+                <div class="footer-contact">
+                    <a href="#">contact@kvh.vn</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <span class="menu-toggle"></span>
+
+    <div class="bg-1"></div>
+    <div class="bg-2"></div>
+    <nav class="toggle-navbar">
+        <span class="close-btn"></span>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="service.html">service</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div class="login-box">
+            <div class="login"><a href="#">login</a></div>
+            <div class="lang"><a href="#">Tiếng Việt</a></div>
+        </div>
+        <div class="other">
+            <ul>
+                <li>Other haki group companies</li>
+                <li><a href="#">haki|Brand</a></li>
+                <li><a href="#">haki|ABI</a></li>
+                <li><a href="#">haki Advertising</a></li>
+                <li><a href="#">haki Craft</a></li>
+            </ul>
+            <ul>
+                <li>Under the umbrella of</li>
+                <li><a href="#">haki group</a></li>
+            </ul>
+            <ul>
+                <li>Haki|ABI is a member of</li>
+                <li><a href="#">The Design Alliance</a></li>
+            </ul>
+        </div>
+    </nav>
+    <span class="angled-line"></span>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/style.js"></script>
+<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+ 
+<script> 
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(21.016115,105.854668),
+            zoom: 17,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.LARGE,
+            },
+            disableDoubleClickZoom: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            scrollwheel: false,
+            panControl: false,
+            streetViewControl: true,
+            draggable : false,
+            overviewMapControl: false,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"featureType":"administrative.locality","elementType":"all","stylers":[{"hue":"#2c2e33"},{"saturation":7},{"lightness":19},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":-2},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"hue":"#e9ebed"},{"saturation":-90},{"lightness":-8},{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":10},{"lightness":69},{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":-78},{"lightness":67},{"visibility":"simplified"}]}],
+        }
+        var mapElement = document.getElementById('tranadobe');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['32 Hòa Mã', 'undefined', 'undefined', 'undefined', 'undefined', 21.015493, 105.85487699999999, 'https://mapbuildr.com/assets/img/markers/ellipse-red.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';     }
+
+}
+</script>
+<style>
+    #tranadobe {
+        height:100vh;
+        width:100%;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+</style>
+
+
+</body>
+</html>

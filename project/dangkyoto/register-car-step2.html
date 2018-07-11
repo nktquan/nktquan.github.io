@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký Ô tô, Mô tô</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="" title=""/></a>
+            </div>
+            <div class="nav-toggle" onclick="$('.navbar').slideToggle();">
+                <span>Trang chủ</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="user-guide.html">Hướng dẫn</a>
+                    </li>
+                    <li class="active">
+                        <a href="register-car-step1.html">Đăng ký ô tô <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Đăng ký mới Ôtô</a></li>
+                                <li><a href="#">Đăng ký sang tên trong tỉnh</a></li>
+                                <li><a href="#">Đăng ký sang tên/Di chuyển ngoài tỉnh</a></li>
+                                <li><a href="#">Đăng ký xe từ tỉnh khác chuyển đến</a></li>
+                                <li><a href="#">Cải tạo, cấp, đăng ký xe</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="register-car-step1.html">Đăng ký mô tô <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Đăng ký mới Môtô</a></li>
+                                <li><a href="#">Đăng ký sang tên trong tỉnh</a></li>
+                                <li><a href="#">Đăng ký sang tên/Di chuyển ngoài tỉnh</a></li>
+                                <li><a href="#">Đăng ký xe từ tỉnh khác chuyển đến</a></li>
+                                <li><a href="#">Cải tạo, cấp, đăng ký xe</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Tìm hồ sơ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="paginator">
+                <ul>
+                    <li><a href="#"><i class="home-ico"></i></a></li>
+                    <li><span>Đăng ký ôtô</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="register-content">
+            <div class="container">
+                <div class="title">Đăng ký Ô tô</div>
+                <div class="time-line">
+                    <div class="line"></div>
+                    <ul>
+                        <li>
+                            <div class="number"><span><i>1</i></span></div>
+                            <div class="text">Hướng dẫn</div>
+                        </li>
+                        <li class="active">
+                            <div class="number"><span><i>2</i></span></div>
+                            <div class="text">Khai báo thông tin đăng ký</div>
+                        </li>
+                        <li>
+                            <div class="number"><span><i>3</i></span></div>
+                            <div class="text">Chọn điểm đăng ký & lấy lịch hẹn</div>
+                        </li>
+                        <li>
+                            <div class="number"><span><i>4</i></span></div>
+                            <div class="text">Lấy mã hồ sơ</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-title">Khai báo thông tin đăng ký</div>
+                <div class="box-register step-2">
+                	<div class="infomation-box">
+                        <div class="form-box">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Chọn số xe đăng ký<span class="text-red">*</span></label>
+                                        <select class="form-control">
+                                            <option>Đăng ký 01</option>
+                                            <option>Đăng ký 02</option>
+                                            <option>Đăng ký 03</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group work-time">
+                            	<label>Danh sách xe đăng ký</label>
+                                <div class="table table-responsive">
+                                    <table class="table" cellpadding="0" cellspacing="0">
+                                        <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Mã hỗ sơ/Nhóm hồ sơ</th>
+                                            <th>Chủ sở hữu</th>
+                                            <th>Địa chỉ</th>
+                                            <th>Loại xe</th>
+                                            <th>Nhãn hiệu</th>
+                                            <th>Số loại</th>
+                                            <th>Số khung</th>
+                                            <th>Số máy</th>
+                                            <th>Màu sơn</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>54564564</td>
+                                            <td>Tran Duc Anh</td>
+                                            <td>18 Tam Trinh</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                        </tr>
+                                       <tr>
+                                            <td>1</td>
+                                            <td>54564564</td>
+                                            <td>Tran Duc Anh</td>
+                                            <td>18 Tam Trinh</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>54564564</td>
+                                            <td>Tran Duc Anh</td>
+                                            <td>18 Tam Trinh</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                            <td>Loại xe</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infomation-box">
+                        <div class="title-box">
+                            <span class="text">Thông tin chủ sở hữu</span>
+                        </div>
+                        <div class="form-box">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="form-group invalid">
+                                        <label>Nhập hồ sơ <span class="text-red">*</span></label>
+                                        <input type="text" class="form-control"/>
+                                        <span class="validate-text"><i>Nội dung báo lỗi</i></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Quốc gia</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chọn quốc gia</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tỉnh/Thành phố</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chọn tỉnh/thành phố</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Chủ sở hữu</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Mã hồ sơ</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số điện thoại</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Giới tính</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="sex" checked/>
+                                                Nam
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="sex"/>
+                                                Nữ
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ngày sinh</label>
+                                        <input type="text" class="form-control" placeholder="Ngày/Tháng/Năm"/>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infomation-box">
+                        <div class="title-box">
+                            <span class="text">Thông tin xe</span>
+                        </div>
+                        <div class="form-box">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Loại xe</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chọn quốc gia</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số máy</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Nhãn hiệu</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chọn quốc gia</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Số loại</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số khung</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infomation-box">
+                        <div class="title-box">
+                            <span class="text">Thông tin đăng ký mới Ô tô</span>
+                        </div>
+                        <div class="form-box">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Mã hồ sơ/Mã nhóm hồ sơ</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Chủ sở hữu</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Địa chỉ</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Loại xe</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chọn quốc gia</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nhãn hiệu</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chọn quốc gia</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số loại</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Số khung</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số máy</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Màu sơn</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infomation-box">
+                        <div class="title-box">
+                            <span class="text">Thông tin hiệu chỉnh bổ sung</span>
+                        </div>
+                        <div class="form-box">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Phân loại quản lý</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Cá nhân người Việt Nam</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số giấy tờ</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Mã số thuế</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Mã màu sơn</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Trọng lượng toàn bộ (kg)</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số chỗ ngồi</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Trọng lượng kéo theo (kg)</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Niên hạn sử dụng</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ngày cấp chứng từ</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Loại giấy tờ</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chứng minh thư nhân dân</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ngày cấp</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tài khoản</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Loại nhiên liệu</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chứng minh thư nhân dân</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tụ trọng</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số chỗ đứng</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nước sản xuất</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chứng minh thư nhân dân</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nguồn gốc</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chứng minh thư nhân dân</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Cơ quan cấp</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="form-group">
+                                        <label>Nơi cấp</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Chứng minh thư nhân dân</option>
+                                            <option>Vietnam</option>
+                                            <option>United State</option>
+                                            <option>Laos</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ngân hàng</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Dung tích xi lanh</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số chỗ nằm</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số chứng từ</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ghi chú</label>
+                                        <input type="text" class="form-control"/>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="print"><i class="fa fa-print"></i> <span>In bản khai báo này</span></a>
+                </div>
+                <a href="#" class="add-profile"><i class="fa fa-plus"></i> <span>Thêm hồ sơ cho xe khác</span></a>
+                <div class="button-box">
+                    <a href="#" class="btn btn-green">Đăng ký</a>
+                    <a href="#" class="btn btn-cancel">Bỏ qua</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="title">Cục cảnh sát giao thông</div>
+            <p>Địa chỉ liên hệ: Lô D20 - Khu Đô thị Cầu Giấy - Hà Nội</p>
+            <p>Điện thoại (Tel.): 84-4 385 714 44; Fax: 84-4 385 714 40</p>
+            <p>Email: dichvucong_gplx@drvn.gov.vn</p>
+        </div>
+    </footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

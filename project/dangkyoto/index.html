@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký Ô tô, Mô tô</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/jquery.mmenu.all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li class="close text-center">
+                <span onclick="$('#menu').data('mmenu').close()"><i class="fa fa-times"></i></span>
+            </li>
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="user-guide.html">Hướng dẫn</a></li>
+            <li><a href="register-car-step1.html">Đăng ký Ô tô</a>
+                <ul>
+                    <li><a href="/">Đăng ký mới Ô tô</a></li>
+                    <li><a href="/">Đăng ký sang tên trong tỉnh</a></li>
+                    <li><a href="/">Đăng ký sang tên/Di chuyển ngoài tỉnh</a></li>
+                    <li><a href="/">Đăng ký xe từ tỉnh khác chuyển đến</a></li>
+                    <li><a href="/">Cải tạo, cấp, đăng ký xe</a></li>
+                </ul>
+            </li>
+            <li><a href="register-car-step1.html">Đăng ký Mô tô</a>
+                <ul>
+                    <li><a href="/">Đăng ký mới Ô tô</a></li>
+                    <li><a href="/">Đăng ký sang tên trong tỉnh</a></li>
+                    <li><a href="/">Đăng ký sang tên/Di chuyển ngoài tỉnh</a></li>
+                    <li><a href="/">Đăng ký xe từ tỉnh khác chuyển đến</a></li>
+                    <li><a href="/">Cải tạo, cấp, đăng ký xe</a></li>
+                </ul>
+            </li>
+            <li><a href="/">Tìm hồ sơ</a></li>
+        </ul>
+    </nav>
+    <header>
+        <a href="#menu" class="menu-toggle"><i class="fa fa-bars"></i></a>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="" title=""/></a>
+            </div>
+            <div class="nav-toggle" onclick="$('.navbar').slideToggle();">
+                <span>Trang chủ</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="user-guide.html">Hướng dẫn</a>
+                    </li>
+                    <li>
+                        <a href="register-car-step1.html">Đăng ký ô tô <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Đăng ký mới Ôtô</a></li>
+                                <li><a href="#">Đăng ký sang tên trong tỉnh</a></li>
+                                <li><a href="#">Đăng ký sang tên/Di chuyển ngoài tỉnh</a></li>
+                                <li><a href="#">Đăng ký xe từ tỉnh khác chuyển đến</a></li>
+                                <li><a href="#">Cải tạo, cấp, đăng ký xe</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="register-car-step1.html">Đăng ký mô tô <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Đăng ký mới Môtô</a></li>
+                                <li><a href="#">Đăng ký sang tên trong tỉnh</a></li>
+                                <li><a href="#">Đăng ký sang tên/Di chuyển ngoài tỉnh</a></li>
+                                <li><a href="#">Đăng ký xe từ tỉnh khác chuyển đến</a></li>
+                                <li><a href="#">Cải tạo, cấp, đăng ký xe</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Tìm hồ sơ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="big-banner">
+            <div class="container">
+                <h2>Chào mừng bạn</h2>
+                <h3>Đến trang đăng ký xe trực tuyến CSGT<br/>Thuộc công an Hà Nội.</h3>
+                <div class="button">
+                    <a href="#" class="btn">Đăng ký Ô tô</a>
+                    <a href="#" class="btn">Đăng ký Mô tô</a>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="container">
+                <ul>
+                    <li class="step1"><span class="numb">1</span> <span>Truy cập vào trang web dangkyxetructuyen</span></li>
+                    <li class="step2"><span class="numb">2</span> <span>Chọn loại xe và hình thức đăng ký xe</span></li>
+                    <li class="step3"><span class="numb">3</span> <span>Nhập đầy đủ thông tin đăng ký, chọn lịch hẹn đến đăng ký và lưu thông tin</span></li>
+                    <li class="step4"><span class="numb">4</span> <span>Gửi hồ sơ và lưu lại mã hồ sơ hoặc mã nhóm hồ sơ</span></li>
+                    <li class="step5"><span class="numb">5</span> <span>Mang tài liệu, mã hồ sơ/mã nhóm đến điểm đăng ký để hoàn thành thủ tục</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="register-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-50">
+                        <div class="register-box">
+                            <div class="title">Đăng ký Ô tô</div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico car"></i>
+                                        <span>Đăng ký mới Ô tô</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico car"></i>
+                                        <span>Đăng ký sang tên trong tỉnh</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico car"></i>
+                                        <span>Đăng ký sang tên/Di chuyển ngoài tỉnh</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico car"></i>
+                                        <span>Đăng ký xe từ tỉnh khác chuyển đến</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico car"></i>
+                                        <span>Cải tạo đổi, cấp, đăng ký xe</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="register-box">
+                            <div class="title">Đăng ký Mô tô</div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico bike"></i>
+                                        <span>Đăng ký mới Mô tô</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico bike"></i>
+                                        <span>Đăng ký sang tên trong tỉnh</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico bike"></i>
+                                        <span>Đăng ký sang tên/Di chuyển ngoài tỉnh</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico bike"></i>
+                                        <span>Đăng ký xe từ tỉnh khác chuyển đến</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="register-ico bike"></i>
+                                        <span>Cải tạo đổi, cấp, đăng ký xe</span>
+                                        <i class="question-ico">
+                                            <div class="tooltip">Mang chứng minh nhân dân/ sổ tạm trú đến phòng Quản lý xuất nhập cảnh để làm thủ tục tiếp nhận và chụp ảnh.</div>
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="title">Cục cảnh sát giao thông</div>
+            <p>Địa chỉ liên hệ: Lô D20 - Khu Đô thị Cầu Giấy - Hà Nội</p>
+            <p>Điện thoại (Tel.): 84-4 385 714 44; Fax: 84-4 385 714 40</p>
+            <p>Email: dichvucong_gplx@drvn.gov.vn</p>
+        </div>
+    </footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mmenu.all.min.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

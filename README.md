@@ -1,2 +1,0 @@
-# Portfolio
-NKTQuan Portfolio

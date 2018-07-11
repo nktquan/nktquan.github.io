@@ -1,0 +1,40 @@
+/*Created by nktquan@gmail.com on 7/8/16.*/
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/GothamVUBookItalic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/GothamVUBook.otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/GothamVUBold.otf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/GothamVUBoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GothamCondensed';
+    src: url('../fonts/gotham/GothamCondensedVUBold.otf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'GothamCondensed';
+    src: url('../fonts/gotham/GothamCondensedVUBoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GothamCondensed';
+    src: url('../fonts/gotham/GothamCondensedVURegular.otf');
+    font-weight: 700;
+}
