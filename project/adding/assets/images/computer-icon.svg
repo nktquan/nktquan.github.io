@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="79px" height="69px" viewBox="0 0 79 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="About" sketch:type="MSArtboardGroup" transform="translate(-480.000000, -1038.000000)" stroke="#4D3F40" stroke-linejoin="round">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(480.000000, 1027.000000)">
+                <g transform="translate(0.000000, 11.000000)" sketch:type="MSShapeGroup">
+                    <path d="M78.116488,55.9675383 C78.116488,58.9160696 75.8605422,61.306498 73.0733902,61.306498 L5.83208506,61.306498 C3.04829502,61.306498 0.788987173,58.9160696 0.788987173,55.9675383 L0.788987173,6.128283 C0.788987173,3.17975178 3.04829502,0.789323379 5.83208506,0.789323379 L73.0733902,0.789323379 C75.8605422,0.789323379 78.116488,3.17975178 78.116488,6.128283 L78.116488,55.9675383 L78.116488,55.9675383 Z" id="Stroke-172" stroke-linecap="round"></path>
+                    <path d="M15.9182808,68.0302923 L62.9871944,68.0302923" id="Stroke-173" stroke-linecap="round"></path>
+                    <path d="M39.4527376,61.3061618 L39.4527376,68.0302923" id="Stroke-174" stroke-linecap="round"></path>
+                    <path d="M41.1337702,54.5820312 C41.1337702,55.5099613 40.3806676,56.2630639 39.4527376,56.2630639 C38.5248076,56.2630639 37.771705,55.5099613 37.771705,54.5820312 C37.771705,53.6541012 38.5248076,52.9009986 39.4527376,52.9009986 C40.3806676,52.9009986 41.1337702,53.6541012 41.1337702,54.5820312 L41.1337702,54.5820312 Z" id="Stroke-175"></path>
+                    <path d="M0.788987173,47.8579007 L78.116488,47.8579007" id="Stroke-176"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

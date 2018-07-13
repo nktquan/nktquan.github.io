@@ -1,0 +1,4538 @@
+@import "fonts"
+@import "mobile"
+
+$primary-font: 'Helvetica-Neue', sans-serif
+$countdown-font: 'Comfortaa', sans-serif
+$primary_color: #1c223a
+$secondary_color: #ee2b00
+$text-light: #fff
+$text-dark: #1C223A
+$text-grey: #9B9B9B
+$text-color: #3C464D
+
+=transition($value)
+  -webkit-transition: all $value
+  -moz-transition: all $value
+  -ms-transition: all $value
+  -o-transition: all $value
+  transition: all $value
+
+=rotate($value)
+  -webkit-transform: rotate($value)
+  -moz-transform: rotate($value)
+  -ms-transform: rotate($value)
+  -o-transform: rotate($value)
+  transform: rotate($value)
+
+body
+  padding: 0
+  margin: 0 auto
+  font-weight: 300
+  font-family: $primary-font
+  background: #f5f5f5
+  color: $text-color
+  line-height: 1.3
+  font-size: 14px
+  @media #{$information-tablet-large}
+    overflow-x: hidden
+
+a
+  +transition(.3s)
+  outline: none
+
+.container
+  width: 1200px
+  max-width: inherit
+  @media #{$information-tablet-large}
+    width: 100%
+
+.right-col
+  text-align: right
+
+.red-text
+  color: $secondary_color
+
+.owl-dots
+  position: absolute
+  bottom: 10px
+  left: 0
+  right: 0
+  text-align: center
+  .owl-dot
+    display: inline-block
+    vertical-align: middle
+    width: 10px
+    height: 10px
+    border: 1px solid $text-color
+    background: #fff
+    border-radius: 10px
+    margin: 0 3px
+    &.active
+      width: 20px
+      background: $secondary_color
+
+.wrapper
+
+header
+  border-bottom: 2px solid $secondary_color
+  background: #fff
+  .top-bar
+    background: $primary_color
+    .right-col
+      ul
+        float: right
+        padding: 0
+        @media #{$information-tablet-large}
+          display: block
+    ul
+      padding: 3px 0
+      margin: 0
+      @media #{$information-tablet-large}
+        display: none
+      li
+        position: relative
+        display: inline-block
+        vertical-align: middle
+        margin-right: 20px
+        &:last-child
+          margin-right: 0
+        &:hover
+          .nav-dropdown
+            display: block
+        a
+          color: $text-light
+          padding: 10px 0
+          text-decoration: none
+          display: inline-block
+          &:hover
+            color: $secondary_color
+          .icon
+            display: inline-block
+            vertical-align: middle
+            width: 16px
+            height: 16px
+            &.support
+              background: url("../img/svg/support.svg") no-repeat
+              background-size: contain
+            &.email
+              background: url("../img/svg/mail.svg") no-repeat
+              background-size: contain
+            &.sign-in
+              background: url("../img/svg/logout.svg") no-repeat
+              background-size: contain
+            &.globe
+              background: url("../img/svg/globe.svg") no-repeat
+              background-size: contain
+            &.cart
+              width: 24px
+              height: 24px
+              background: url("../img/svg/cart.svg") no-repeat
+              background-size: contain
+          span
+            display: inline-block
+            vertical-align: middle
+          .fa
+            display: inline-block
+            vertical-align: middle
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .nav-dropdown
+          display: none
+          border: 1px solid #3C464D
+          min-width: 200px
+          background: #fff
+          position: absolute
+          top: calc(100% + 25px)
+          right: 0
+          z-index: 99
+          &:before
+            content: ''
+            display: block
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 0 20px 25px
+            border-color: transparent transparent #1c223a transparent
+            position: absolute
+            top: -20px
+            right: -1px
+          &:after
+            content: ''
+            display: block
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 0 20px 25px
+            border-color: transparent transparent #fff transparent
+            position: absolute
+            top: -18px
+            right: 0
+          ul
+            padding: 10px 0
+            margin: 0
+            &:after
+              content: ''
+              display: block
+              height: 30px
+              width: 100%
+              position: absolute
+              left: 0
+              top: -30px
+            li
+              list-style: none
+              width: 100%
+              float: none
+              margin-right: 0
+              a
+                text-align: left
+                color: #1C223A
+                display: block
+                padding: 5px 15px
+                text-decoration: none
+                &:hover
+                  color: $secondary_color
+                .icon
+                  width: 16px
+                  height: 16px
+                  margin-right: 5px
+                  &.user1
+                    background: url("../img/svg/user1.svg") no-repeat center
+                    background-size: 16px
+                  &.user2
+                    background: url("../img/svg/user2.svg") no-repeat center
+                    background-size: 16px
+                  &.user3
+                    background: url("../img/svg/user3.svg") no-repeat center
+                    background-size: 16px
+                  &.user4
+                    background: url("../img/svg/user4.svg") no-repeat center
+                    background-size: 16px
+                  &.user5
+                    background: url("../img/svg/user5.svg") no-repeat center
+                    background-size: 16px
+                  &.user6
+                    background: url("../img/svg/user6.svg") no-repeat center
+                    background-size: 16px
+                  &.vn
+                    background: url("../img/svg/flag-vi.svg") no-repeat center
+                    background-size: 16px
+                  &.en
+                    background: url("../img/svg/flag-us.svg") no-repeat center
+                    background-size: 16px
+                  &.cn
+                    background: url("../img/svg/flag-cn.svg") no-repeat center
+                    background-size: 16px
+                span
+  .middle-bar
+    padding: 10px 0
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .logo
+      width: 20%
+      float: left
+      @media #{$information-tablet-large}
+        width: 100%
+        float: none
+        text-align: center
+      a
+        display: block
+        @media #{$information-tablet-large}
+          display: inline-block
+        .logo-img
+          display: block
+          width: 150px
+          height: 80px
+        img
+          width: 150px
+    .search-box
+      width: 55%
+      float: left
+      padding: 25px 0
+      @media #{$information-tablet-large}
+        width: 100%
+        float: left
+      .search-input-box
+        .btn
+          background: transparent
+          color: $text-dark
+          cursor: pointer
+          border: 1px solid rgba(0, 0, 0, .15)
+          border-right: none
+          height: 42px
+          font-size: 13px
+          border-top-left-radius: 5px
+          border-bottom-left-radius: 5px
+          &:after
+            display: none
+          span
+            display: inline-block
+            vertical-align: middle
+            max-width: 130px
+            overflow: hidden
+            text-overflow: ellipsis
+          .fa
+            display: inline-block
+            vertical-align: middle
+            margin-left: 10px
+        .input-group-btn
+          .form-control
+            width: 150px
+            border-top-right-radius: 0
+            border-bottom-right-radius: 0
+            border-right: 0
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            outline: none
+            cursor: pointer
+            padding-right: 35px
+            background: url("../img/caret.png") no-repeat
+            background-size: 10px
+            background-position: center right 10px
+        .form-control
+          height: 42px
+          position: relative
+          z-index: 1
+        .btn-search
+          border: 1px solid $primary_color
+          background: $primary_color
+          color: $text-light
+          font-weight: 300
+          text-transform: uppercase
+          border-top-left-radius: 0
+          border-bottom-left-radius: 0
+          border-top-right-radius: 5px
+          border-bottom-right-radius: 5px
+          position: relative
+          +transition(0s)
+          &:hover
+            background: $secondary_color
+            border-color: $secondary_color
+            &:after
+              background: url("../img/svg/search-btn-white.svg") no-repeat left
+              background-size: 117px
+          &:after
+            content: ''
+            display: block
+            height: 42px
+            width: 20px
+            background: url("../img/svg/search-btn.svg") no-repeat left
+            background-size: 117px
+            position: absolute
+            top: -1px
+            left: -20px
+            z-index: 9
+            +transition(0s)
+          span
+            display: inline-block
+            vertical-align: middle
+            max-width: inherit
+            margin-right: 5px
+          .icon-search
+            display: inline-block
+            vertical-align: middle
+            width: 20px
+            height: 20px
+            background: url("../img/svg/search.svg") no-repeat center
+            background-size: contain
+        .dropdown-menu
+          border-radius: 5px
+          border: 1px solid #1C223A
+          max-width: 300px
+          li
+            .form-check
+              margin-bottom: 0
+              .form-check-label
+                padding: 5px 15px 5px 35px
+                display: block
+                cursor: pointer
+                position: relative
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                .form-check-input
+                label
+                  cursor: pointer
+                  margin-bottom: 0
+                input[type=checkbox],
+                input[type=radio]
+                  display: none
+                input[type=checkbox] + label
+                  display: block
+                  width: 16px
+                  height: 16px
+                  background: url("../img/svg/checkbox2.svg") no-repeat center
+                  background-size: 19px
+                  position: absolute
+                  top: 6px
+                  left: 10px
+                input[type=checkbox]:checked + label
+                  background: url("../img/svg/checkbox2-check.svg") no-repeat center
+                  background-size: 19px
+                input[type=radio] + label
+                  display: block
+                  width: 16px
+                  height: 16px
+                  background: url("../img/svg/checkbox.svg") no-repeat center
+                  background-size: 19px
+                  position: absolute
+                  top: 0
+                  left: 10px
+                input[type=radio]:checked + label
+                  background: url("../img/svg/checkbox-check.svg") no-repeat center
+                  background-size: 19px
+    .deli
+      width: 25%
+      float: left
+      text-align: right
+      padding: 22px 0
+      @media #{$information-tablet-large}
+        display: none
+      .text
+        display: inline-block
+        vertical-align: middle
+        line-height: 1.2
+        span
+          display: block
+      .icon-box
+        display: inline-block
+        vertical-align: middle
+        .icon-deli
+          display: block
+          width: 59px
+          height: 50px
+          background: url("../img/svg/deli.svg") no-repeat center
+          background-size: 60px
+  .bottom-bar
+    position: relative
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .all-category
+      &.open,
+      &:hover
+        .category-dropdown
+          display: block
+      .cate-btn
+        height: 45px
+        width: 250px
+        background: $secondary_color
+        padding: 14px 20px
+        color: #ffffff
+        float: left
+        cursor: pointer
+        display: block
+        .icon-menu
+          display: inline-block
+          vertical-align: middle
+          width: 20px
+          height: 20px
+          background: url("../img/svg/menu-bars.svg") no-repeat center
+          background-size: contain
+          margin-right: 10px
+        span
+          display: inline-block
+          vertical-align: middle
+      .category-dropdown
+        display: none
+        position: absolute
+        top: 100%
+        left: 0
+        right: 0
+        background: #232A48
+        z-index: 99
+        height: 300px
+        @media #{$information-tablet-large}
+          display: none !important
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .cate-list
+          background: #1C223A
+          width: 250px
+          float: left
+          height: 300px
+          padding: 10px 0
+          ul
+            padding: 0
+            margin: 0
+            li
+              list-style: none
+              &.active,
+              &:hover
+                a
+                  color: $secondary_color
+              a
+                color: #ffffff
+                display: block
+                padding: 10px 20px
+                text-transform: uppercase
+                text-decoration: none
+                .icon
+                  display: inline-block
+                  vertical-align: middle
+                  width: 16px
+                  height: 16px
+                  margin-right: 5px
+                  &.icon1
+                    background: url("../img/svg/cate1.svg") no-repeat center
+                    background-size: 16px
+                  &.icon2
+                    background: url("../img/svg/cate2.svg") no-repeat center
+                    background-size: 16px
+                  &.icon3
+                    background: url("../img/svg/cate3.svg") no-repeat center
+                    background-size: 16px
+                  &.icon4
+                    background: url("../img/svg/cate4.svg") no-repeat center
+                    background-size: 16px
+                  &.icon5
+                    background: url("../img/svg/cate5.svg") no-repeat center
+                    background-size: 16px
+                  &.icon6
+                    background: url("../img/svg/cate6.svg") no-repeat center
+                    background-size: 16px
+                span
+                  display: inline-block
+                  vertical-align: middle
+        .cate-middle
+          width: calc(100% - 600px)
+          float: left
+          padding: 15px 30px
+          &:after
+            content: ''
+            display: block
+            clear: both
+          .pd-cate-list
+            padding: 0
+            margin: 10px 0
+            width: 50%
+            float: left
+            li
+              list-style: none
+              margin-bottom: 4px
+              &.title
+                text-transform: uppercase
+                color: #ffffff
+                margin-bottom: 10px
+              &.view-all
+                font-size: 12px
+                margin-top: 10px
+                a
+                  color: $secondary_color
+              a
+                color: #ffffff
+        .cate-right
+          width: 350px
+          float: left
+          text-align: center
+          padding: 20px
+          .pd-item
+            .thumb
+              img
+            .btn-viewall
+              height: 50px
+              font-size: 16px
+              border: 1px solid $secondary_color
+              background: transparent
+              color: #ffffff
+              font-weight: 300
+              border-radius: 0
+              padding: 15px 30px
+              margin-top: 15px
+              &:hover
+                color: $secondary_color
+                background: #ffffff
+    .nav-list
+      float: left
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        display: inline-block
+        vertical-align: middle
+        a
+          display: block
+          padding: 13px 20px
+          color: $text-dark
+          text-decoration: none
+          &:hover
+            color: $secondary_color
+          .icon
+            display: inline-block
+            vertical-align: middle
+            width: 16px
+            height: 16px
+            &.home
+              background: url("../img/svg/home.svg") no-repeat center
+              background-size: contain
+            &.blog
+              background: url("../img/svg/blog.svg") no-repeat center
+              background-size: contain
+            &.tag
+              background: url("../img/svg/sale.svg") no-repeat center
+              background-size: contain
+          span
+            display: inline-block
+            vertical-align: middle
+            text-transform: uppercase
+            font-weight: 400
+            height: 16px
+            @media #{$information-phone}
+              display: none
+    .feed
+      float: right
+      padding: 13px 0
+      @media #{$information-tablet-large}
+        display: none
+      .decoration
+        text-decoration: underline
+      .text-orange
+        color: #E22F0A
+      .text-blue
+        color: #0066C0
+
+main
+
+.home-slider
+  .item
+    display: block
+    height: 300px
+    color: #fff
+    .item-box
+      padding: 30px 400px 0 30px
+      h2
+        font-size: 48px
+        font-weight: 300
+      .slider-content
+        margin-bottom: 20px
+        p
+          margin: 0 0 20px
+      .btn
+        background: #fff
+        color: $text-color
+        border: 1px solid $text-color
+        border-radius: 0
+        font-weight: 300
+        text-transform: uppercase
+        padding: 10px 30px
+
+.box
+  padding: 100px 0
+  .box-title
+    font-size: 36px
+    color: $text-dark
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 0
+  .box-description
+    color: $text-grey
+    text-align: center
+    margin-top: 15px
+
+.top-brand
+  .brand-list
+    padding: 0
+    margin: 30px -5px 0
+    &:after
+      content: ''
+      display: block
+      clear: both
+    li
+      list-style: none
+      padding: 5px
+      float: left
+      width: 16.66%
+      @media #{$information-tablet-large}
+        width: 25%
+      @media #{$information-phone}
+        width: 33.33%
+      a
+        display: block
+        filter: grayscale(1)
+        &:hover
+          filter: grayscale(0)
+        img
+          width: 100%
+
+.featured
+  background: #fff
+  .featured-menu
+    display: block
+    padding: 0
+    margin: 15px 0 50px
+    text-align: center
+    li
+      list-style: none
+      display: inline-block
+      vertical-align: middle
+      margin: 0 15px
+      a
+        color: #9B9B9B
+        text-transform: uppercase
+        display: block
+        border-bottom: 2px solid transparent
+        text-decoration: none
+        &:hover, &.active
+          color: $text-color
+          border-color: #E22F0A
+  .featured-product
+    margin: 0 -15px
+    width: calc(100% + 30px)
+    .owl-dots
+      display: none
+    .owl-nav
+      @media #{$information-tablet-large}
+        display: none
+      .owl-next
+        display: block
+        width: 30px
+        height: 48px
+        background: url("../img/svg/slider-arrow.svg") no-repeat center
+        background-size: 55px
+        color: transparent
+        +rotate(180deg)
+        position: absolute
+        top: calc((100% - 48px) / 2)
+        right: -50px
+        &.disabled
+          opacity: .3
+          cursor: default
+        &:hover
+          opacity: .6
+          &.disabled
+            opacity: .3
+      .owl-prev
+        display: block
+        width: 30px
+        height: 48px
+        background: url("../img/svg/slider-arrow.svg") no-repeat center
+        background-size: 55px
+        color: transparent
+        position: absolute
+        top: calc((100% - 48px) / 2)
+        left: -50px
+        &.disabled
+          opacity: .3
+          cursor: default
+        &:hover
+          opacity: .6
+          &.disabled
+            opacity: .3
+    .item
+      padding: 0 15px
+      .item-box
+        border: 1px solid #EEEEEE
+        .thumb
+          a
+            display: block
+            position: relative
+            img
+              width: 100%
+            .hover-box
+              position: absolute
+              top: 0
+              left: 0
+              right: 0
+              bottom: 0
+              background: rgba(60, 70, 77, .9)
+              text-align: center
+              padding: 110px 0
+              opacity: 0
+              +transition(.3s)
+              @media #{$information-tablet-large}
+                padding: 135px 0
+              @media #{$information-tablet}
+                padding: 105px 0
+              @media #{$information-phone}
+                padding: 55px 0
+              span
+                display: inline-block
+                color: #fff
+                border: 1px solid #fff
+                padding: 10px 40px
+                text-transform: uppercase
+                +transition(.3s)
+                &:hover
+                  background: #ffffff
+                  color: #000000
+        .info
+          padding: 15px 20px
+          text-align: center
+          .name
+            color: $text-color
+            display: block
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+          .price
+            font-size: 16px
+            .new-price
+              color: $text-color
+              display: inline-block
+              vertical-align: middle
+            .old-price
+              color: #9B9B9B
+              position: relative
+              display: inline-block
+              vertical-align: middle
+              &:after
+                content: ''
+                display: block
+                width: 25px
+                border-bottom: 1px solid #000000
+                position: absolute
+                +rotate(-35deg)
+                top: 9px
+                left: 10px
+                right: 0
+                margin: auto
+            .off
+              color: #E22F0A
+              display: inline-block
+              vertical-align: middle
+        &:hover
+          .thumb
+            a
+              .hover-box
+                opacity: 1
+
+.top-product
+  .top-product-slider
+    .owl-dots
+      bottom: -50px
+  .top-pd
+    margin-top: 50px
+    .item
+      background: #fff
+      height: 385px
+      @media #{$information-tablet-large}
+        height: auto
+        margin-bottom: 30px
+      &:after
+        content: ''
+        display: block
+        clear: both
+      .left
+        width: 55%
+        float: left
+        .thumb
+          a
+            img
+              width: 100%
+        .tag-box
+          padding: 25px 15px 23px
+          .tag
+            display: inline-block
+            font-size: 12px
+            background: #EEEEEE
+            border-radius: 3px
+            padding: 3px 5px
+      .right
+        width: 45%
+        float: left
+        padding: 15px
+        .name
+          font-size: 16px
+          color: $text-color
+        .price
+          font-size: 13px
+          .new-price
+            display: inline-block
+            vertical-align: middle
+          .old-price
+            margin-left: 10px
+            color: #9B9B9B
+            display: inline-block
+            vertical-align: middle
+            text-decoration: line-through
+        .content
+          height: 80px
+          overflow: hidden
+          font-size: 13px
+          margin: 20px 0
+        .btn-box
+          .btn-primary
+            border: 1px solid #EEEEEE
+            background: transparent
+            border-radius: 5px
+            text-transform: uppercase
+            font-size: 14px
+            color: $text-color
+            padding: 5px 10px
+            line-height: 1
+            font-weight: 300
+            @media #{$information-phone}
+              margin: 5px 0
+            &:hover
+              color: #ffffff
+              background: $text-color
+              .icon
+                &.cart
+                  background: url("../img/svg/cart2_white.svg") no-repeat center
+                  background-size: 26px
+                &.heart
+                  background: url("../img/svg/heart_white.svg") no-repeat center
+                  background-size: 26px
+            .icon
+              display: inline-block
+              vertical-align: middle
+              width: 22px
+              height: 22px
+              &.cart
+                background: url("../img/svg/cart2.svg") no-repeat center
+                background-size: 26px
+              &.heart
+                background: url("../img/svg/heart.svg") no-repeat center
+                background-size: 26px
+            span
+              display: inline-block
+              vertical-align: middle
+              margin-left: 3px
+      .bottom
+        width: calc(100% - 30px)
+        float: left
+        border-top: 1px solid #EEEEEE
+        margin: 10px 15px 0
+        padding: 20px 0
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .left
+          float: left
+          width: 50%
+          color: #9B9B9B
+          .grade
+            font-size: 13px
+            color: #9B9B9B
+            small
+              font-size: 12px
+        .right
+          width: 50%
+          text-align: right
+          padding: 0
+          .countdown
+            span
+              display: inline-block
+              vertical-align: middle
+              width: 40px
+              height: 40px
+              border-radius: 5px
+              border: 1px solid #EEEEEE
+              text-align: center
+              padding: 11px 0
+    .item2-box
+      margin: 0 -10px
+      &:after
+        content: ''
+        display: block
+        clear: both
+      .item2
+        width: 50%
+        float: left
+        padding: 0 10px
+        text-align: center
+        .item-box
+          background: #fff
+          height: 385px
+          @media #{$information-tablet-large}
+            height: auto
+          .thumb
+            a
+              img
+                width: 100%
+          .info
+            padding: 15px
+            .name
+              font-size: 16px
+              color: $text-color
+              white-space: nowrap
+              overflow: hidden
+              text-overflow: ellipsis
+              display: block
+            .price
+              font-size: 13px
+            .content
+              margin: 5px 0
+              height: 35px
+              overflow: hidden
+              font-size: 13px
+            .line
+              display: inline-block
+              width: 50px
+              height: 5px
+              border-radius: 10px
+              background: $text-color
+              margin: 10px 0 15px
+            .grade
+              font-size: 13px
+              color: #9B9B9B
+              small
+                font-size: 12px
+
+.product-cate
+  .cate-box
+    background: #1C223A
+    padding-bottom: 70px
+    .product-cate-slider
+      .owl-dots
+        display: none
+      .owl-nav
+        .owl-next
+          display: block
+          width: 15px
+          height: 24px
+          background: url("../img/svg/slider-arrow2.svg") no-repeat center
+          background-size: 27px
+          color: transparent
+          +rotate(180deg)
+          position: absolute
+          top: 45%
+          right: -50px
+          &.disabled
+            opacity: .3
+            cursor: default
+          &:hover
+            opacity: .6
+            &.disabled
+              opacity: .3
+        .owl-prev
+          display: block
+          width: 15px
+          height: 24px
+          background: url("../img/svg/slider-arrow2.svg") no-repeat center
+          background-size: 27px
+          color: transparent
+          position: absolute
+          top: 45%
+          left: -50px
+          &.disabled
+            opacity: .3
+            cursor: default
+          &:hover
+            opacity: .6
+            &.disabled
+              opacity: .3
+    .item-box
+      text-align: center
+      color: #fff
+      display: block
+      padding: 30px 20px 42px
+      cursor: pointer
+      position: relative
+      z-index: 9
+      &:hover,
+      &.active
+        color: $secondary_color
+        &:after
+          content: ''
+          display: block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 12px 15px 0 15px
+          border-color: #3c464d transparent transparent transparent
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          margin: auto
+        .icon
+          &.icon1
+            background: url("../img/svg/pc-active.svg") no-repeat center
+            background-size: contain
+          &.icon2
+            background: url("../img/svg/headphone-active.svg") no-repeat center
+            background-size: contain
+          &.icon3
+            background: url("../img/svg/camera-active.svg") no-repeat center
+            background-size: contain
+          &.icon4
+            background: url("../img/svg/phone-active.svg") no-repeat center
+            background-size: contain
+          &.icon5
+            background: url("../img/svg/monitor-active.svg") no-repeat center
+            background-size: contain
+      .icon
+        display: block
+        margin: auto
+        width: 50px
+        height: 50px
+        &.icon1
+          background: url("../img/svg/pc.svg") no-repeat center
+          background-size: contain
+        &.icon2
+          background: url("../img/svg/headphone.svg") no-repeat center
+          background-size: contain
+        &.icon3
+          background: url("../img/svg/camera.svg") no-repeat center
+          background-size: contain
+        &.icon4
+          background: url("../img/svg/phone.svg") no-repeat center
+          background-size: contain
+        &.icon5
+          background: url("../img/svg/monitor.svg") no-repeat center
+          background-size: contain
+      span
+        display: block
+        margin-top: 5px
+        text-transform: uppercase
+        font-weight: 300
+  .cate-list-pd
+    background: #fff
+    margin-top: -82px
+    position: relative
+    z-index: 0
+    ul
+      padding: 0
+      margin: 0
+      &:after
+        content: ''
+        display: block
+        clear: both
+      li
+        width: 25%
+        float: left
+        list-style: none
+        position: relative
+        @media #{$information-tablet-large}
+          width: 33.33%
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(7),
+          &:nth-child(8)
+            &:after
+              content: ''
+              display: block
+              width: 100px
+              height: 100px
+              background: url("../img/svg/line-product.svg") no-repeat
+              background-size: contain
+              position: absolute
+              right: -49px
+              bottom: -49px
+              z-index: 0
+          &:nth-child(3),
+          &:nth-child(6),
+          &:nth-child(9)
+            &:after
+              display: none !important
+        @media #{$information-tablet}
+          width: 33.33%
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(7),
+          &:nth-child(8)
+            &:after
+              content: ''
+              display: block
+              width: 100px
+              height: 100px
+              background: url("../img/svg/line-product.svg") no-repeat
+              background-size: contain
+              position: absolute
+              right: -49px
+              bottom: -49px
+              z-index: 0
+          &:nth-child(3),
+          &:nth-child(6),
+          &:nth-child(9)
+            &:after
+              display: none !important
+        @media #{$information-phone}
+          width: 50%
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(7),
+          &:nth-child(8)
+            &:after
+              content: ''
+              display: block
+              width: 100px
+              height: 100px
+              background: url("../img/svg/line-product.svg") no-repeat
+              background-size: contain
+              position: absolute
+              right: -49px
+              bottom: -49px
+              z-index: 0
+          &:nth-child(3),
+          &:nth-child(6),
+          &:nth-child(9)
+            &:after
+              display: none !important
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7)
+          &:after
+            content: ''
+            display: block
+            width: 100px
+            height: 100px
+            background: url("../img/svg/line-product.svg") no-repeat
+            background-size: contain
+            position: absolute
+            right: -49px
+            bottom: -49px
+            z-index: 0
+        .item
+          display: block
+          padding: 15px
+          border: 1px solid transparent
+          position: relative
+          z-index: 1
+          .hover
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: rgba(254, 254, 254, .85)
+            text-align: center
+            opacity: 0
+            padding: 55px 0
+            @media #{$information-tablet}
+              padding: 40px 0
+            .btn
+              border: 1px solid #EEEEEE
+              background: transparent
+              border-radius: 5px
+              text-transform: uppercase
+              font-size: 14px
+              color: #3C464D
+              padding: 5px 10px
+              line-height: 1
+              font-weight: 300
+              &:hover
+                background: #3C464D
+                color: #ffffff
+                .icon
+                  &.cart
+                    background: url("../img/svg/cart2_white.svg") no-repeat center
+                    background-size: 26px
+                  &.search
+                    background: url("../img/svg/search2-white.svg") no-repeat center
+                    background-size: 26px
+              .icon
+                display: inline-block
+                vertical-align: middle
+                width: 22px
+                height: 22px
+                &.cart
+                  background: url("../img/svg/cart2.svg") no-repeat center
+                  background-size: 26px
+                &.search
+                  background: url("../img/svg/search2.svg") no-repeat center
+                  background-size: 26px
+          &:hover
+            border-color: $text-color
+            .hover
+              opacity: 1
+          &:after
+            content: ''
+            display: block
+            clear: both
+          .thumb
+            width: 45%
+            float: left
+            span
+              img
+                width: 100%
+          .info
+            width: 55%
+            float: left
+            font-size: 14px
+            padding-left: 10px
+            .name
+              max-height: 36px
+              overflow: hidden
+              color: $text-color
+            .price
+              color: $secondary_color
+    .view-all
+      border-top: 1px solid #EEEEEE
+      padding: 15px 0
+      margin: 0 15px
+      width: calc(100% - 30px)
+      text-align: right
+      a
+        color: $text-color
+        text-decoration: none
+        &:hover
+          color: $secondary_color
+        .icon-plus
+          display: inline-block
+          vertical-align: middle
+          width: 16px
+          height: 16px
+          margin-right: 5px
+          background: url("../img/svg/view-all.svg") no-repeat center
+          background-size: contain
+        span
+          display: inline-block
+          vertical-align: middle
+
+.banner-box
+  margin: 50px -15px
+  @media #{$information-tablet}
+    .item
+      margin-bottom: 20px
+  .item
+    a
+      display: block
+      border: 1px solid #fff
+      overflow: hidden
+      &:hover
+        img
+          -webkit-transform: scale(1.05)
+          -moz-transform: scale(1.05)
+          -ms-transform: scale(1.05)
+          -o-transform: scale(1.05)
+          transform: scale(1.05)
+      img
+        width: 100%
+        +transition(.3s)
+
+.blog-box
+  .blog-slider
+    margin: 50px -15px 0
+    width: calc(100% + 30px)
+    .owl-dots
+      bottom: -30px
+    .item
+      padding: 0 15px
+      .blog-item
+        background: #fff
+        border: 1px solid #EEEEEE
+        .thumb
+          img
+            width: 100%
+        .info
+          padding: 20px 15px
+          .name
+            margin-bottom: 10px
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+          .time
+            font-size: 12px
+            color: #9B9B9B
+            margin-bottom: 10px
+            i
+            span
+          .desc
+            margin-bottom: 10px
+            height: 36px
+            overflow: hidden
+          a
+            color: $secondary_color
+  .more
+    text-align: center
+    margin-top: 45px
+    .btn-more
+      height: 50px
+      background: #fff
+      border: 1px solid #1C223A
+      color: #1C223A
+      border-radius: 0
+      padding: 16px 40px
+      text-transform: uppercase
+      &:hover
+        background: #1C223A
+        color: #ffffff
+
+.brand-cate
+  background: #fff
+  padding: 20px 0
+  ul
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      color: #9B9B9B
+      font-size: 13px
+      margin: 10px 0
+
+.sign-up-news
+  background: url("../img/brand/signup-bg.jpg") no-repeat center
+  background-size: cover
+  .box-title
+    color: #fff
+  .box-description
+    color: #fff
+  .email-input
+    margin-top: 50px
+    .input-group
+      width: 70%
+      margin: auto
+      position: relative
+      &:after
+        content: ''
+        display: block
+        width: 22px
+        height: 16px
+        background: url("../img/svg/mail2.svg") no-repeat center
+        background-size: 22px
+        position: absolute
+        top: 16px
+        left: 12px
+      .form-control
+        height: 50px
+        background: #fff
+        border-radius: 0
+        z-index: 0
+        font-weight: 300
+        padding-left: 43px
+      .btn-secondary
+        height: 50px
+        border-radius: 0
+        border-color: $secondary_color
+        background: $secondary_color
+        color: #fff
+        text-transform: uppercase
+        font-weight: 300
+        position: relative
+        z-index: 9
+        cursor: pointer
+        +transition(0s)
+        &:hover
+          background: $text-color
+          border-color: $text-color
+          &:after
+            border-color: transparent transparent $text-color transparent
+        &:after
+          content: ''
+          display: block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 0 50px 25px
+          border-color: transparent transparent #ee2c00 transparent
+          position: absolute
+          top: -1px
+          left: -26px
+        span
+          display: inline-block
+          vertical-align: middle
+        .icon-long-arrow
+          display: inline-block
+          vertical-align: middle
+          width: 25px
+          height: 12px
+          background: url("../img/svg/long-arrow.svg") no-repeat center
+          background-size: 25px
+          margin-left: 10px
+
+.valuable
+  background: #141A30
+  padding: 20px 0
+  @media #{$information-tablet}
+    display: none
+  ul
+    margin: 0
+    padding: 0
+    &:after
+      content: ''
+      display: block
+      clear: both
+    li
+      list-style: none
+      width: 25%
+      float: left
+      &:after
+        content: ''
+        display: block
+        clear: both
+      .left
+        width: 40px
+        float: left
+        .icon
+          display: block
+          width: 38px
+          height: 32px
+          &.deli
+            background: url("../img/svg/info1.svg") no-repeat center
+            background-size: 41px
+          &.money
+            background: url("../img/svg/info2.svg") no-repeat center
+            background-size: 41px
+          &.support
+            background: url("../img/svg/info3.svg") no-repeat center
+            background-size: 41px
+          &.gift
+            width: 48px
+            background: url("../img/svg/info4.svg") no-repeat center
+            background-size: 50px
+      .right
+        width: calc(100% - 40px)
+        padding-left: 10px
+        float: left
+        color: #fff
+        .name
+        .desc
+          font-size: 12px
+      &:last-child
+        .left
+          width: 50px
+        .right
+          width: calc(100% - 50px)
+
+footer
+  border-top: 1px solid #fff
+  background: #1C223A
+  color: $text-light
+  .top-footer
+    padding: 50px 0
+    .footer-info
+      .info-title
+        margin-bottom: 50px
+        position: relative
+        &:after
+          content: ''
+          display: block
+          width: 25px
+          height: 3px
+          position: absolute
+          bottom: -10px
+          left: 0
+          background: $secondary_color
+      ul
+        padding: 0
+        margin: 0
+        li
+          list-style: none
+          margin-bottom: 15px
+          a
+            color: $text-light
+    .footer-info2
+      .info-title2
+        margin-bottom: 50px
+        position: relative
+        &:after
+          content: ''
+          display: block
+          width: 25px
+          height: 3px
+          position: absolute
+          bottom: -10px
+          left: 0
+          background: $secondary_color
+      .desc
+        margin-bottom: 30px
+      .contact-info
+        padding: 0
+        margin: 0 0 70px
+        li
+          list-style: none
+          margin-bottom: 15px
+          &:after
+            content: ''
+            display: block
+            clear: both
+          .fa
+            width: 15px
+            text-align: center
+            float: left
+          span
+            width: calc(100% - 15px)
+            padding-left: 10px
+            float: left
+      .bottom-footer
+        .info-title2
+          margin-bottom: 30px
+        .social
+          padding: 0
+          margin: 0
+          li
+            list-style: none
+            margin-right: 5px
+            display: inline-block
+            vertical-align: middle
+            &:last-child
+              margin-right: 0
+            a
+              display: block
+              &:hover
+                opacity: .7
+              .icon
+                display: block
+                width: 36px
+                height: 36px
+                border-radius: 50%
+                overflow: hidden
+                &.fb
+                  background: url("../img/svg/fb.svg") no-repeat center
+                  background-size: 50px
+                &.yt
+                  background: url("../img/svg/youtube.svg") no-repeat center
+                  background-size: 50px
+                &.insta
+                  background: url("../img/svg/insta.svg") no-repeat center
+                  background-size: 50px
+        .lang-dropdown
+          .btn
+            font-size: 14px
+            font-weight: 300
+            background: inherit
+            border: 1px solid #475070
+            color: #475070
+            cursor: pointer
+            .icon-globe
+              display: inline-block
+              vertical-align: middle
+              width: 16px
+              height: 16px
+              background: url("../img/svg/globe2.svg") no-repeat
+              background-size: contain
+            span
+              display: inline-block
+              vertical-align: middle
+          .dropdown-menu
+            border-radius: 0
+            .dropdown-item
+  .copyright
+    color: #475070
+    border-top: 1px solid #475070
+    padding: 15px 0
+
+.fixed-menu
+  background: #fff
+  overflow: hidden
+  position: fixed
+  top: 35%
+  right: 30px
+  box-shadow: 2px 2px 3px #eee
+  border-radius: 5px
+  @media #{$information-tablet-large}
+    display: none
+  ul
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      border: 1px solid #EEEEEE
+      border-top: 0
+      &:first-child
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        border-top: 1px solid #EEEEEE
+      &:last-child
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+      a
+        padding: 9px 0
+        text-align: center
+        display: block
+        width: 40px
+        height: 40px
+        cursor: pointer
+        +transition(.3s)
+        &:hover
+          .icon
+            &.search
+              background: url("../img/svg/search2-white.svg") no-repeat center
+              background-size: 24px
+            &.cart
+              background: url("../img/svg/cart2_white.svg") no-repeat center
+              background-size: 24px
+            &.heart
+              background: url("../img/svg/heart_white.svg") no-repeat center
+              background-size: 24px
+            &.totop
+              background: url("../img/svg/top-white.svg") no-repeat center
+              background-size: 24px
+        .icon
+          width: 20px
+          height: 20px
+          display: inline-block
+          &.search
+            background: url("../img/svg/search2.svg") no-repeat center
+            background-size: 24px
+          &.cart
+            background: url("../img/svg/cart2.svg") no-repeat center
+            background-size: 24px
+          &.heart
+            background: url("../img/svg/heart.svg") no-repeat center
+            background-size: 24px
+          &.totop
+            background: url("../img/svg/top.svg") no-repeat center
+            background-size: 24px
+      &:hover
+        background: $secondary_color
+        border-color: $secondary_color
+
+.breadcrumb-box
+  .breadcrumb
+    background: transparent
+    padding: 15px 0
+    .breadcrumb-item
+      &.active
+      a
+        color: #0066C0
+      span
+        color: #000
+      .red-text
+        color: $secondary_color
+
+.main-content
+  &:after
+    content: ''
+    display: block
+    clear: both
+  .content-box
+    width: 920px
+    float: right
+    @media #{$information-tablet-large}
+      float: none
+      width: 100%
+  .sidebar
+    width: calc(100% - 920px)
+    float: right
+    @media #{$information-tablet-large}
+      float: none
+      width: 100%
+      margin-top: 50px
+      padding: 0
+
+.content-box
+  background: #fff
+  border-left: 1px solid #1C223A
+  .content-header
+    padding: 25px 20px
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .left
+      width: 50%
+      float: left
+      .cate-name
+        font-size: 24px
+        font-weight: 700
+      .result
+        font-size: 12px
+    .right
+      width: 50%
+      float: left
+      text-align: right
+      .dropdown
+        display: inline-block
+        vertical-align: middle
+        margin-right: 10px
+        position: relative
+        .btn
+          border: 1px solid #475070
+          color: #475070
+          border-radius: 0
+          background: #fff
+          font-size: 12px
+          min-width: 200px
+          position: relative
+          text-align: left
+          padding-right: 40px
+          cursor: pointer
+          &:after
+            display: none
+          .fa
+            position: absolute
+            top: 10px
+            right: 10px
+        .dropdown-menu
+          border-radius: 0
+          min-width: 200px
+          border: 1px solid #1C223A
+          top: 20px !important
+          &:before
+            content: ''
+            display: block
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 0 20px 25px
+            border-color: transparent transparent #1c223a transparent
+            position: absolute
+            top: -20px
+            right: -1px
+          &:after
+            content: ''
+            display: block
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 0 20px 25px
+            border-color: transparent transparent #fff transparent
+            position: absolute
+            top: -18px
+            right: 0
+          .dropdown-item
+      .form-inline
+        display: block
+        text-align: right
+        .form-group
+          display: inline-block
+          vertical-align: middle
+          margin-right: 10px
+          .form-control
+            height: 34px
+            border-radius: 0
+            border: 1px solid #1c223a
+      .btn-view
+        display: inline-block
+        vertical-align: middle
+        cursor: pointer
+        &.active
+          .icon
+            &.grid
+              background: url("../img/svg/grid-view-active.svg") no-repeat center
+              background-size: contain
+            &.list
+              background: url("../img/svg/list-view-active.svg") no-repeat center
+              background-size: contain
+        .icon
+          display: block
+          width: 33px
+          height: 33px
+          &.grid
+            background: url("../img/svg/grid-view.svg") no-repeat center
+            background-size: contain
+          &.list
+            background: url("../img/svg/list-view.svg") no-repeat center
+            background-size: contain
+  .product-box
+    &.list-view
+      .product-list
+        li
+          width: 100%
+          border-right: none
+          float: left
+          .item
+            height: inherit
+            &:after
+              content: ''
+              display: block
+              clear: both
+            .thumb
+              width: 200px
+              float: left
+              border-right: 1px solid #DDDDDD
+            .info
+              width: calc(100% - 200px)
+              float: left
+              padding-left: 15px
+    .product-list
+      padding: 0 20px
+      margin: 0
+      &:after
+        content: ''
+        display: block
+        clear: both
+      li
+        list-style: none
+        width: 25%
+        float: left
+        border-right: 1px solid #DDDDDD
+        margin: 20px 0
+        @media #{$information-tablet-large}
+          width: 33.33%
+          border-right: 0
+        @media #{$information-phone}
+          width: 50%
+          border-right: 0
+        &:nth-child(4n)
+          border-right-color: transparent
+        .item
+          padding: 10px 20px
+          height: 275px
+          .thumb
+            a
+              display: block
+              overflow: hidden
+              &:hover
+                -webkit-transform: scale(1.05)
+                -moz-transform: scale(1.05)
+                -ms-transform: scale(1.05)
+                -o-transform: scale(1.05)
+                transform: scale(1.05)
+              img
+                +transition(.3s)
+                width: 100%
+          .info
+            .name
+              display: block
+              color: #000
+              height: 36px
+              overflow: hidden
+            .price
+              margin: 10px 0
+              line-height: 1
+              span
+                font-size: 20px
+                color: $secondary_color
+                display: inline-block
+                vertical-align: top
+                margin: 0 3px
+              small
+                font-size: 12px
+                display: inline-block
+                vertical-align: top
+            .old-price
+              font-size: 12px
+              line-height: 1
+              .old
+                display: inline-block
+                vertical-align: middle
+                color: #9B9B9B
+                border-right: 1px solid #000
+                padding-right: 10px
+                margin-right: 10px
+                position: relative
+                &:after
+                  content: ''
+                  display: block
+                  width: 20px
+                  border-bottom: 1px solid #000000
+                  position: absolute
+                  +rotate(-35deg)
+                  top: 5px
+                  left: 0
+                  right: 0
+                  margin: auto
+              .off
+                display: inline-block
+                vertical-align: middle
+                background: $secondary_color
+                color: $text-light
+                padding: 2px 3px
+
+.pagination-box
+  text-align: right
+  padding: 20px
+  .page-numb
+    background: #EEEEEE
+    padding: 6px 15px
+    border-radius: 30px
+    display: inline-block
+    vertical-align: middle
+    margin-right: 20px
+    font-weight: 400
+  .btn-page
+    display: inline-block
+    vertical-align: middle
+    cursor: pointer
+    .icon
+      display: block
+      width: 30px
+      height: 30px
+      &.next
+        background: url("../img/svg/paging-arrow.svg") no-repeat center
+        background-size: 25px
+      &.prev
+        background: url("../img/svg/paging-arrow.svg") no-repeat center
+        background-size: 25px
+        +rotate(180deg)
+    &:hover
+      opacity: .5
+
+.sidebar
+  padding-right: 15px
+  .movement
+    display: block
+    color: #0066C0
+    cursor: pointer
+    margin-bottom: 20px
+    .icon-back
+      display: inline-block
+      vertical-align: middle
+      width: 18px
+      height: 12px
+      background: url("../img/svg/long-arrow-back.svg") no-repeat center
+      background-size: contain
+    span
+      display: inline-block
+      vertical-align: middle
+  .sub-cate-list
+    padding: 0
+    margin: 0 0 40px
+    li
+      list-style: none
+      padding: 0 0 0 35px
+      margin-bottom: 7px
+      a
+        color: #000
+  .side-box
+    margin-bottom: 40px
+    .side-header
+      position: relative
+      border-bottom: 1px solid #000
+      text-transform: uppercase
+      margin-bottom: 25px
+      .side-title
+        font-weight: 400
+      a
+        position: absolute
+        top: 0
+        right: 0
+        font-size: 12px
+    .side-list
+      padding: 0
+      margin: 0
+      max-height: 160px
+      overflow-y: auto
+      li
+        list-style: none
+        .form-check
+          .form-check-label
+            padding-left: 35px
+            cursor: pointer
+            position: relative
+            .form-check-input
+            label
+              cursor: pointer
+            input[type=checkbox],
+            input[type=radio]
+              display: none
+            input[type=checkbox] + label
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/checkbox2.svg") no-repeat center
+              background-size: 19px
+              position: absolute
+              top: 0
+              left: 10px
+            input[type=checkbox]:checked + label
+              background: url("../img/svg/checkbox2-check.svg") no-repeat center
+              background-size: 19px
+            input[type=radio] + label
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/checkbox.svg") no-repeat center
+              background-size: 19px
+              position: absolute
+              top: 0
+              left: 10px
+            input[type=radio]:checked + label
+              background: url("../img/svg/checkbox-check.svg") no-repeat center
+              background-size: 19px
+
+.rate
+  display: inline-block
+  vertical-align: middle
+  line-height: 1
+  .star
+    display: inline-block
+    vertical-align: middle
+    width: 14px
+    height: 14px
+    background: url("../img/svg/star.svg") no-repeat center
+    background-size: 16px
+  .star-o
+    display: inline-block
+    vertical-align: middle
+    width: 14px
+    height: 14px
+    background: url("../img/svg/star-o.svg") no-repeat center
+    background-size: 16px
+  .numb
+    display: inline-block
+    vertical-align: middle
+
+.main-detail
+  background: #fff
+  padding: 30px 20px
+  .detail-header
+    line-height: 1
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .left
+      width: 80%
+      float: left
+      @media #{$information-tablet-large}
+        width: 70%
+      @media #{$information-tablet}
+        width: 100%
+        float: none
+      .name
+        font-size: 20px
+        font-weight: 400
+        margin: 0 0 2px
+      .sub-info
+        .model
+          display: inline-block
+          vertical-align: middle
+          margin-right: 15px
+        .sku
+          display: inline-block
+          vertical-align: middle
+          margin-right: 20px
+    .right
+      width: 20%
+      float: left
+      text-align: right
+      @media #{$information-tablet-large}
+        width: 30%
+      @media #{$information-tablet}
+        width: 100%
+        float: none
+        text-align: left
+        margin-top: 10px
+      .social-share
+        display: inline-block
+        vertical-align: middle
+        font-size: 12px
+        background: #EEEEEE
+        height: 16px
+        padding: 3px 10px
+        .icon-share
+          display: inline-block
+          vertical-align: middle
+          width: 12px
+          height: 12px
+          background: url("../img/svg/share.svg") no-repeat center
+          background-size: contain
+        span
+          display: inline-block
+          vertical-align: middle
+          text-transform: uppercase
+          line-height: 1
+      a
+        display: inline-block
+        vertical-align: middle
+        &:hover
+          opacity: .7
+        .icon
+          display: inline-block
+          vertical-align: middle
+          width: 16px
+          height: 16px
+          &.fb
+            background: url("../img/svg/fb2.svg") no-repeat center
+            background-size: contain
+          &.tw
+            background: url("../img/svg/tw.svg") no-repeat center
+            background-size: contain
+          &.pin
+            background: url("../img/svg/pin.svg") no-repeat center
+            background-size: contain
+          &.in
+            background: url("../img/svg/in.svg") no-repeat center
+            background-size: contain
+          &.social1
+            background: url("../img/svg/social1.svg") no-repeat center
+            background-size: contain
+          &.gg
+            background: url("../img/svg/googleplus.svg") no-repeat center
+            background-size: contain
+
+.product-detail
+  margin: 30px 0
+  &:after
+    content: ''
+    display: block
+    clear: both
+  .left
+    width: 55%
+    float: left
+    padding-right: 20px
+    @media #{$information-tablet}
+      width: 100%
+      float: none
+      padding: 0
+    .image-thumb
+      .MagicZoom
+        width: 600px
+        height: 600px
+        display: table-cell
+        vertical-align: middle
+        text-align: center
+        @media #{$information-tablet-large}
+          width: 486px
+          height: 486px
+        @media #{$information-tablet}
+          width: 697px
+          height: 697px
+        @media #{$information-phone}
+          width: 410px
+          height: 410px
+        img
+          max-width: 600px
+          max-height: 600px
+          @media #{$information-tablet-large}
+            max-width: 486px
+            max-height: 486px
+          @media #{$information-tablet}
+            max-width: 697px
+            max-height: 697px
+          @media #{$information-phone}
+            max-width: 410px
+            max-height: 410px
+      .item-list
+        text-align: center
+        .item
+          display: inline-block
+          vertical-align: middle
+          margin: 0 5px
+          a
+            width: 70px
+            height: 70px
+            display: table-cell
+            vertical-align: middle
+            text-align: center
+            border: 1px solid #ccc
+            cursor: pointer
+            img
+              max-width: 70px
+              max-height: 70px
+              box-shadow: none
+  .right
+    width: 45%
+    float: left
+    @media #{$information-tablet}
+      width: 100%
+      float: none
+      margin-top: 50px
+    .top
+      padding-bottom: 30px
+      border-bottom: 1px solid #9B9B9B
+      .guarantee
+        font-size: 12px
+        color: #0066C0
+        text-transform: uppercase
+      .price
+        line-height: 1
+        span
+          font-size: 36px
+          font-weight: 400
+          display: inline-block
+          vertical-align: top
+        small
+          font-size: 24px
+          display: inline-block
+          vertical-align: top
+      .approximate
+      .old-price
+        font-size: 12px
+        line-height: 1
+        .old
+          display: inline-block
+          vertical-align: middle
+          color: #9B9B9B
+          border-right: 1px solid #000
+          padding-right: 10px
+          margin-right: 10px
+          position: relative
+          &:after
+            content: ''
+            display: block
+            width: 20px
+            border-bottom: 1px solid #000000
+            position: absolute
+            +rotate(-35deg)
+            top: 5px
+            left: 0
+            right: 0
+            margin: auto
+        .off
+          display: inline-block
+          vertical-align: middle
+          background: $secondary_color
+          color: $text-light
+          padding: 2px 3px
+    .mid
+      padding: 30px 0
+      border-bottom: 1px solid #9B9B9B
+      .item
+        margin-bottom: 20px
+        &:after
+          content: ''
+          display: block
+          clear: both
+        &:last-child
+          margin-bottom: 0
+        .item-left
+          width: 30%
+          float: left
+          text-align: right
+          @media #{$information-tablet}
+            width: 50%
+          .btn-buy
+            height: 50px
+            width: 100%
+            color: $text-light
+            background: $secondary_color
+            border: 1px solid $secondary_color
+            border-radius: 0
+            font-weight: 300
+            text-transform: uppercase
+            font-size: 18px
+            text-align: center
+            padding: 15px
+            &:hover
+              background: $text-color
+              border-color: $text-color
+        .item-right
+          width: 70%
+          float: left
+          padding-left: 15px
+          @media #{$information-tablet}
+            width: 50%
+          a
+            display: inline-block
+            vertical-align: middle
+            color: #0066C0
+          .icon
+            display: inline-block
+            vertical-align: middle
+            width: 12px
+            height: 12px
+            &.info
+              background: url("../img/svg/info.svg") no-repeat center
+              background-size: contain
+            &.quest
+              background: url("../img/svg/quest.svg") no-repeat center
+              background-size: contain
+          .input-group
+            width: 100px
+            .input-group-btn
+              .btn
+                background: transparent
+                color: $text-color
+                border: 1px solid #9B9B9B
+                cursor: pointer
+                &.down
+                  border-right: none
+                &.up
+                  border-left: none
+            .form-control
+              border-color: #9B9B9B
+              border-left: none
+              border-right: none
+              -moz-appearance: textfield
+              text-align: center
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button
+              -webkit-appearance: none
+              -moz-appearance: none
+              appearance: none
+              margin: 0
+          .stock
+            margin-top: 15px
+          .quantity-discount
+            margin-top: 5px
+            position: relative
+            .btn
+              padding: 0
+              color: #0066C0
+              font-weight: 300
+              font-size: 14px
+              cursor: pointer
+              &:hover
+                color: $secondary_color
+            .qty-popup
+              position: absolute
+              top: -50px
+              left: 200px
+              min-width: 200px
+              border: 1px solid #1C223A
+              background: #fff
+              padding: 15px
+              display: none
+              &:before
+                content: ''
+                display: block
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 14px 12px 14px 0
+                border-color: transparent #1c223a transparent transparent
+                position: absolute
+                top: 45px
+                left: -12px
+              &:after
+                content: ''
+                display: block
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 14px 12px 14px 0
+                border-color: transparent #fff transparent transparent
+                position: absolute
+                top: 45px
+                left: -11px
+              .item-instock
+                padding-bottom: 10px
+                border-bottom: 1px solid #EEEEEE
+                margin-bottom: 10px
+              .item-box
+                &:after
+                  content: ''
+                  display: block
+                  clear: both
+                .money
+                  width: 50%
+                  float: left
+                  span
+                    display: block
+                .item-count
+                  width: 50%
+                  float: left
+                  border-left: 1px solid #EEEEEE
+                  padding-left: 15px
+                  span
+                    display: block
+          .detail-action
+            padding: 5px 0 0
+            margin: 0
+            li
+              list-style: none
+              margin-bottom: 5px
+              &:last-child
+                margin-bottom: 0
+              a
+                text-decoration: none
+                &:hover
+                  color: $secondary_color
+                .icon
+                  display: inline-block
+                  vertical-align: middle
+                  width: 14px
+                  height: 14px
+                  &.cart
+                    background: url("../img/svg/cart2.svg") no-repeat center
+                    background-size: 16px
+                  &.heart
+                    background: url("../img/svg/heart.svg") no-repeat center
+                    background-size: 16px
+                span
+                  display: inline-block
+                  vertical-align: middle
+    .bottom
+      padding-top: 30px
+      ul
+        padding: 0
+        margin: 0
+        li
+          margin-bottom: 20px
+          list-style: none
+          .text1
+            text-transform: uppercase
+          .text2
+          .text3
+            font-size: 10px
+            .icon
+              display: inline-block
+              vertical-align: middle
+              height: 14px
+              &.btc
+                width: 14px
+                background: url("../img/svg/btc.svg") no-repeat center
+                background-size: contain
+              &.mc
+                width: 20px
+                background: url("../img/svg/master.svg") no-repeat center
+                background-size: 21px
+              &.vs
+                width: 40px
+                background: url("../img/svg/visa.svg") no-repeat center
+                background-size: 40px
+              &.pp
+                width: 48px
+                background: url("../img/svg/paypal.svg") no-repeat center
+                background-size: 48px
+
+.detail-nav
+  background: #FAFAFA
+  border-bottom: 2px solid $primary_color
+  display: block
+  text-align: center
+  .nav-item
+    border-radius: 0
+    display: inline-block
+    vertical-align: middle
+    float: none
+    border: none
+    margin-bottom: 0
+    color: $primary_color
+    height: 40px
+    padding: 12px 20px
+    cursor: pointer
+    &.active,
+    &:hover
+      color: $text-light !important
+      background: $primary_color
+
+.detail-tab-content
+  .tab-pane
+    padding: 30px 0
+    .item-specific
+      border: 1px solid #9B9B9B
+      padding: 20px 20px 10px
+      margin-bottom: 30px
+      margin-top: 20px
+      .title
+        font-weight: 700
+        margin-bottom: 20px
+      .item
+        font-weight: 300
+        margin-bottom: 10px
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .left
+          width: 40%
+          float: left
+        .right
+          width: 60%
+          float: left
+
+.document-box
+  .doc-list
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      margin-bottom: 5px
+      a
+        display: block
+        position: relative
+        padding-left: 20px
+        color: #0066C0
+        .icon
+          display: block
+          width: 16px
+          height: 16px
+          position: absolute
+          top: -2px
+          left: 0
+          background: url("../img/svg/pdf.svg") no-repeat center
+          background-size: contain
+        span
+
+.customer-review
+  background: #fff
+  margin-top: 40px
+  padding: 20px
+  .title
+    font-size: 20px
+  .rate
+    margin-bottom: 15px
+    .star-numb
+      margin-top: 10px
+  .rating-star
+    ul
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        margin-bottom: 10px
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .star
+          color: $secondary_color
+          display: block
+          float: left
+        .progress-box
+          width: 200px
+          float: left
+          margin-left: 10px
+          .progress
+            border-radius: 10px
+            background: #EEEEEE
+            .progress-bar
+              border-radius: 10px
+        .number-vote
+          float: left
+          margin-left: 10px
+    .view-status
+      margin: 20px 0 0
+  .comment-box
+    border-top: 1px solid $text-color
+    padding-top: 40px
+    margin-top: 40px
+    ul
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0
+        .rating
+          .rate
+            margin-bottom: 10px
+            strong
+              font-weight: 600
+        .by
+          color: #9B9B9B
+          margin-bottom: 10px
+        .cm-content
+          margin-bottom: 15px
+        .cm-vote
+          text-align: right
+          font-weight: 700
+          span
+            display: inline-block
+            vertical-align: middle
+            margin-right: 15px
+            &:last-child
+              margin-right: 0
+          a
+            display: inline-block
+            vertical-align: middle
+            border: 1px solid $secondary_color
+            border-radius: 30px
+            padding: 3px 8px
+            color: $text-color
+            font-weight: 300
+            font-size: 12px
+            text-transform: uppercase
+            text-decoration: none
+            &:hover
+              color: #ffffff
+              background: $secondary_color
+
+.shopping-history
+  background: #E1E7FF
+  margin: 40px 0
+  @media #{$information-tablet}
+    display: none
+  &:after
+    content: ''
+    display: block
+    clear: both
+  .title
+    text-align: right
+    width: 150px
+    height: 122px
+    color: $text-light
+    background: #1C223A
+    font-size: 20px
+    float: left
+    padding: 35px 15px 35px 20px
+    position: relative
+    &:after
+      content: ''
+      display: block
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 61px 0 61px 30px
+      border-color: transparent transparent transparent #1c223a
+      position: absolute
+      top: 0
+      left: 100%
+  .recent-product
+    padding: 0 10px 0 50px
+    margin: 0
+    width: calc(100% - 150px)
+    float: left
+    &:after
+      content: ''
+      display: block
+      clear: both
+    li
+      list-style: none
+      display: block
+      float: left
+      width: 28%
+      padding: 10px
+      &:last-child
+        width: 16%
+      .item
+        border: 1px solid #1C223A
+        background: #ffffff
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .thumb
+          width: 100px
+          float: left
+          a
+            img
+        .info
+          width: calc(100% - 100px)
+          float: left
+          padding: 10px
+          .name
+            display: block
+            color: #0066C0
+            height: 36px
+            overflow: hidden
+          .price
+            color: #1C223A
+      .view-all
+        display: block
+        height: 102px
+        background: #ffffff
+        text-align: center
+        text-transform: uppercase
+        padding: 44px 15px
+        text-decoration: none
+        &:hover
+          color: $secondary_color
+
+.overlay
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba(0, 0, 0, .5)
+  z-index: -1
+  opacity: 0
+  &.open
+    opacity: 1
+    z-index: 9997
+
+.cart-box
+  width: 300px
+  background: #F8FAFB
+  height: 100vh
+  position: fixed
+  top: 0
+  right: -300px
+  z-index: 9999
+  padding: 50px 20px 20px
+  &.open
+    right: 0
+  +transition(.3s)
+  .close-btn
+    display: block
+    width: 16px
+    height: 16px
+    background: url("../img/svg/close.svg") no-repeat center
+    background-size: contain
+    cursor: pointer
+    position: absolute
+    top: 15px
+    right: 15px
+  .cart-header
+    border-bottom: 1px solid #E4EAEE
+    position: relative
+    padding-bottom: 10px
+    margin-bottom: 20px
+    .title
+      font-size: 20px
+      color: #1C223A
+    .item-numb
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      background: $secondary_color
+      color: $text-light
+      border-radius: 20px
+      padding: 3px 8px
+  .cart-pd-list
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+      .item
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .thumb
+          width: 88px
+          float: left
+          position: relative
+          a
+            display: block
+            background: #ffffff
+            img
+              width: 100%
+          .delete-pd
+            display: block
+            width: 16px
+            height: 16px
+            background: url("../img/svg/delete.svg") no-repeat center
+            background-size: contain
+            cursor: pointer
+            position: absolute
+            top: 0
+            right: 0
+        .info
+          width: calc(100% - 88px)
+          float: left
+          padding-left: 10px
+          padding-top: 5px
+          .name
+            color: #1C223A
+            display: block
+            max-height: 36px
+            overflow: hidden
+          .price
+            margin-top: 10px
+  .total
+    margin-top: 15px
+    border-top: 1px solid #E4EAEE
+    padding-top: 20px
+    font-size: 16px
+    font-weight: 400
+    margin-bottom: 30px
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .left
+      width: 50%
+      float: left
+    .right
+      width: 50%
+      float: left
+      text-align: right
+  .btn-checkout
+    background: $secondary_color
+    border: 1px solid $secondary_color
+    display: block
+    color: $text-light
+    text-transform: uppercase
+    font-weight: 300
+    border-radius: 0
+    height: 50px
+    padding: 15px
+
+.modal
+  .modal-dialog
+    max-width: 800px
+    margin: 100px auto
+    @media #{$information-tablet}
+      max-width: calc(100% - 30px)
+    &.modal-lg
+      max-width: 1000px
+      @media #{$information-tablet-large}
+        max-width: 900px
+      @media #{$information-tablet}
+        max-width: calc(100% - 30px)
+    .modal-content
+      border-radius: 0
+      border: 1px solid #1C223A
+      &:before
+        content: ''
+        display: block
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 40px 45px
+        border-color: transparent transparent #1c223a transparent
+        position: absolute
+        top: -40px
+        right: -1px
+      &:after
+        content: ''
+        display: block
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 40px 45px
+        border-color: transparent transparent #fff transparent
+        position: absolute
+        top: -38px
+        right: 0
+      .modal-header
+        .modal-title
+        .close
+          position: absolute
+          width: 45px
+          height: 40px
+          top: -40px
+          right: 0
+          background: url("../img/svg/close.svg") no-repeat 24px 22px
+          background-size: 18px
+          z-index: 9
+          cursor: pointer
+      .modal-body
+      .modal-footer
+
+.auth-modal
+  &:after
+    content: ''
+    display: block
+    clear: both
+  .btn-box
+    width: 100%
+  .left
+    width: 298px
+    float: left
+    height: 100%
+    background: #EEEEEE url("../img/auth-bg.png") no-repeat center
+    @media #{$information-tablet}
+      display: none
+  .right
+    width: 500px
+    float: left
+    padding: 20px
+    @media #{$information-tablet}
+      width: 100%
+      float: none
+    .modal-header
+      border-bottom: 0
+      &:after
+        content: ''
+        display: block
+        clear: both
+      .modal-title
+        font-size: 18px
+        float: left
+        width: 50%
+        .nav-link
+          color: #999
+          display: inline-block
+          vertical-align: middle
+          cursor: pointer
+          padding: 0
+          &.active,
+          &.hover
+            color: #0066C0
+        span
+          display: inline-block
+          vertical-align: middle
+          margin: 0 10px
+      .signup-text
+        float: left
+        width: 50%
+        text-align: right
+        a
+          color: #0066C0
+    .modal-body
+      .form-group
+        position: relative
+        padding-top: 20px
+        &.focus
+          label
+            top: 0
+            left: 0
+            font-size: 12px
+        &.password-box
+          .form-control
+            padding-right: 160px
+          .pass-box
+            position: absolute
+            top: 20px
+            right: 0
+            z-index: 3
+            .show-pw
+              display: inline-block
+              vertical-align: middle
+              width: 42px
+              height: 42px
+              cursor: pointer
+              text-align: center
+              padding: 11px 0
+            .forgot-text
+              display: inline-block
+              vertical-align: middle
+              color: #0066C0
+        .hint-box
+          margin-top: 10px
+          .progress
+            border-radius: 0
+            height: 5px
+            margin-top: 10px
+            .progress-bar
+              border-radius: 0
+              height: 5px
+        label
+          display: block
+          position: absolute
+          top: 30px
+          left: 30px
+          margin-bottom: 0
+          color: #9B9B9B
+          font-weight: 100
+          z-index: 1
+          +transition(.3s)
+        .icon
+          display: block
+          width: 16px
+          height: 16px
+          position: absolute
+          top: 30px
+          left: 5px
+          &.email
+            background: url("../img/svg/mail4.svg") no-repeat center
+            background-size: contain
+          &.password
+            background: url("../img/svg/lock.svg") no-repeat center
+            background-size: contain
+          &.eye
+            display: inline-block
+            width: 20px
+            height: 20px
+            position: relative
+            top: inherit
+            left: inherit
+            background: url("../img/svg/eyes.svg") no-repeat center
+            background-size: contain
+        .form-control
+          border: none
+          border-radius: 0
+          border-bottom: 2px solid #EEEEEE
+          padding-left: 30px
+          background: transparent
+          position: relative
+          z-index: 2
+          height: 42px
+      .login-footer-box
+        margin-top: 40px
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .btn-box
+          width: 50%
+          float: left
+          .btn
+            height: 50px
+            border-radius: 0
+            border: 1px solid #1c223a
+            background: transparent
+            color: #1c223a
+            text-transform: uppercase
+            padding: 15px 30px
+        .social-box
+          width: 50%
+          float: left
+          text-align: right
+          padding: 16px 0
+          span
+            display: inline-block
+            vertical-align: middle
+            font-weight: 400
+          a
+            display: inline-block
+            vertical-align: middle
+            .icon
+              display: block
+              width: 16px
+              height: 16px
+              &.fb
+                background: url("../img/svg/fb3.svg") no-repeat center
+                background-size: 19px
+              &.gg
+                width: 24px
+                background: url("../img/svg/gg3.svg") no-repeat center
+                background-size: 25px
+
+.modal
+  &.checkout
+    .modal-dialog
+      .modal-content
+        &:after
+          content: ''
+          display: block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 0 40px 45px
+          border-color: transparent transparent #F8FAFB transparent
+          position: absolute
+          top: -38px
+          right: 0
+
+.checkout-modal
+  display: block
+  @media #{$information-tablet-large}
+    display: flex
+    flex-direction: column
+  &:after
+    content: ''
+    display: block
+    clear: both
+  .left
+    width: 700px
+    float: left
+    padding: 20px 30px
+    @media #{$information-tablet-large}
+      width: 100%
+      float: none
+      padding: 20px
+      order: 2
+    .header-nav
+      padding: 0
+      margin: 0
+      border-bottom: 1px solid #E4EAEE
+      text-align: center
+      margin-bottom: 25px
+      &:after
+        content: ''
+        display: block
+        clear: both
+      li
+        display: block
+        width: 33.33%
+        float: left
+        &.active,
+        &:hover
+          a
+            color: #1C223A
+            &:after
+              content: ''
+              display: block
+              width: 100%
+              border: 1px solid #1C223A
+              position: absolute
+              bottom: -1px
+              left: 0
+        a
+          position: relative
+          display: block
+          color: #9B9B9B
+          padding: 15px 20px
+          text-decoration: none
+    .checkout-title
+      font-size: 20px
+      font-weight: 100
+      margin-bottom: 20px
+    .customer-form
+      .form-group
+        label
+          font-weight: 700
+          text-transform: uppercase
+          font-size: 12px
+          color: #9B9B9B
+        .form-control,
+        .custom-select
+          display: block
+          width: 100%
+          border-radius: 3px
+          border: 1px solid #DDE3E8
+          height: 54px
+          &:focus
+            border-color: #71B6EF
+    .checkout-footer
+      margin-top: 20px
+      &:after
+        content: ''
+        display: block
+        clear: both
+      .select-left-box
+        width: 50%
+        float: left
+        margin-top: 5px
+        .form-check
+          .form-check-label
+            padding-left: 20px
+            cursor: pointer
+            position: relative
+            .form-check-input
+            label
+              cursor: pointer
+            input[type=checkbox],
+            input[type=radio]
+              display: none
+            input[type=checkbox] + label
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/checkbox2.svg") no-repeat center
+              background-size: 19px
+              position: absolute
+              top: 0
+              left: 0
+            input[type=checkbox]:checked + label
+              background: url("../img/svg/checkbox2-check.svg") no-repeat center
+              background-size: 19px
+            input[type=radio] + label
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/checkbox.svg") no-repeat center
+              background-size: 19px
+              position: absolute
+              top: 0
+              left: 0
+            input[type=radio]:checked + label
+              background: url("../img/svg/checkbox-check.svg") no-repeat center
+              background-size: 19px
+            strong
+              font-weight: 700
+      .return-box
+        width: 50%
+        float: left
+        padding: 18px 0
+        a
+          color: #1C223A
+          .icon-long-arrow
+            display: inline-block
+            vertical-align: middle
+            width: 14px
+            height: 14px
+            background: url("../img/svg/long-arrow-back.svg") no-repeat center
+            background-size: contain
+            margin-right: 5px
+          span
+            display: inline-block
+            vertical-align: middle
+      .btn-box
+        width: 50%
+        float: left
+        text-align: right
+        .btn-primary
+          display: inline-block
+          height: 54px
+          background: $secondary_color
+          border: 1px solid $secondary_color
+          border-radius: 3px
+          text-transform: uppercase
+          padding: 12px 30px
+          cursor: pointer
+        .btn-disabled
+          display: inline-block
+          height: 54px
+          background: #9B9B9B
+          border: 1px solid #9B9B9B
+          border-radius: 3px
+          text-transform: uppercase
+          padding: 12px 30px
+          color: #eee
+        a
+          display: inline-block
+          margin-top: 10px
+      .term
+        width: 100%
+        float: left
+        text-align: right
+        font-size: 12px
+        margin-top: 10px
+        a
+          color: #0066C0
+  .right
+    width: 298px
+    float: left
+    background: #F8FAFB
+    height: 100%
+    padding: 20px 15px
+    @media #{$information-tablet-large}
+      width: 100%
+      float: none
+      padding: 0 20px
+      height: inherit
+      order: 1
+    .modal-header
+      position: relative
+      padding: 15px 0
+      .close
+        top: -60px !important
+        right: -15px !important
+        @media #{$information-tablet-large}
+          top: -40px !important
+          right: -20px !important
+      .title
+        font-size: 20px
+      .product-numb
+        display: block
+        background: $secondary_color
+        color: $text-light
+        padding: 3px 8px
+        border-radius: 30px
+    .product-cart-list
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        padding: 15px 0
+        .item
+          &:after
+            content: ''
+            display: block
+            clear: both
+          .thumb
+            width: 88px
+            position: relative
+            float: left
+            .img-box
+              width: 88px
+              img
+                width: 100%
+            .delete-pd
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/delete.svg") no-repeat center
+              background-size: contain
+              position: absolute
+              top: 0
+              right: 0
+              cursor: pointer
+          .info
+            width: calc(100% - 88px)
+            float: left
+            padding-left: 10px
+            .name
+              max-height: 37px
+              overflow: hidden
+            .price
+            .shipping-box
+              .text
+              .time
+                color: #9B9B9B
+                font-size: 12px
+                span
+                  color: #1C223A
+    .voucher-box
+      border-top: 1px solid #E4EAEE
+      border-bottom: 1px solid #E4EAEE
+      padding: 20px 0
+      .form-group
+        label
+        .input-group
+          .form-control
+            border-color: #DDE3E8
+            height: 30px
+            font-size: 12px
+          .input-group-btn
+            .btn
+              background: #ffffff
+              border-color: #DDE3E8
+              color: #0066C0
+              text-transform: uppercase
+              font-weight: 700
+              height: 30px
+              font-size: 12px
+    .fee-box
+      padding: 20px 0
+      border-bottom: 1px solid #E4EAEE
+      .item
+        margin-bottom: 5px
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .item-left
+          width: 60%
+          float: left
+        .item-right
+          width: 40%
+          float: left
+          text-align: right
+    .total-box
+      padding: 20px 0
+      .item
+        &:after
+          content: ''
+          display: block
+          clear: both
+        .item-left
+          width: 25%
+          float: left
+          font-size: 16px
+          font-weight: 700
+        .item-right
+          width: 75%
+          float: left
+          text-align: right
+          .total-price
+            font-size: 16px
+          .appr
+            font-size: 10px
+            strong
+      .convert
+        font-size: 10px
+        color: #9B9B9B
+        margin-top: 30px
+        text-align: right
+
+.address-box
+  border: 1px solid #E4EAEE
+  &.open
+    .address-key-box
+      background: #EEEEEE
+      color: #9B9B9B
+      .collapse-btn
+        +rotate(180deg)
+    .address-list
+      height: auto
+  .address-key-box
+    padding: 20px
+    position: relative
+    .name
+      font-weight: 700
+    ul
+      padding: 0
+      margin: 0 0 20px
+      li
+        list-style: none
+    .change
+    .collapse-btn
+      display: block
+      width: 24px
+      height: 24px
+      cursor: pointer
+      background: url("../img/svg/angle-down.svg") no-repeat center
+      background-size: 14px
+      position: absolute
+      top: calc((100% - 24px) / 2)
+      right: 10px
+  .address-list
+    padding: 0
+    margin: 0
+    +transition(.3s)
+    height: 0
+    overflow: hidden
+    li
+      list-style: none
+      .item
+        .form-check
+          .form-check-label
+            padding: 20px 20px 20px 50px
+            cursor: pointer
+            position: relative
+            display: block
+            width: 100%
+            .form-check-input
+            label
+              cursor: pointer
+            input[type=checkbox],
+            input[type=radio]
+              display: none
+            input[type=checkbox] + label
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/checkbox2.svg") no-repeat center
+              background-size: 19px
+              position: absolute
+              top: 0
+              left: 10px
+            input[type=checkbox]:checked + label
+              background: url("../img/svg/checkbox2-check.svg") no-repeat center
+              background-size: 19px
+            input[type=radio] + label
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/checkbox.svg") no-repeat center
+              background-size: 19px
+              position: absolute
+              top: calc((100% - 24px) / 2)
+              left: 18px
+            input[type=radio]:checked + label
+              background: url("../img/svg/checkbox-check.svg") no-repeat center
+              background-size: 19px
+            .info
+              .primary
+                color: #9B9B9B
+              .name
+                font-weight: 700
+              ul
+                padding: 0
+                margin: 0
+                li
+            .edit
+              display: block
+              cursor: pointer
+              position: absolute
+              top: calc((100% - 24px) / 2)
+              right: 10px
+              color: #0066C0
+
+.pay-box
+  ul
+    margin: 0
+    padding: 0
+    border: 1px solid #E4EAEE
+    li
+      list-style: none
+      border-bottom: 1px solid #E4EAEE
+      &:last-child
+        border-bottom: none
+      &.open
+        .item
+          .form-check
+            background: #E4EAEE
+          .content-dropdown
+            display: block
+        .collapse-btn
+          +rotate(180deg)
+      .item
+        .form-check
+          margin-bottom: 0
+          .form-check-label
+            padding: 20px 40px 20px 50px
+            cursor: pointer
+            position: relative
+            display: block
+            width: 100%
+            .form-check-input
+            label
+              cursor: pointer
+            input[type=checkbox],
+            input[type=radio]
+              display: none
+            input[type=checkbox] + label
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/checkbox2.svg") no-repeat center
+              background-size: 19px
+              position: absolute
+              top: 20px
+              left: 10px
+            input[type=checkbox]:checked + label
+              background: url("../img/svg/checkbox2-check.svg") no-repeat center
+              background-size: 19px
+            input[type=radio] + label
+              display: block
+              width: 16px
+              height: 16px
+              background: url("../img/svg/checkbox.svg") no-repeat center
+              background-size: 19px
+              position: absolute
+              top: 20px
+              left: 18px
+            input[type=radio]:checked + label
+              background: url("../img/svg/checkbox-check.svg") no-repeat center
+              background-size: 19px
+            .info
+              .icon-payment
+                .icon
+                  display: block
+                  height: 16px
+                  &.btc
+                    width: 60px
+                    background: url("../img/svg/btc2.svg") no-repeat center
+                    background-size: 67px
+                  &.pp
+                    width: 63px
+                    background: url("../img/svg/paypal.svg") no-repeat center
+                    background-size: 66px
+              .desc
+                font-size: 12px
+                margin-top: 4px
+              .cc
+                font-weight: 700
+            .collapse-btn
+              display: block
+              width: 24px
+              height: 24px
+              cursor: pointer
+              background: url("../img/svg/angle-down.svg") no-repeat center
+              background-size: 14px
+              position: absolute
+              top: calc((100% - 24px) / 2)
+              right: 10px
+        .content-dropdown
+          padding: 20px
+          display: none
+          .btc-box
+            .btc-box-header
+              border-bottom: 1px solid #E4EAEE
+              padding-bottom: 20px
+              &:after
+                content: ''
+                display: block
+                clear: both
+              label
+                color: #9B9B9B
+                margin: 0
+              strong
+                font-weight: 700
+              .order
+                width: 30%
+                float: left
+                label
+                  display: block
+                strong
+                  display: block
+              .date
+                width: 30%
+                float: left
+                label
+                  display: block
+                strong
+                  display: block
+              .amount
+                width: 40%
+                float: left
+                .exchange
+                  strong
+                    display: inline-block
+                    vertical-align: middle
+                  .icon-exchange
+                    display: inline-block
+                    vertical-align: middle
+                    width: 24px
+                    height: 16px
+                    background: url("../img/svg/exchange.svg") no-repeat center
+                    background-size: 24px
+                    margin: 0 5px
+            .progress-box
+              margin-top: 30px
+              width: 100%
+              float: left
+              .countdown
+                display: block
+                text-align: right
+                font-weight: 700
+                color: #3BC0A4
+              .progress
+                height: 10px
+                border-radius: 10px
+                background: #ffffff
+                border: 1px solid #E4EAEE
+                .progress-bar
+                  background: #3BC0A4
+                  height: 8px
+                  border-radius: 10px
+          &.customer-form
+            .card-number
+              position: relative
+              .form-control
+                padding-right: 45px
+              .icon-card
+                display: block
+                width: 30px
+                height: 18px
+                background: url("../img/svg/cc.svg") no-repeat center
+                background-size: 37px
+                position: absolute
+                bottom: 18px
+                right: 15px
+            .cvv
+              position: relative
+              .form-control
+                padding-right: 40px
+              .quest-box
+                position: absolute
+                bottom: 16px
+                right: 13px
+                @media #{$information-tablet-large}
+                  display: none
+                &:hover
+                  .quest-item
+                    display: block
+                .icon-quest
+                  display: block
+                  width: 22px
+                  height: 22px
+                  background: url("../img/svg/quest2.svg") no-repeat center
+                  background-size: 32px
+                  cursor: pointer
+                .quest-item
+                  min-width: 310px
+                  display: block
+                  border: 1px solid #1C223A
+                  background: #fff
+                  position: absolute
+                  left: calc(100% + 30px)
+                  top: -70px
+                  font-size: 12px
+                  padding: 20px
+                  display: none
+                  &:before
+                    content: ''
+                    display: block
+                    width: 0
+                    height: 0
+                    border-style: solid
+                    border-width: 14px 12px 14px 0
+                    border-color: transparent #1c223a transparent transparent
+                    position: absolute
+                    top: 65px
+                    left: -12px
+                  &:after
+                    content: ''
+                    display: block
+                    width: 0
+                    height: 0
+                    border-style: solid
+                    border-width: 14px 12px 14px 0
+                    border-color: transparent #fff transparent transparent
+                    position: absolute
+                    top: 65px
+                    left: -11px
+                  .item-box
+                    &:after
+                      content: ''
+                      display: block
+                      clear: both
+                    .real-card
+                      width: 70px
+                      height: 135px
+                      float: left
+                      background: url("../img/svg/cc-real.svg") no-repeat center
+                      background-size: 50px
+                    .text
+                      width: 198px
+                      float: left
+                      padding-left: 10px
+                      border: none
+                      li
+                        list-style: none
+                        border: none
+                        margin-bottom: 10px
+                        &:last-child
+                          margin-bottom: 0
+                        strong
+                          font-weight: 700
+                        .desc
+      .qr-generate
+        text-align: center
+        padding-top: 20px
+        .text
+        .qrcode
+          margin: 10px 0
+          img
+            width: 120px
+        .transaction-code
+          font-weight: bold
+
+.no-result
+  background: #ffffff
+  padding: 40px
+  &:after
+    content: ''
+    display: block
+    clear: both
+  .left
+    width: 360px
+    float: left
+    text-align: center
+    @media #{$information-tablet}
+      width: 100%
+      float: none
+    img
+  .right
+    width: calc(100% - 360px)
+    float: left
+    padding: 60px 40px 0
+    @media #{$information-tablet}
+      width: 100%
+      float: none
+      text-align: center
+    .text1
+      font-weight: 700
+      font-size: 30px
+    .text2
+      font-weight: 700
+    .text3
+      margin-bottom: 30px
+    a
+      color: #1C223A
+      font-weight: 700
+      text-decoration: none
+      &:hover
+        color: $secondary_color
+      .icon-long-arrow
+        display: inline-block
+        vertical-align: middle
+        width: 14px
+        height: 14px
+        background: url("../img/svg/long-arrow-back.svg") no-repeat center
+        background-size: contain
+        margin-right: 5px
+      span
+        display: inline-block
+        vertical-align: middle
+
+.all-categories
+  padding: 30px
+  background: #ffffff
+  margin-bottom: 50px
+  .category-list
+    padding: 0
+    margin: 0
+    &:after
+      content: ''
+      display: block
+      clear: both
+    li
+      width: 33.33%
+      float: left
+      list-style: none
+      a
+        display: block
+        padding: 10px 0
+        color: #0066C0
+        &:hover
+          color: $secondary_color
+          text-decoration: none
+        .icon-circle
+          display: inline-block
+          vertical-align: middle
+          width: 22px
+          height: 22px
+          background: #D8D8D8
+          border-radius: 50%
+          margin-right: 10px
+        span
+          display: inline-block
+          vertical-align: middle
+
+.modal-notice
+  .modal-dialog
+    max-width: 640px
+    .modal-content
+      width: 640px
+      border-radius: 6px
+      padding: 55px 40px
+      background: #ffffff
+      border: none
+      &:before,
+      &:after
+        display: none
+      .modal-notice-box
+        position: relative
+        font-weight: 100
+        .text1
+          font-size: 24px
+          margin-bottom: 15px
+        .text2
+          font-size: 20px
+        .error-icon
+          position: absolute
+          top: 0
+          right: 0
+          img
+            width: 70px
+        .alert-icon
+          position: absolute
+          bottom: -62px
+          right: -20px
+          img
+            width: 180px
+        .complete-icon
+          text-align: center
+          margin-bottom: 30px
+
+.modal-alert
+  .modal-dialog
+    max-width: 500px
+    .modal-content
+      width: 500px
+      border-radius: 6px
+      padding: 55px 40px 30px
+      background: #ffffff
+      border: none
+      &:before,
+      &:after
+        display: none
+      .modal-alert-box
+        position: relative
+        font-weight: 100
+        .new-ms-icon
+          text-align: center
+        .text1
+          font-size: 20px
+          margin: 30px 0
+        .btn-box
+          &:after
+            content: ''
+            display: block
+            clear: both
+          a
+            font-size: 24px
+            display: block
+            width: 50%
+            float: left
+            text-align: center
+            padding: 15px 20px
+            text-transform: uppercase
+            font-weight: 100
+          .later
+            color: #F5A623
+          .read-now
+            color: #7ED321
+
+.about-content
+  .single-header
+    background: url("../img/single-page-bg.png") no-repeat center
+    background-size: cover
+    text-align: center
+    padding: 50px 0
+    .title
+      font-size: 36px
+      font-weight: 100
+      color: $text-light
+      text-transform: uppercase
+    .about-header-tabs
+      padding: 0
+      margin: 0
+      display: block
+      text-align: center
+      li
+        list-style: none
+        display: inline-block
+        vertical-align: middle
+        .nav-link
+          display: block
+          padding: 10px 20px
+          color: $text-light
+          text-transform: uppercase
+          border-bottom: 2px solid transparent
+          cursor: pointer
+          &.active,
+          &:hover
+            border-bottom-color: $secondary_color
+  .tab-content
+
+.about-box
+  text-align: center
+  .box
+    padding: 50px 30px
+    &.box1
+      background: #ffffff
+      margin-bottom: 15px
+    &.box2
+      background: #f6f6f6
+      background: -webkit-linear-gradient(#ffffff, #f6f6f6)
+      background: -o-linear-gradient(#ffffff, #f6f6f6)
+      background: -moz-linear-gradient(#ffffff, #f6f6f6)
+      background: linear-gradient(#ffffff, #f6f6f6)
+      .row
+        .left,
+        .right
+          float: right
+    &.box3
+      background: #f6f6f6
+      background: -webkit-linear-gradient(#ffffff, #f6f6f6)
+      background: -o-linear-gradient(#ffffff, #f6f6f6)
+      background: -moz-linear-gradient(#ffffff, #f6f6f6)
+      background: linear-gradient(#ffffff, #f6f6f6)
+    &.box4
+      background: #f6f6f6
+      background: -webkit-linear-gradient(#ffffff, #f6f6f6)
+      background: -o-linear-gradient(#ffffff, #f6f6f6)
+      background: -moz-linear-gradient(#ffffff, #f6f6f6)
+      background: linear-gradient(#ffffff, #f6f6f6)
+      .row
+        .left,
+        .right
+          float: right
+    &.box5
+      background: #f6f6f6
+      background: -webkit-linear-gradient(#ffffff, #f9f9f9)
+      background: -o-linear-gradient(#ffffff, #f9f9f9)
+      background: -moz-linear-gradient(#ffffff, #f9f9f9)
+      background: linear-gradient(#ffffff, #f9f9f9)
+      margin-bottom: 50px
+    .row
+      display: block
+      &:after
+        content: ''
+        display: block
+        clear: both
+      .left
+        padding: 0 15px
+        width: 50%
+        float: left
+        @media #{$information-tablet}
+          width: 100%
+          float: none
+          margin-bottom: 40px
+      .right
+        padding: 0 15px
+        width: 50%
+        float: left
+        @media #{$information-tablet}
+          width: 100%
+          float: none
+      .title
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase
+        margin-top: 30px
+        margin-bottom: 30px
+      .content
+        font-size: 20px
+        font-weight: 100
+      .video
+      .img
+        img
+
+.box-under
+  background: #ffffff
+  min-height: 500px
+  padding: 40px
+  margin-bottom: 50px
+  .title
+    font-size: 24px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 30px
+    margin-bottom: 30px
+  .content
+    font-size: 20px
+    font-weight: 100
+
+.setting-content
+  .single-header
+    background: url("../img/setting-bg.jpg") no-repeat center
+    background-size: cover
+    text-align: center
+    padding: 50px 0
+    .title
+      font-size: 36px
+      font-weight: 100
+      color: $text-light
+      text-transform: uppercase
+    .about-header-tabs
+      padding: 0
+      margin: 0
+      display: block
+      text-align: center
+      li
+        list-style: none
+        display: inline-block
+        vertical-align: middle
+        .nav-link
+          display: block
+          padding: 10px 20px
+          color: $text-light
+          text-transform: uppercase
+          border-bottom: 2px solid transparent
+          cursor: pointer
+          &.active,
+          &:hover
+            border-bottom-color: $secondary_color
+  .tab-content
+
+.personal-info
+  padding: 20px
+  background: #ffffff
+  .title
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 40px
+    span
+      display: inline-block
+      vertical-align: middle
+    a
+      display: inline-block
+      vertical-align: middle
+      .icon-edit
+        display: block
+        width: 18px
+        height: 22px
+        background: url("../img/svg/edit.svg") no-repeat center
+        background-size: 18px
+        margin-left: 10px
+  .setting-form
+    width: 700px
+    margin-bottom: 50px
+    @media #{$information-tablet}
+      width: 100%
+    .form-group
+      label
+        font-size: 12px
+        font-weight: 700
+        color: #9B9B9B
+        text-transform: uppercase
+      .form-control
+        border: 1px solid #DDE3E8
+        background: #EEEEEE
+        border-radius: 3px
+        font-size: 14px
+        color: #9B9B9B
+        height: 54px
+  .setting-footer
+    a
+      display: inline-block
+      vertical-align: middle
+    .email
+      display: inline-block
+      vertical-align: middle
+      color: #9B9B9B
+      border-right: 1px solid #9B9B9B
+      margin-left: 30px
+      margin-right: 5px
+      padding-right: 5px
+    .icon
+      display: inline-block
+      vertical-align: middle
+      width: 16px
+      height: 16px
+      margin-right: 3px
+      &.lock
+        background: url("../img/svg/lock2.svg") no-repeat center
+        background-size: 18px
+      &.mail
+        background: url("../img/svg/mail5.svg") no-repeat center
+        background-size: 18px
+  .btn-primary
+    border-radius: 3px
+    background: $secondary_color
+    border: 1px solid $secondary_color
+    color: #ffffff
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 300
+    padding: 10px 100px
+    margin-top: 40px
+    &:hover
+      background: #fff
+      color: $secondary_color
+
+.ship-address
+  .item
+    background: #DFF0D8
+    border: 1px solid #D6E9C6
+    border-radius: 5px
+    padding: 20px 75px 20px 20px
+    position: relative
+    .name
+      font-weight: 700
+      text-transform: uppercase
+    .add
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .phone
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .action
+      position: absolute
+      right: 20px
+      top: calc((100% - 22px) / 2)
+      a
+        display: inline-block
+        vertical-align: middle
+        margin-left: 5px
+        .icon
+          display: block
+          width: 22px
+          height: 22px
+          &.edit
+            background: url("../img/svg/edit.svg") no-repeat center
+            background-size: 22px
+          &.delete
+            background: url("../img/svg/delete2.svg") no-repeat center
+            background-size: 22px
+  .add-box
+    float: left
+    .add
+      display: block
+      width: 133px
+      height: 133px
+      border-radius: 5px
+      background: #ffffff
+      border: 1px solid #DCE3ED
+      text-align: center
+      color: #1C223A
+      padding: 32px 10px
+      text-decoration: none
+      &:hover
+        color: $secondary_color
+      .icon-add
+        display: inline-block
+        width: 48px
+        height: 48px
+        background: url("../img/svg/add2.svg") no-repeat center
+        background-size: contain
+      span
+        display: block
+        text-transform: uppercase
+        font-weight: 700
+
+.payment-method
+  background: #ffffff
+  margin: 20px 0 40px
+  padding: 20px
+  .title
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 40px
+  .item
+    background: #DFF0D8
+    border: 1px solid #D6E9C6
+    border-radius: 5px
+    padding: 20px 75px 20px 20px
+    position: relative
+    height: 134px
+    .payment-logo
+      margin-bottom: 5px
+      .icon
+        width: 54px
+        height: 32px
+        display: block
+        &.master
+          background: url("../img/svg/master.svg") no-repeat center
+          background-size: 52px
+    .name
+      font-weight: 700
+      text-transform: uppercase
+    .add
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .phone
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .action
+      position: absolute
+      right: 20px
+      top: 20px
+      a
+        display: inline-block
+        vertical-align: middle
+        margin-left: 5px
+        .icon
+          display: block
+          width: 22px
+          height: 22px
+          &.edit
+            background: url("../img/svg/edit.svg") no-repeat center
+            background-size: 22px
+          &.delete
+            background: url("../img/svg/delete2.svg") no-repeat center
+            background-size: 22px
+  .add-box
+    float: left
+    .add
+      display: block
+      width: 133px
+      height: 134px
+      border-radius: 5px
+      background: #ffffff
+      border: 1px solid #DCE3ED
+      text-align: center
+      color: #1C223A
+      padding: 32px 10px
+      text-decoration: none
+      &:hover
+        color: $secondary_color
+      .icon-add
+        display: inline-block
+        width: 48px
+        height: 48px
+        background: url("../img/svg/add2.svg") no-repeat center
+        background-size: contain
+      span
+        display: block
+        text-transform: uppercase
+        font-weight: 700
+
+.blog-container
+  margin: 0 -10px 40px
+  &:after
+    content: ''
+    display: block
+    clear: both
+  .left
+    width: 250px
+    float: left
+    padding: 0 10px
+    @media #{$information-phone}
+      width: 100%
+      float: none
+      margin-bottom: 50px
+    .search-box
+      margin-bottom: 20px
+      .search-form
+        position: relative
+        .search-input
+          width: 100%
+          height: 40px
+          padding: 8px 16px
+        .btn-search
+          width: 40px
+          height: 40px
+          text-align: center
+          background: transparent
+          position: absolute
+          top: 0
+          right: 0
+          padding: 7px
+          .search-icon
+            display: block
+            width: 24px
+            height: 24px
+            background: url("../img/svg/search2.svg") no-repeat center
+            background-size: 26px
+    .blog-nav
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        a
+          font-weight: 700
+          color: #0f68bd
+          display: block
+        ul
+          margin-top: 20px
+          padding-left: 10px
+          margin-bottom: 0
+          li
+            a
+              color: $text-color
+              padding: 3px 0
+              font-weight: 400
+              text-decoration: none
+            &:hover,
+            &.active
+              a
+                color: $secondary_color
+  .right
+    width: calc(100% - 250px)
+    float: left
+    padding: 0 10px
+    @media #{$information-phone}
+      width: 100%
+      float: none
+    .blog-box
+      background: #fff
+      padding: 20px
+      .blog-list
+        padding: 0
+        margin: 0 -20px
+        &:after
+          content: ''
+          display: block
+          clear: both
+        li
+          list-style: none
+          width: 50%
+          float: left
+          padding: 0 20px
+          .item
+            margin-bottom: 30px
+            .thumb
+              margin-bottom: 15px
+              a
+                display: block
+                width: 100%
+                height: 150px
+            .info
+              .blog-title
+                display: block
+                text-transform: uppercase
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                color: $text-color
+                margin-bottom: 10px
+              .blog-other-info
+                margin-bottom: 10px
+                font-size: 12px
+                span
+                  display: inline-block
+                  vertical-align: middle
+                a
+                  display: inline-block
+                  vertical-align: middle
+                  border-left: 1px solid $text-color
+                  border-right: 1px solid $text-color
+                  padding: 0 10px
+                  margin: 0 10px
+              .blog-desc
+                margin-bottom: 0
+                height: 36px
+                overflow: hidden
+
+    .pagination-box
+      padding: 15px 0
+
+.blog-detail-container
+  background: #fff
+  padding: 30px
+  .image-header
+    margin-bottom: 20px
+    img
+      width: 100%
+  .blog-title
+    font-weight: 300
+    text-transform: uppercase
+    font-size: 24px
+    margin-bottom: 15px
+  .blog-other-info
+    margin-bottom: 15px
+    font-size: 12px
+    span
+      display: inline-block
+      vertical-align: middle
+    a
+      display: inline-block
+      vertical-align: middle
+      border-left: 1px solid $text-color
+      border-right: 1px solid $text-color
+      padding: 0 10px
+      margin: 0 10px
+  .blog-content
+    font-weight: 400
+
+.reply-container
+  background: #ffffff
+  padding: 30px
+  margin-top: 10px
+  .reply-title
+    font-size: 36px
+    font-weight: 100
+    text-transform: uppercase
+    margin-bottom: 20px
+    strong
+      font-weight: 700
+  .reply-form
+    .form-group
+      label
+        text-transform: uppercase
+        font-size: 12px
+        color: #9b9b9b
+        font-weight: 700
+        span
+          font-weight: 400
+          text-transform: initial
+      .form-control
+        border-color: #9b9b9b
+      input.form-control
+        height: 48px
+      textarea.form-control
+        min-height: 50px
+      .error-message
+        display: none
+        margin-top: 5px
+        color: $secondary_color
+      &.has-error
+        label
+          color: $secondary_color
+        .form-control
+          border-color: $secondary_color
+        .error-message
+          display: block
+    .btn-box
+      text-align: right
+      .btn-submit
+        background: $secondary_color
+        border: 1px solid $secondary_color
+        border-radius: 0
+        color: #fff
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 20px
+        padding:  18px 30px 15px
+        cursor: pointer
+        &:hover
+          color: $secondary_color
+          background: transparent
+
+.countdown-wrapper
+  text-align: center
+  background: #ffffff
+  font-family: $countdown-font
+  font-weight: 700
+  .cd-bg
+    background: url("../img/countdown-bg.png") no-repeat bottom center
+    background-size: cover
+    height: 80vh
+    padding-top: 20vh
+    color: #ffffff
+    @media #{$information-tablet-large}
+    .countdown-text
+      margin-bottom: 20px
+      img
+        @media #{$information-phone}
+          width: 90%
+    p
+      font-size: 18px
+      font-weight: bold
+      @media #{$information-phone}
+        font-size: 16px
+    .countdown-box
+      margin-top: 100px
+      ul
+        padding: 0
+        margin: 0
+        li
+          list-style: none
+          display: inline-block
+          vertical-align: middle
+          position: relative
+          margin: 0 40px
+          line-height: .5
+          @media #{$information-phone}
+            margin: 0 15px
+          &:after
+            content: ''
+            display: block
+            width: 40px
+            border-bottom: 1px solid #9B9B9B
+            position: absolute
+            bottom: 0
+            right: -72px
+            @media #{$information-phone}
+              display: none
+          &.last
+            &:after
+              display: none !important
+          strong
+            display: inline-block
+            vertical-align: bottom
+            font-size: 36px
+            margin-right: 3px
+            @media #{$information-phone}
+              font-size: 24px
+          span
+            display: inline-block
+            vertical-align: bottom
+            color: #9B9B9B
+            text-transform: uppercase
+            font-size: 14px
+            font-weight: bold
+            @media #{$information-phone}
+              font-size: 12px
+  .cd-img
+    margin-top: -50vh
+    img
+      @media #{$information-tablet}
+        width: 90%
+  .cd-footer
+    padding: 50px 0
+    font-weight: bold
+    a
+      color: $secondary_color
+      &:hover
+        opacity: .7
+
+.cd-social-box
+  position: fixed
+  top: 100px
+  right: 30px
+  z-index: 9999
+  ul
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      margin: 10px 0
+      a
+        display: block
+        &:hover
+          opacity: .7
+#Zoom-1
+  figure.mz-figure
+    a, span
+      display: none !important
+      opacity: 0 !important
+.mz-expand
+  a, span
+    display: none !important
+    opacity: 0 !important

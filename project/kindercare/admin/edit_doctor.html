@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+	<!-- Favicon-->
+	<link rel="icon" href="css/favicon.ico" type="image/x-icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap Core Css -->
+	<link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Waves Effect Css -->
+	<link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+	<!-- Animation Css -->
+	<link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+	<!-- Bootstrap Material Datetime Picker Css -->
+	<link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+	<!-- Custom Css -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Custom _ 2 Css -->
+	<link href="css/css_admin.css" rel="stylesheet" />
+
+	<!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+	<link href="css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+	<!-- Page Loader -->
+	<div class="page-loader-wrapper">
+		<div class="loader">
+			<div class="preloader">
+				<div class="spinner-layer pl-red">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+			<p>Please wait...</p>
+		</div>
+	</div>
+	<!-- #END# Page Loader -->
+	<!-- Overlay For Sidebars -->
+	<div class="overlay"></div>
+	<!-- #END# Overlay For Sidebars -->
+	<!-- Search Bar -->
+	<div class="search-bar">
+		<div class="search-icon">
+			<i class="material-icons">search</i>
+		</div>
+		<input type="text" placeholder="START TYPING...">
+		<div class="close-search">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+	<!-- #END# Search Bar -->
+	<!-- Top Bar -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+				<a href="javascript:void(0);" class="bars"></a>
+				<a href="index.html">
+					<img src="images/logo.png" />
+				</a>
+			</div>
+		</div>
+	</nav>
+	<!-- #Top Bar -->
+	<section>
+		<!-- Left Sidebar -->
+		<aside id="leftsidebar" class="sidebar">
+			<!-- Menu -->
+			<div class="menu">
+				<ul class="list">
+					<li class="active first_li">
+						<a href="dashboard.html">
+							<img src="images/dashboard.png" width="28" height="23">
+							<span>TRANG CHỦ</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="menu-toggle">
+							<img src="images/ql_lich_hen.png" width="26" height="24">
+							<span>QUẢN LÝ LỊCH HẸN</span>
+						</a>
+						<ul class="ml-menu">
+							<li>
+								<a href="javascript:void(0);">
+									<span>Lịch hẹn mới</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lý lịch phòng khám</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Lịch sử đặt hẹn</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="customer.html">
+							<img src="images/ql_customer.png" width="28" height="24">
+							<span>QUẢN LÝ KHÁCH HÀNG</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="menu-toggle">
+							<img src="images/ql_nv.png" width="23" height="23">
+							<span>QUẢN LÍ NHÂN SỰ</span>
+						</a>
+						<ul class="ml-menu">
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lý bác sĩ</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lí nhân viên</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- #Menu -->
+			<!-- Footer -->
+			<div class="legal">
+				<div class="row clearfix">
+					<div class="col-sm-6 image">
+						<img src="images/user.png" width="24" height="24" alt="User" />
+						<span><b>Admin</b></span>
+					</div>
+					<div class="col-sm-6 logout">
+						<span><b>Đăng xuất</b></span>
+						<i class="material-icons">power_settings_new</i>
+					</div>
+				</div>
+			</div>
+			<!-- #Footer -->
+		</aside>
+		<!-- #END# Left Sidebar -->
+
+	</section>
+
+	<section class="content" id="doctor_main_edit">
+		<div class="container-fluid">
+			<form id="form_validation" method="POST">
+				<!-- CPU Usage -->
+				<div class="row clearfix">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="search_main">
+							<div class="body">
+								<div class="row clearfix">
+									<div class="col-sm-12">
+										<div class="col-md-9">
+											<div class="form-group form-float">
+												<div class="frm_search">
+													<input type="text" class="form-control" id="search" name="search">
+													<div class="icon_search">
+														<i class="material-icons">search</i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 btn_add">
+											<button type="button" class="btn waves-effect btn_add_doctor">Thêm bác sĩ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- #END# CPU Usage -->
+			</form>
+			<div class="profile_doctor">
+				<div class="block-header">
+				<h2>Sửa lịch bác sĩ</h2>
+				</div>
+				<!-- Basic Card -->
+				<div class="row clearfix">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="card">
+							<div class="header">
+								<div class="row clearfix">
+									<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+										<div class="row clearfix">
+											<div class="col-md-1 col-sm-1 col-xs-12 align-center">
+												<img src="images/user.png" width="60" height=60" alt="Doctor" />
+											</div>
+											<div class="col-md-3 col-sm-3 col-xs-12">
+												<h2>
+													Bs. Nguyễn Hùng <small><img class="icon_phone" src="images/icon_phone.png" width="14" height="14" />0912.345.789</small>
+												</h2>
+											</div>
+											<div class="col-md-8 col-sm-8 col-xs-12 date_time">
+												<div class="col-md-4 col-sm-4 col-xs-12" style="margin: 10px 0 0 0; padding-left: 0">
+													<div class="font-bold file_text">CHỌN NGÀY KHÁM</div>
+													<div class="input-group">
+														<input type="text" class="datepicker form-control" placeholder="Chọn ngày...">
+														<span class="input-group-addon">
+															<i class="material-icons">date_range</i>
+														</span>
+													</div>
+												</div>
+												<div class="col-md-8 col-sm-8 col-xs-12" style="margin: 10px 0 0 0; padding-left: 0">
+													<div class="font-bold file_text" style="padding-left: 15px;">CHỌN THỜI GIAN KHÁM</div>
+													<div class="col-md-6 col-sm-6 col-xs-12">
+														<div class="input-group">
+															<input type="text" class="form-control timepicker" placeholder="Thời gian bắt đầu">
+														</div>
+													</div>
+													<div class="col-md-6 col-sm-6 col-xs-12">
+														<div class="input-group">
+															<input type="text" class="form-control timepicker" placeholder="Thời gian kết thúc">
+														</div>
+													</div>
+													<div class="font-bold note_time"><i class="material-icons">add_circle</i> Thêm khung giờ</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 align-center">
+										<button type="button" class="btn waves-effect btn_save_ed">Lưu thông tin</button>
+									</div>
+								</div>
+							</div>
+							<div class="body">Giờ khám sẽ tự động được tạo, mỗi khung giờ cách nhau 30 phút.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Jquery Core Js -->
+<script src="plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="plugins/node-waves/waves.js"></script>
+
+<!-- Jquery CountTo Plugin Js -->
+<script src="plugins/jquery-countto/jquery.countTo.js"></script>
+
+<!-- Morris Plugin Js -->
+<script src="plugins/raphael/raphael.min.js"></script>
+<!-- Moment Plugin Js -->
+<script src="plugins/momentjs/moment.js"></script>
+<!-- Bootstrap Material Datetime Picker Plugin Js -->
+<script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+<!-- Custom Js -->
+<script src="js/admin.js"></script>
+<script src="js/pages/forms/basic-form-elements.js"></script>
+
+<!-- Demo Js -->
+<script src="js/demo.js"></script>
+</body>
+
+</html>

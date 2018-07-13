@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Mek Store - Homepage</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="countdown-wrapper">
+    <div class="cd-bg">
+        <div class="countdown-text">
+            <img src="img/countdown-text.png" alt="" title=""/>
+        </div>
+        <p>Our website is under construction.<br/>We`ll be here soon with our new awesome site</p>
+        <div class="countdown-box" id="countdown-box"></div>
+    </div>
+    <div class="cd-img"><img src="img/countdown-img.png" alt="" title=""/></div>
+    <div class="cd-footer"> © 2017-2018 <a href="#">MEK.Store</a> - All Rights Reserved. </div>
+</div>
+
+<div class="cd-social-box">
+    <ul>
+        <li>
+            <a href="#"><img src="img/fb.png" alt="" title="" /></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/yt.png" alt="" title="" /></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/tw.png" alt="" title="" /></a>
+        </li>
+    </ul>
+</div>
+
+<script src="./js/jquery-3.2.1.slim.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/jquery.countdown.min.js"></script>
+<script src="./js/style.js"></script>
+<script>
+    $('#countdown-box').countdown('2020/10/10', function(event) {
+        var $this = $(this).html(event.strftime(''
+            + '<ul>'
+            + '<li><strong>%d</strong><span>Days</span></li>'
+            + '<li><strong>%H</strong><span>Hours</span></li>'
+            + '<li><strong>%M</strong><span>Minutes</span></li>'
+            + '<li class="last"><strong>%S</strong><span>Seconds</span></li>'
+            + '<ul>'));
+    });
+</script>
+</body>
+</html>

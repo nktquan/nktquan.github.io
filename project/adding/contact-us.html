@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta property="og:image"
+          content="fo/themes/default/images/logo-toong400x400.jpg"/>
+    <meta name="thumbnail" content="fo/themes/default/images/logo-toong400x400.jpg"/>
+    <meta property="og:title" content="Contact Us - Toong"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="The best place after home"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Toong - Contact Us</title>
+
+    <meta name="description"
+          content="Toong is the professional coworking space for creators, which blends the very best features of working at an office, café, and home, partnered with outstanding club atmospherics.">
+    <meta name="keywords" content="Contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox-buttons.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/event.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/blog.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/plans.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/community.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/blog-detail.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/event-detail.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,vietnamese'
+          rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<header class="t-header stick2top">  <!-- show menu tu dau -->
+    <div class="container">
+        <a href="index.html" class="header-logo"></a>
+        <div class="dropdown lang-option">
+            <a href="lien-he.html" data-code="vi"
+               class="btn btn-default dropdown-toggle t-change-language">EN</a>
+
+        </div>
+
+        <div class="menu-wrapper">
+            <ul class="main-menu">
+                <li>
+                    <a href="#">What is co-living?</a>
+                </li>
+
+                <li><a href="#">Co-living lifestyle</a></li>
+
+                <li class="has-submenu">
+                    <a href="#">Who is co-living for?</a>
+                    <div class="submenu-container">
+                        <ul class="sub-menu">
+                            <li id="Toong"><a href="about-us.html">Adding</a></li>
+                            <li id="Contact"><a href="contact-us.html">Contact</a></li>
+                            <li id="Job Opportunities"><a href="career.html">Job Opportunities</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Location</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="javascript:void(0)" class="nav-expand-btn"><span class="ti-menu"></span></a>
+    </div>
+</header>
+
+
+<section class="contact-map-sect t-section" style="background-image:url(uploads/toong-map.jpg)">
+    <div id="toong-gmap" class="toong-gmap">
+    </div>
+    <div class="t-contact-form-wrapper form-expanded">
+        <a href="javascript:void(0)" class="form-expand-btn discover-now home-btn">
+            <div class="collapsed-text">Email us <span class="ti-marker-alt"></span></div>
+            <div class="expanded-text">View map<span class="ti-map"></span></div>
+        </a>
+
+        <div class="t-contact-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <form id="contact-form" class="col-sm-8 t-contact-form" method="post">
+                        <div class="t-form-elements">
+                            <input type="hidden" id="csrf" name="n48qIfcDaiZbIrU"
+                                   value="8573c9a5b43b29c2f191e03b4b07bb31"/>
+                            <h3>Send us an e-mail</h3>
+                            <div class="t-form-group">
+                                <input type="text" id="fullName" name="fullName" class="t-main-textbox"
+                                       placeholder="Your full name"/> <span class="ti-user"></span>
+                            </div>
+                            <div class="alert alert-danger t-alert" role="alert" style="display: none;">Lỗi rồi! Lỗi
+                                rồi!
+                            </div>
+                            <div class="t-form-group">
+                                <input type="text" id="email" name="email" class="t-main-textbox phuong-email"
+                                       placeholder="Your email" required="required"/> <span class="ti-email"></span>
+                            </div>
+                            <div class="t-form-group">
+                                <textarea id="messages_content" name="messages_content" class="t-main-textbox"
+                                          required="required" placeholder="Your message"></textarea></div>
+                            <p class="text-center">
+                                <input type="submit" value="Submit" class="discover-now home-btn"/></p>
+                        </div>
+
+                        <div class="t-form-notify" style="display: none;">
+                            <p>
+                                Thanks You! </p>
+                        </div>
+                    </form>
+                    <div class="col-sm-4 t-contact-info">
+                        <h3 class="footer-coltitle">Toong HQ</h3>
+                        <div class="contact-text-wrap">
+                            <span class="ti-location-pin"></span>
+
+                            <p class="footer-text">2nd Floor - 25T2 Hoang Dao Thuy, Cau Giay, Hanoi</p>
+                        </div>
+
+                        <h3 class="footer-coltitle">Call us</h3>
+                        <div class="contact-text-wrap">
+                            <span class="ti-mobile"></span>
+
+                            <p class="footer-text">+84 96 224 8585</p>
+                        </div>
+
+                        <h3 class="footer-coltitle">EMAIL US</h3>
+                        <div class="contact-text-wrap">
+                            <span class="ti-email"></span>
+
+                            <p class="footer-text">info@toong.com.vn</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="t-footer">
+    <div class="t-footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="assets/images/white_logo_transparent@2x.png" alt="" title=""/>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3 class="footer-coltitle">Adding HQ</h3>
+                    <p class="footer-text">2nd Floor - 25T2 Hoang Dao Thuy, Cau Giay, Hanoi</p>
+                    <h3 class="footer-coltitle">Call us</h3>
+                    <p class="footer-text">+84 96 224 8585</p>
+                </div>
+
+                <div class="col-sm-2 col-xs-6">
+                    <ul>
+
+                        <li><a href="about-us.html">About Us</a>
+                        </li>
+
+                        <li><a href="booking/step-one.html">Book a Room</a>
+                        </li>
+
+                        <li><a href="event.html">Events</a>
+                        </li>
+
+                        <li><a href="career.html">Job Opportunities</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <ul>
+
+                        <li><a href="frequently-asked-questions.html">FAQ</a>
+                        </li>
+
+                        <li><a href="general-policy.html">General Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2 col-xs-12">
+                    <p class="footer-text">We are also on</p>
+                    <ul class="footer-social-list">
+                        <li><a href="https://www.facebook.com/toongcoworking" target="_blank"><span
+                                class="ti-facebook"></span></a></li>
+                        <li><a href="https://instagram.com/toongcoworking/" target="_blank"><span
+                                class="ti-instagram t-icon-instagram"></span></a></li>
+                        <li><a href="https://vn.linkedin.com/pub/toong-coworking/bb/b3a/460" target="_blank"><span
+                                class="ti-linkedin"></span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="t-footer-bottom text-center">
+        <div class="container">
+            <p class="copyright-text">&copy; Copyright Toong. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<div class="t-popup popup-chuaxong" style="display: none;">
+    <div class="overlay"></div>
+    <div class="popup-container">
+        <div class="container">
+            <div class="row">
+                <p class="blankpage-text text-center" style="color:white">We are updating</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxyf2J_wyAgI1ilJ5hMb4XSAssXKtoE-U">
+</script>
+
+<script type="text/javascript" src="assets/js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.form.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.superscrollorama.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fancybox-media.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="assets/js/menu.js"></script>
+<script type="text/javascript" src="assets/js/subscribe.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="assets/js/pages/contact.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.contact.init();
+        function initialize() {
+
+            var windowW = $(window).width();
+            var styleArray = [
+                {
+                    "featureType": "all",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#4d3f40"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "weight": "0.01"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        },
+                        {
+                            "color": "#20505f"
+                        },
+                        {
+                            "weight": 2
+                        },
+                        {
+                            "gamma": 0.84
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "weight": 0.6
+                        },
+                        {
+                            "color": "#4d3f40"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "weight": "0.01"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#4d3f40"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "weight": "0.01"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#4d3f40"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "lightness": "-20"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "weight": "0.01"
+                        },
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.attraction",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.attraction",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "lightness": "0"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#4d3f40"
+                        },
+                        {
+                            "weight": "3.00"
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#4d3f40"
+                        },
+                        {
+                            "lightness": "20"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "weight": "0.01"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "lightness": "-10"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "lightness": "-5"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "lightness": "0"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "lightness": "-15"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "lightness": "-10"
+                        },
+                        {
+                            "gamma": "1.00"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#4d3f40"
+                        },
+                        {
+                            "lightness": "-10"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "color": "#ff0000"
+                        },
+                        {
+                            "weight": "0.01"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#4d3f40"
+                        },
+                        {
+                            "lightness": "39"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "weight": "0.01"
+                        }
+                    ]
+                }
+            ]
+
+            var myCenter = new google.maps.LatLng(21.028128, 105.847046);
+            if (windowW <= 768) {
+                myCenter = new google.maps.LatLng(21.028557, 105.850253);
+                console.log(windowW);
+            }
+            ;
+
+            var mapOptions = {
+                scrollwheel: false,
+                center: myCenter,
+                zoom: 17,
+                styles: styleArray,
+                zoomControl: false,
+                panControl: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                streetViewControl: false,
+                overviewMapControl: false
+            };
+            var map = new google.maps.Map(document.getElementById('toong-gmap'),
+                mapOptions);
+
+            var image = 'fo/themes/default/images/toong-onmap.svg';
+            var myLatLng = new google.maps.LatLng(21.026752, 105.849193);
+            var beachMarker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                icon: image
+            });
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    });
+</script>
+</body>
+
+<!-- Mirrored from toong.com.vn/contact-us by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Aug 2017 16:32:50 GMT -->
+</html> 

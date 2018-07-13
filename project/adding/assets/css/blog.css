@@ -1,0 +1,101 @@
+
+/*baner*/
+
+.home-hero-slide{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.home-bottom{
+    width: 70%;
+    height: 160px;
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    padding: 10px 30px 0 30px;
+    opacity: 1;
+}
+.home-bottom h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+/*end baner*/
+
+/*posts*/
+.posts{
+    padding: 30px;
+}
+.posts span{
+    display: block;
+    font-style: italic;
+}
+a.tit{
+    color: #61312d;
+    font-size: 20px;
+    margin: 20px auto;
+    font-weight: bold;
+    display: block;
+}
+.posts p{
+    line-height: 20px;
+}
+.posts img{
+    width: 100%;
+    height: auto;
+}
+/*posts*/
+
+
+/* icon -fa */
+
+
+/* end icon-fa */
+
+
+/*submit*/
+.submit{
+    height: 355px;
+    position: relative;
+}
+.b-submit{
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+    text-align: center;
+    color: white;
+}
+
+.email-sub{
+    width: 380px;
+    background: none;
+    border: 2px solid white;
+    padding: 4px;
+}
+.but-sub{
+    border: none;
+    background: #a66054;
+    padding: 6px;
+    width: 100px;
+}
+/*end submit*/
+/*suggest*/
+.suggest-box{
+    padding: 30px;
+    height: 650px;
+    position: relative;
+}
+.suggest-box img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+p.author{
+    font-style: italic;
+}
+.suggest-next{
+    position: absolute;
+    bottom: 0;
+}
+/*end suggest*/

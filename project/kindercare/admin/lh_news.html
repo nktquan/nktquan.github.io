@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+	<!-- Favicon-->
+	<link rel="icon" href="css/favicon.ico" type="image/x-icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap Core Css -->
+	<link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Waves Effect Css -->
+	<link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+	<!-- Animation Css -->
+	<link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+	<!-- Bootstrap Select Css -->
+	<link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+	<!-- Bootstrap Material Datetime Picker Css -->
+	<link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+	<!-- Custom Css -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Custom _ 2 Css -->
+	<link href="css/css_admin.css" rel="stylesheet" />
+
+	<!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+	<link href="css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+	<!-- Page Loader -->
+	<div class="page-loader-wrapper">
+		<div class="loader">
+			<div class="preloader">
+				<div class="spinner-layer pl-red">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+			<p>Please wait...</p>
+		</div>
+	</div>
+	<!-- #END# Page Loader -->
+	<!-- Overlay For Sidebars -->
+	<div class="overlay"></div>
+	<!-- #END# Overlay For Sidebars -->
+	<!-- Search Bar -->
+	<div class="search-bar">
+		<div class="search-icon">
+			<i class="material-icons">search</i>
+		</div>
+		<input type="text" placeholder="START TYPING...">
+		<div class="close-search">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+	<!-- #END# Search Bar -->
+	<!-- Top Bar -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+				<a href="javascript:void(0);" class="bars"></a>
+				<a href="index.html">
+					<img src="images/logo.png" />
+				</a>
+			</div>
+			<div class="header_search search_main">
+				<form action="">
+					<div class="form-group form-float">
+						<div class="frm_search">
+							<input type="text" class="form-control" id="search" name="search" placeholder="Nhập tên, ID, hoặc số điện thoại để tìm kiếm">
+							<div class="icon_search">
+								<i class="material-icons">search</i>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="collapse navbar-collapse header_right" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><button type="button" class="btn waves-effect btn_add_file">Tạo hồ sơ mới</button></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- #Top Bar -->
+	<section>
+		<!-- Left Sidebar -->
+		<aside id="leftsidebar" class="sidebar">
+			<!-- Menu -->
+			<div class="menu">
+				<ul class="list">
+					<li class="active first_li">
+						<a href="dashboard.html">
+							<img src="images/dashboard.png" width="28" height="23">
+							<span>TRANG CHỦ</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="menu-toggle">
+							<img src="images/ql_lich_hen.png" width="26" height="24">
+							<span>QUẢN LÝ LỊCH HẸN</span>
+						</a>
+						<ul class="ml-menu">
+							<li>
+								<a href="javascript:void(0);">
+									<span>Lịch hẹn mới</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lý lịch phòng khám</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Lịch sử đặt hẹn</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="customer.html">
+							<img src="images/ql_customer.png" width="28" height="24">
+							<span>QUẢN LÝ KHÁCH HÀNG</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="menu-toggle">
+							<img src="images/ql_nv.png" width="23" height="23">
+							<span>QUẢN LÍ NHÂN SỰ</span>
+						</a>
+						<ul class="ml-menu">
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lý bác sĩ</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lí nhân viên</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- #Menu -->
+			<!-- Footer -->
+			<div class="legal">
+				<div class="row clearfix">
+					<div class="col-sm-6 image">
+						<img src="images/user.png" width="24" height="24" alt="User" />
+						<span><b>Admin</b></span>
+					</div>
+					<div class="col-sm-6 logout">
+						<span><b>Đăng xuất</b></span>
+						<i class="material-icons">power_settings_new</i>
+					</div>
+				</div>
+			</div>
+			<!-- #Footer -->
+		</aside>
+		<!-- #END# Left Sidebar -->
+
+	</section>
+
+	<section class="content" id="lh_news">
+		<div class="container-fluid">
+			<div class="row clearfix">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="block-header">
+							<h2><b>Lịch sử đặt hẹn</b></h2>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="demo-masked-input">
+							<div class="input-group">
+								<div class="col-md-6 m-b-10">
+									<input type="text" class="datepicker form-control" placeholder="Từ ngày...">
+								</div>
+								<div class="col-md-6 m-b-10">
+									<input type="text" class="datepicker form-control" placeholder="Đến ngày...">
+								</div>
+								<span class="input-group-addon">
+									<i class="material-icons">date_range</i>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="form-group form-float ql_customer_search">
+							<div class="frm_search">
+								<input type="text" class="form-control" id="search" name="search" placeholder="Tìm kiếm lịch hẹn">
+								<div class="icon_search">
+									<i class="material-icons">search</i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- CPU Usage -->
+			<div class="row clearfix">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="search_main">
+						<div class="body">
+							<!-- Basic Table -->
+							<div class="box_search_value">
+								<div class="row clearfix">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="body">
+											<div class="card">
+												<div class="card_top">
+													<div class="row clearfix">
+														<div class="col-md-1">
+															<div class="tag_id">12/08/2017</div>
+														</div>
+														<div class="col-md-8 col-sm-8 col-xs-12">
+															<div class="row clearfix">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<div class="col-md-5 col-sm-5 col-xs-5">
+																		<div class="file_text">Phòng khám:</div>
+																		<div class="file_text">Ngày hẹn:</div>
+																		<div class="file_text">Thời gian:</div>
+																	</div>
+																	<div class="col-md-7 col-sm-7 col-xs-7">
+																		<div class="font-bold file_text">Trung tâm y tế dự phòng Lò Đúc</div>
+																		<div class="font-bold file_text">Thứ tư, ngày 12/08/2017</div>
+																		<div class="font-bold file_text">Buổi chiều, từ 13:30 đến 16:00</div>
+																	</div>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<div class="col-md-5 col-sm-5 col-xs-5">
+																		<div class="file_text">Tên bố/mẹ:</div>
+																		<div class="file_text">Số điện thoại:</div>
+																		<div class="file_text">Email:</div>
+																	</div>
+																	<div class="col-md-7 col-sm-7 col-xs-7">
+																		<div class="font-bold file_text">Nguyễn Văn A</div>
+																		<div class="font-bold file_text">0963453437</div>
+																		<div class="font-bold file_text">vana@gmail.com</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row clearfix">
+																<div class="group_control demo-masked-input">
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<select class="form-control show-tick">
+																			<option>Chọn bác sĩ phụ trách</option>
+																			<option>Bs. Nguyễn Văn A</option>
+																			<option>Bs. Nguyễn Văn B</option>
+																			<option>Bs. Nguyễn Văn C</option>
+																		</select>
+																	</div>
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<div class="input-group">
+																			<input type="text" class="datepicker form-control" placeholder="Chọn ngày...">
+																			<span class="input-group-addon">
+																				<i class="material-icons">date_range</i>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<div class="input-group">
+																			<div class="input-group">
+																				<input type="text" class="form-control timepicker" placeholder="Chọn thời gian">
+																				<span class="input-group-addon">
+																					<i class="material-icons">access_time</i>
+																				</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-sm-3 col-xs-12 align-center m-t-10">
+															<button type="button" class="btn waves-effect btn_edit_file">Xác nhận lịch hẹn</button>
+															<div class="delete_hen m-t-10"><a href="#">Huỷ lịch hẹn</a></div>
+														</div>
+													</div>
+												</div>
+												<div class="card_top">
+													<div class="row clearfix">
+														<div class="col-md-1">
+															<div class="tag_id">12/08/2017</div>
+														</div>
+														<div class="col-md-8 col-sm-8 col-xs-12">
+															<div class="row clearfix">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<div class="col-md-5 col-sm-5 col-xs-5">
+																		<div class="file_text">Phòng khám:</div>
+																		<div class="file_text">Ngày hẹn:</div>
+																		<div class="file_text">Thời gian:</div>
+																	</div>
+																	<div class="col-md-7 col-sm-7 col-xs-7">
+																		<div class="font-bold file_text">Trung tâm y tế dự phòng Lò Đúc</div>
+																		<div class="font-bold file_text">Thứ tư, ngày 12/08/2017</div>
+																		<div class="font-bold file_text">Buổi chiều, từ 13:30 đến 16:00</div>
+																	</div>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<div class="col-md-5 col-sm-5 col-xs-5">
+																		<div class="file_text">Tên bố/mẹ:</div>
+																		<div class="file_text">Số điện thoại:</div>
+																		<div class="file_text">Email:</div>
+																	</div>
+																	<div class="col-md-7 col-sm-7 col-xs-7">
+																		<div class="font-bold file_text">Nguyễn Văn A</div>
+																		<div class="font-bold file_text">0963453437</div>
+																		<div class="font-bold file_text">vana@gmail.com</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row clearfix">
+																<div class="group_control demo-masked-input">
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<select class="form-control show-tick">
+																			<option>Chọn bác sĩ phụ trách</option>
+																			<option>Bs. Nguyễn Văn A</option>
+																			<option>Bs. Nguyễn Văn B</option>
+																			<option>Bs. Nguyễn Văn C</option>
+																		</select>
+																	</div>
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<div class="input-group">
+																			<input type="text" class="datepicker form-control" placeholder="Chọn ngày...">
+																			<span class="input-group-addon">
+																				<i class="material-icons">date_range</i>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<div class="input-group">
+																			<div class="input-group">
+																				<input type="text" class="form-control timepicker" placeholder="Chọn thời gian">
+																				<span class="input-group-addon">
+																					<i class="material-icons">access_time</i>
+																				</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-sm-3 col-xs-12 align-center m-t-10">
+															<button type="button" class="btn waves-effect btn_edit_file">Xác nhận lịch hẹn</button>
+															<div class="delete_hen m-t-10"><a href="#">Huỷ lịch hẹn</a></div>
+														</div>
+													</div>
+												</div>
+												<div class="card_top">
+													<div class="row clearfix">
+														<div class="col-md-1">
+															<div class="tag_id">12/08/2017</div>
+														</div>
+														<div class="col-md-8 col-sm-8 col-xs-12">
+															<div class="row clearfix">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<div class="col-md-5 col-sm-5 col-xs-5">
+																		<div class="file_text">Phòng khám:</div>
+																		<div class="file_text">Ngày hẹn:</div>
+																		<div class="file_text">Thời gian:</div>
+																	</div>
+																	<div class="col-md-7 col-sm-7 col-xs-7">
+																		<div class="font-bold file_text">Trung tâm y tế dự phòng Lò Đúc</div>
+																		<div class="font-bold file_text">Thứ tư, ngày 12/08/2017</div>
+																		<div class="font-bold file_text">Buổi chiều, từ 13:30 đến 16:00</div>
+																	</div>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<div class="col-md-5 col-sm-5 col-xs-5">
+																		<div class="file_text">Tên bố/mẹ:</div>
+																		<div class="file_text">Số điện thoại:</div>
+																		<div class="file_text">Email:</div>
+																	</div>
+																	<div class="col-md-7 col-sm-7 col-xs-7">
+																		<div class="font-bold file_text">Nguyễn Văn A</div>
+																		<div class="font-bold file_text">0963453437</div>
+																		<div class="font-bold file_text">vana@gmail.com</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row clearfix">
+																<div class="group_control demo-masked-input">
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<select class="form-control show-tick">
+																			<option>Chọn bác sĩ phụ trách</option>
+																			<option>Bs. Nguyễn Văn A</option>
+																			<option>Bs. Nguyễn Văn B</option>
+																			<option>Bs. Nguyễn Văn C</option>
+																		</select>
+																	</div>
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<div class="input-group">
+																			<input type="text" class="datepicker form-control" placeholder="Chọn ngày...">
+																			<span class="input-group-addon">
+																				<i class="material-icons">date_range</i>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<div class="input-group">
+																			<div class="input-group">
+																				<input type="text" class="form-control timepicker" placeholder="Chọn thời gian">
+																				<span class="input-group-addon">
+																					<i class="material-icons">access_time</i>
+																				</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-sm-3 col-xs-12 align-center m-t-10">
+															<button type="button" class="btn waves-effect btn_edit_file">Xác nhận lịch hẹn</button>
+															<div class="delete_hen m-t-10"><a href="#">Huỷ lịch hẹn</a></div>
+														</div>
+													</div>
+												</div>
+												<div class="card_top">
+													<div class="row clearfix">
+														<div class="col-md-1">
+															<div class="tag_id">12/08/2017</div>
+														</div>
+														<div class="col-md-8 col-sm-8 col-xs-12">
+															<div class="row clearfix">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<div class="col-md-5 col-sm-5 col-xs-5">
+																		<div class="file_text">Phòng khám:</div>
+																		<div class="file_text">Ngày hẹn:</div>
+																		<div class="file_text">Thời gian:</div>
+																	</div>
+																	<div class="col-md-7 col-sm-7 col-xs-7">
+																		<div class="font-bold file_text">Trung tâm y tế dự phòng Lò Đúc</div>
+																		<div class="font-bold file_text">Thứ tư, ngày 12/08/2017</div>
+																		<div class="font-bold file_text">Buổi chiều, từ 13:30 đến 16:00</div>
+																	</div>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<div class="col-md-5 col-sm-5 col-xs-5">
+																		<div class="file_text">Tên bố/mẹ:</div>
+																		<div class="file_text">Số điện thoại:</div>
+																		<div class="file_text">Email:</div>
+																	</div>
+																	<div class="col-md-7 col-sm-7 col-xs-7">
+																		<div class="font-bold file_text">Nguyễn Văn A</div>
+																		<div class="font-bold file_text">0963453437</div>
+																		<div class="font-bold file_text">vana@gmail.com</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row clearfix">
+																<div class="group_control demo-masked-input">
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<select class="form-control show-tick">
+																			<option>Chọn bác sĩ phụ trách</option>
+																			<option>Bs. Nguyễn Văn A</option>
+																			<option>Bs. Nguyễn Văn B</option>
+																			<option>Bs. Nguyễn Văn C</option>
+																		</select>
+																	</div>
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<div class="input-group">
+																			<input type="text" class="datepicker form-control" placeholder="Chọn ngày...">
+																			<span class="input-group-addon">
+																				<i class="material-icons">date_range</i>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="col-md-4 col-sm-4 col-xs-12 m-b-10">
+																		<div class="input-group">
+																			<div class="input-group">
+																				<input type="text" class="form-control timepicker" placeholder="Chọn thời gian">
+																				<span class="input-group-addon">
+																					<i class="material-icons">access_time</i>
+																				</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 col-sm-3 col-xs-12 align-center m-t-10">
+															<button type="button" class="btn waves-effect btn_edit_file">Xác nhận lịch hẹn</button>
+															<div class="delete_hen m-t-10"><a href="#">Huỷ lịch hẹn</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- #END# Basic Table -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #END# CPU Usage -->
+		</div>
+	</div>
+</section>
+
+<!-- Jquery Core Js -->
+<script src="plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="plugins/node-waves/waves.js"></script>
+
+<!-- Jquery CountTo Plugin Js -->
+<script src="plugins/jquery-countto/jquery.countTo.js"></script>
+
+<!-- Morris Plugin Js -->
+<script src="plugins/raphael/raphael.min.js"></script>
+
+<!-- Moment Plugin Js -->
+<script src="plugins/momentjs/moment.js"></script>
+
+<!-- Bootstrap Material Datetime Picker Plugin Js -->
+<script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+<!-- Input Mask Plugin Js -->
+<script src="plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+<!-- Jquery Validation Plugin Css -->
+<script src="plugins/jquery-validation/jquery.validate.js"></script>
+<!-- Custom Js -->
+<script src="js/admin.js"></script>
+<script src="js/pages/forms/advanced-form-elements.js"></script>
+<script src="js/pages/forms/basic-form-elements.js"></script>
+
+<!-- Demo Js -->
+<script src="js/demo.js"></script>
+</body>
+</body>
+
+</html>

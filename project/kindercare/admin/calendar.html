@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+	<!-- Favicon-->
+	<link rel="icon" href="css/favicon.ico" type="image/x-icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap Core Css -->
+	<link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Waves Effect Css -->
+	<link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+	<!-- Animation Css -->
+	<link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+	<!-- FullCalendar -->
+	<link href="plugins/calendar/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+	<link href="plugins/calendar/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+
+	<!-- Custom Css -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Custom _ 2 Css -->
+	<link href="css/css_admin.css" rel="stylesheet" />
+
+	<!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+	<link href="css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+	<!-- Page Loader -->
+	<div class="page-loader-wrapper">
+		<div class="loader">
+			<div class="preloader">
+				<div class="spinner-layer pl-red">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+			<p>Please wait...</p>
+		</div>
+	</div>
+	<!-- #END# Page Loader -->
+	<!-- Overlay For Sidebars -->
+	<div class="overlay"></div>
+	<!-- #END# Overlay For Sidebars -->
+	<!-- Search Bar -->
+	<div class="search-bar">
+		<div class="search-icon">
+			<i class="material-icons">search</i>
+		</div>
+		<input type="text" placeholder="START TYPING...">
+		<div class="close-search">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+	<!-- #END# Search Bar -->
+	<!-- Top Bar -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+				<a href="javascript:void(0);" class="bars"></a>
+				<a href="index.html">
+					<img src="images/logo.png" />
+				</a>
+			</div>
+			<div class="header_search search_main">
+				<form action="">
+					<div class="form-group form-float">
+						<div class="frm_search">
+							<input type="text" class="form-control" id="search" name="search" placeholder="Nhập tên, ID, hoặc số điện thoại để tìm kiếm">
+							<div class="icon_search">
+								<i class="material-icons">search</i>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="collapse navbar-collapse header_right" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><button type="button" class="btn waves-effect btn_add_file">Tạo hồ sơ mới</button></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- #Top Bar -->
+	<section>
+		<!-- Left Sidebar -->
+		<aside id="leftsidebar" class="sidebar">
+			<!-- Menu -->
+			<div class="menu">
+				<ul class="list">
+					<li class="active first_li">
+						<a href="dashboard.html">
+							<img src="images/dashboard.png" width="28" height="23">
+							<span>TRANG CHỦ</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="menu-toggle">
+							<img src="images/ql_lich_hen.png" width="26" height="24">
+							<span>QUẢN LÝ LỊCH HẸN</span>
+						</a>
+						<ul class="ml-menu">
+							<li>
+								<a href="javascript:void(0);">
+									<span>Lịch hẹn mới</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lý lịch phòng khám</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Lịch sử đặt hẹn</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="customer.html">
+							<img src="images/ql_customer.png" width="28" height="24">
+							<span>QUẢN LÝ KHÁCH HÀNG</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="menu-toggle">
+							<img src="images/ql_nv.png" width="23" height="23">
+							<span>QUẢN LÍ NHÂN SỰ</span>
+						</a>
+						<ul class="ml-menu">
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lý bác sĩ</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>Quản lí nhân viên</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- #Menu -->
+			<!-- Footer -->
+			<div class="legal">
+				<div class="row clearfix">
+					<div class="col-sm-6 image">
+						<img src="images/user.png" width="24" height="24" alt="User" />
+						<span><b>Admin</b></span>
+					</div>
+					<div class="col-sm-6 logout">
+						<span><b>Đăng xuất</b></span>
+						<i class="material-icons">power_settings_new</i>
+					</div>
+				</div>
+			</div>
+			<!-- #Footer -->
+		</aside>
+		<!-- #END# Left Sidebar -->
+
+	</section>
+
+	<section class="content" id="calendar_main">
+		<div class="container-fluid">
+			<div class="row clearfix">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="block-header">
+							<h2><b>Quản lý lịch phòng khám</b></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- CPU Usage -->
+			<div class="row clearfix">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="body">
+						<div id='calendar'></div>
+					</div>
+				</div>
+			</div>
+			<!-- #END# CPU Usage -->
+		</div>
+	</div>
+</section>
+
+<div id="CalenderModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Thêm sự kiện</h4>
+			</div>
+			<div class="modal-body">
+				<div id="testmodal" style="padding: 5px 20px;">
+					<form id="antoform" class="form-horizontal calender" role="form">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Tiêu đề</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control m-b-10" id="title" name="title">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Mô tả</label>
+							<div class="col-sm-9">
+								<textarea class="form-control" style="height:55px;" id="descr" name="descr"></textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary antosubmit">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="CalenderModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel2">Sửa sự kiện</h4>
+			</div>
+			<div class="modal-body">
+
+				<div id="testmodal2" style="padding: 5px 20px;">
+					<form id="antoform2" class="form-horizontal calender" role="form">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Tiêu đề</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control m-b-10" id="title2" name="title2">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Mô tả</label>
+							<div class="col-sm-9">
+								<textarea class="form-control" style="height:55px;" id="descr2" name="descr"></textarea>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary antosubmit2">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
+<div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
+<!-- /calendar modal -->
+
+<!-- Jquery Core Js -->
+<script src="plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- FullCalendar -->
+<script src="plugins/calendar/moment/min/moment.min.js"></script>
+<script src="plugins/calendar/fullcalendar/dist/fullcalendar.js"></script>
+<script src="plugins/calendar/moment/min/locales.js"></script>
+<script type="text/javascript">
+	/* CALENDAR */
+
+	function  init_calendar() {
+
+		if( typeof ($.fn.fullCalendar) === 'undefined'){ return; }
+
+		var date = new Date(),
+		d = date.getDate(),
+		m = date.getMonth(),
+		y = date.getFullYear(),
+		started,
+		categoryClass;
+
+		var calendar = $('#calendar').fullCalendar({
+			header: {
+				left: 'month,agendaWeek',
+				center: 'prev, title, next',
+				right: ''
+			},
+			locale: 'vi',
+			selectable: true,
+			selectHelper: true,
+			displayEventTime: false,
+			select: function(start, end, allDay) {
+				$('#fc_create').click();
+
+				started = start;
+				ended = end;
+
+				$(".antosubmit").on("click", function() {
+					var title = $("#title").val();
+					if (end) {
+						ended = end;
+					}
+
+					categoryClass = $("#event_type").val();
+
+					if (title) {
+						calendar.fullCalendar('renderEvent', {
+							title: title,
+							start: started,
+							end: end,
+							allDay: allDay
+						},
+						  true // make the event "stick"
+						  );
+					}
+
+					$('#title').val('');
+
+					calendar.fullCalendar('unselect');
+
+					$('.antoclose').click();
+
+					return false;
+				});
+			},
+			eventClick: function(calEvent, jsEvent, view) {
+				$('#fc_edit').click();
+				$('#title2').val(calEvent.title);
+
+				categoryClass = $("#event_type").val();
+
+				$(".antosubmit2").on("click", function() {
+					calEvent.title = $("#title2").val();
+
+					calendar.fullCalendar('updateEvent', calEvent);
+					$('.antoclose2').click();
+				});
+
+				calendar.fullCalendar('unselect');
+			},
+			editable: true,
+			events: [{
+				title: '2 lịch khám',
+				start: new Date(y, m, 1)
+			}, {
+				title: '5 lịch khám',
+				start: new Date(y, m, d, 10, 30),
+				allDay: false
+			}, {
+				title: '2 lịch khám',
+				start: new Date(y, m, d + 14, 12, 0),
+				end: new Date(y, m, d, 14, 0),
+				allDay: false
+			}, {
+				title: '5 lịch khám',
+				start: new Date(y, m, d + 1, 19, 0),
+				end: new Date(y, m, d + 1, 22, 30),
+				allDay: false
+			}, {
+				title: '3 lịch khám',
+				start: new Date(y, m, 28),
+				end: new Date(y, m, 29),
+				url: 'http://google.com/'
+			}]
+		});
+
+	};
+	init_calendar();
+</script>
+<!-- Waves Effect Plugin Js -->
+<script src="plugins/node-waves/waves.js"></script>
+
+<!-- Custom Js -->
+<script src="js/admin.js"></script>
+</body>
+
+</html>

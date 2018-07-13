@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="75px" height="76px" viewBox="0 0 75 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="About" sketch:type="MSArtboardGroup" transform="translate(-887.000000, -1035.000000)" stroke="#000000" stroke-linejoin="round">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(480.000000, 1027.000000)">
+                <g transform="translate(408.000000, 9.000000)" sketch:type="MSShapeGroup">
+                    <path d="M58.796996,42 L61.7779971,22.3278462 C62.6251619,16.7418462 61.0231923,11.0589231 57.3924859,6.76523077 C53.7617795,2.46830769 48.465407,0 42.8887693,0 L30.1080458,0 C24.534593,0 19.2382205,2.46830769 15.6075141,6.76523077 C11.9768077,11.0589231 10.3748381,16.7418462 11.2220029,22.3278462 L14.2093736,42" id="Stroke-31" stroke-linecap="round"></path>
+                    <path d="M18,71 L18,74" id="Stroke-33" stroke-linecap="round"></path>
+                    <path d="M53,71 L53,74" id="Stroke-35" stroke-linecap="round"></path>
+                    <path d="M66.6521739,39 C60.5106522,39 55.5434783,44.0144 55.5434783,50.2 L55.5434783,55 C55.5434783,55 50.7826087,51.8 36.5,51.8 C22.2173913,51.8 17.4565217,55 17.4565217,55 L17.4565217,50.2 C17.4565217,44.0144 12.4798261,39 6.34782609,39 C2.84065217,39 0,41.864 0,45.4 C0,48.0624 1.60917391,50.3504 3.90391304,51.3136 C5.37978261,51.928 6.34782609,53.3872 6.34782609,55 L6.34782609,61.4 C6.34782609,66.7024 10.6072174,71 15.8695652,71 L57.1304348,71 C62.3832609,71 66.6521739,66.7024 66.6521739,61.4 L66.6521739,55 C66.6521739,53.3872 67.6106957,51.928 69.0897391,51.3136 C71.3813043,50.3504 73,48.0624 73,45.4 C73,41.864 70.1593478,39 66.6521739,39 L66.6521739,39 Z" id="Stroke-37"></path>
+                    <path d="M46,30 L41,27 L46,24" id="Stroke-39" stroke-linecap="round"></path>
+                    <path d="M27,30 L32,27 L27,24" id="Stroke-41" stroke-linecap="round"></path>
+                    <path d="M42,28 C42,30.7566667 39.7566667,33 37,33 C34.2366667,33 32,30.7566667 32,28 C32,25.24 34.2366667,23 37,23 C39.7566667,23 42,25.24 42,28 L42,28 Z" id="Stroke-43" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

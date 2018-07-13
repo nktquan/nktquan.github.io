@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="vi">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<title>Kinder Care | Bé khỏe mạnh, mẹ vui vẻ</title>
+
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/css_main.css" type="text/css" rel="stylesheet" />
+    <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+    <!-- FullCalendar -->
+	<link href="../js/calendar/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+	<link href="../js/calendar/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <nav class="navbar navbar-default">
+          <div class="container">
+          	<div class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <div class="nav navbar-nav navbar-right user_7_nav">                  
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!--<div class="nav-img"><img src="images/tick.png" /></div>--> Nguyễn văn A <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  </div>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+          </div>
+        </nav>
+    </div>
+    <div class="container-fluid" id="tab_user_ts">
+    	<div class="row" id="user_5">
+        	<div class="container">
+            	<div class="row">
+                  <ul class="nav nav-tabs">
+                    <li class="col-md-3 col-sm-3 col-xs-12 active"><a data-toggle="tab" href="#home"><img src="" />Kế hoạch khám</a></li>
+                    <li class="col-md-3 col-sm-3 col-xs-6"><a data-toggle="tab" href="#menu1"><img src="images/fill-1.png" /> Hồ sơ</a></li>
+                    <li class="col-md-3 col-sm-3 col-xs-6"><a data-toggle="tab" href="#menu2"><img src="images/fill-1.png"  /> Cài đặt</a></li>
+                    <li class="col-md-3 col-sm-3 col-xs-12"><a data-toggle="tab" href="#menu3">Tổng đài: 0241.000.000</a></li>
+                  </ul>
+                
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                      <h3>Danh sách lịch sử khám của bạn</h3>
+                      <div class="pull-right">
+                      	<form>
+                        	<input type="date" />
+                        	<button type="submit">Tìm kiếm lịch khám</button>
+                        </form>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="container">
+                      	<div class="row">
+                        	<div class="col-md-12">
+                            	<div class="row">
+                                    <div class="col-md-12">
+                                    	<h4>Lịch khám gần nhất</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <h5>30/7</h5>
+                                    <p>2017</p>
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-xs-12">
+                                	<p><span>Phòng khám:</span> Trung tâm y tế dự phòng Lò Đúc</p>
+                                	<p><span>Ngày hẹn:</span> 01/07.2017</p>
+                                	<p><span>Thời gian:</span> Buổi chiều từ 1:00 đến 22:00</p>
+                                	<p><span>Họ và tên:</span> Nguyễn Văn A</p>
+                                	<p><span>Số điện thoại:</span> 098789878</p>
+                                	<p><span>Email:</span> quitc.02756@gmail.com</p>
+                                	<p><span>Trạng thái:</span> <div class="status_red">Đang chờ xác nhận</div></p>
+                                    <p><a href="">Thay đổi lịch khám</a></p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.2390488887563!2d105.80476031450458!3d21.02311898600137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab67e0113a89%3A0x203d4b35deb0c684!2zODUgQ2jDuWEgTMOhbmcsIEzDoW5nIFRoxrDhu6NuZywgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1504894593746" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                                <div class="col-md-12">
+                                	<h4>Lịch khám hiện tại</h4>
+                                    <p class="stt_red">Click 2 lần ngày bạn muốn đặt lịch hẹn để tạo ngày hẹn mới</p>
+                                </div>
+                                <div class="col-md-12" style="margin-top:30px;">
+                                	<div id='calendar'></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                      <div class="col-md-12">
+                        	<p>
+                            	<div class="stick_2">#1982</div> 
+                                <div class="stick_2_1"><b>Thông tin của bạn</b></div>
+                                <div class="clearfix"></div>
+                            </p>
+                            <div class="clearfix"></div>
+                            <div class="row">
+                            	<div class="col-md-4 col-sm-4 col-xs-12">
+                                	<p><span>Họ tên bố/mẹ:</span> <b>Nguyễn văn A</b></p>
+                                	<p><span>Số điện thoại:</span> <b>0976787678</b></p>
+                                </div>
+                            	<div class="col-md-4 col-sm-4 col-xs-12">
+                                	<p><span>Email:</span> <b>quitc@gmail.com</b></p>
+                                	<p><span>Địa chỉ:</span> <b>144 Đội Cấn</b></p>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="col-md-12">
+                      	<div class="row">
+                        <h4>Hồ sơ thông tin của bé</h4>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <p><b>Bé Nguyễn văn B</b></p>
+                            <p><span>Sinh ngày:</span> <b>12.03.1221</b></p>
+                            <p><span>Giới tính:</span> <b>Nam</b></p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <p><span>Cân nặng:</span> <b>12kg</b></p>
+                            <p><span>Chiều cao:</span> <b>80cm</b></p>
+                            <p><span>nhóm máu:</span> <b>O</b></p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <p><span>Số lần khám:</span> <b>4</b></p>
+                            <p><span>Lần khám gần nhất:</span> <b>12/07/2017:</b></p>
+                            <p><span>Lịch hẹn khám:</span> <b>Không có</b></p>
+                        </div>
+                        <div class="col-md-12 text-center">
+                        	<button>Xem lịch liêm phong kỳ định</button>
+                        	<button>Đặt lịch khám</button>
+                        	<button>Lịch sủ khám</button>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <form>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <h5>Thiết lập nhận thông báo</h5>
+                                        <p><input type="checkbox" /> Nhận SMS thông báo khi đến ngày hẹn khám</p>
+                                        <p><input type="checkbox" /> Nhắc trước lịch hẹn 1 ngày</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    	<h5>Đổi mật khẩu</h5>
+                                        <p><input type="password" placeholder="Mật khẩu hiện tại" /></p>
+                                        <p><input type="password" placeholder="Mật khẩu mới" /></p>
+                                        <p><input type="password" placeholder="Nhập lại mật khẩu mới" /></p>
+                                        <p><button type="submit">Lưu thông tin</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                      <h3>Menu 3</h3>
+                      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                  </div>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!-- calendar modal -->
+    <div id="CalenderModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Thêm sự kiện</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="testmodal" style="padding: 5px 20px;">
+                        <form id="antoform" class="form-horizontal calender" role="form">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Tiêu đề</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control m-b-10" id="title" name="title">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Mô tả</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" style="height:55px;" id="descr" name="descr"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary antosubmit">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="CalenderModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel2">Sửa sự kiện</h4>
+                </div>
+                <div class="modal-body">
+    
+                    <div id="testmodal2" style="padding: 5px 20px;">
+                        <form id="antoform2" class="form-horizontal calender" role="form">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Tiêu đề</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control m-b-10" id="title2" name="title2">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Mô tả</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" style="height:55px;" id="descr2" name="descr"></textarea>
+                                </div>
+                            </div>
+    
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary antosubmit2">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
+    <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
+    <!-- /calendar modal -->
+    <!-- FullCalendar -->
+	<script src="../js/calendar/moment/min/moment.min.js"></script>
+    <script src="../js/calendar/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="../js/calendar/moment/min/locales.js"></script>
+    <script type="text/javascript">
+        /* CALENDAR */
+    
+        function  init_calendar() {
+    
+            if( typeof ($.fn.fullCalendar) === 'undefined'){ return; }
+    
+            var date = new Date(),
+            d = date.getDate(),
+            m = date.getMonth(),
+            y = date.getFullYear(),
+            started,
+            categoryClass;
+    
+            var calendar = $('#calendar').fullCalendar({
+                header: {
+                    left: 'month,agendaWeek',
+                    center: 'prev, title, next',
+                    right: ''
+                },
+                locale: 'vi',
+                selectable: true,
+                selectHelper: true,
+                displayEventTime: false,
+                select: function(start, end, allDay) {
+                    $('#fc_create').click();
+    
+                    started = start;
+                    ended = end;
+    
+                    $(".antosubmit").on("click", function() {
+                        var title = $("#title").val();
+                        if (end) {
+                            ended = end;
+                        }
+    
+                        categoryClass = $("#event_type").val();
+    
+                        if (title) {
+                            calendar.fullCalendar('renderEvent', {
+                                title: title,
+                                start: started,
+                                end: end,
+                                allDay: allDay
+                            },
+                              true // make the event "stick"
+                              );
+                        }
+    
+                        $('#title').val('');
+    
+                        calendar.fullCalendar('unselect');
+    
+                        $('.antoclose').click();
+    
+                        return false;
+                    });
+                },
+                eventClick: function(calEvent, jsEvent, view) {
+                    $('#fc_edit').click();
+                    $('#title2').val(calEvent.title);
+    
+                    categoryClass = $("#event_type").val();
+    
+                    $(".antosubmit2").on("click", function() {
+                        calEvent.title = $("#title2").val();
+    
+                        calendar.fullCalendar('updateEvent', calEvent);
+                        $('.antoclose2').click();
+                    });
+    
+                    calendar.fullCalendar('unselect');
+                },
+                editable: true,
+                events: [{
+                    title: '2 lịch khám',
+                    start: new Date(y, m, 1)
+                }, {
+                    title: '5 lịch khám',
+                    start: new Date(y, m, d, 10, 30),
+                    allDay: false
+                }, {
+                    title: '2 lịch khám',
+                    start: new Date(y, m, d + 14, 12, 0),
+                    end: new Date(y, m, d, 14, 0),
+                    allDay: false
+                }, {
+                    title: '5 lịch khám',
+                    start: new Date(y, m, d + 1, 19, 0),
+                    end: new Date(y, m, d + 1, 22, 30),
+                    allDay: false
+                }, {
+                    title: '3 lịch khám',
+                    start: new Date(y, m, 28),
+                    end: new Date(y, m, 29),
+                    url: 'http://google.com/'
+                }]
+            });
+    
+        };
+        $(function(){
+            init_calendar();
+        })
+    </script>
+</body>
+</html>

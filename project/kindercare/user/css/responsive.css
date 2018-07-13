@@ -1,0 +1,123 @@
+@charset "utf-8";
+@media (min-width: 1200px){
+	.container {
+		width:1140px;
+	}
+	#user_7 #menu2 >form >.col-md-12 >.row >.col-md-6 {
+		padding-left:30px;
+	}
+	#dotor_3 #user_7 #home >.col-md-4 {
+		padding-left:50px;
+	}
+	#dotor_3 #user_7 #home >.col-md-4:first-child {
+		padding-left:15px;
+	}
+}
+@media (max-width: 1199px){
+}
+@media (max-width: 1024px){
+	.form-login {
+		width:70%;
+		margin:auto;
+		float:inherit !important;
+		padding-top:1px;
+		margin-top:15px;
+	}
+}
+@media (min-width: 992px){	
+}
+@media (max-width: 991px) {
+
+}
+@media (min-width: 769px){
+}
+@media (max-width: 768px){
+	.form-login {
+		width:80%;
+		margin:auto;
+		float:inherit !important;
+		padding-top:1px;
+		margin-top:15px;
+	}
+}
+@media (min-width: 737px){
+}
+@media (max-width: 736px){
+	
+.user_7_nav {
+    margin: 7.5px 0 !important;
+}
+
+.udotor_1_nav >div {
+	float:right;
+	margin-right:15px;
+	margin-top:-20px !important;
+}
+#dotor_3 #user_7 #home >.col-md-4:first-child {
+	margin-bottom:15px;
+	text-align:center;
+}
+#dotor_3 #user_7 #home >.col-md-4 {
+	border-top:1px solid #ccc;
+	padding-top:15px;
+}
+#dotor_3 #user_7 #home >.col-md-12 >form >p >button {
+	margin-bottom:10px;
+}
+#user_5 #home{
+	text-align:center;
+}
+#user_5 #home >h3{
+	float:none;
+}
+#user_5 #home >div.pull-right >form >input{
+	margin: 15px 0;
+}
+#user_5 #home >.container >.row >.col-md-12 >.col-md-5 >p >span{
+	float:none;
+	text-align:left;
+}
+#user_5 #home >.container >.row >.col-md-12 >.col-md-5 >p >a{
+	margin:0 auto;
+}
+}
+@media (max-width: 667px){
+}
+@media (max-width: 640px){
+}
+@media (max-width: 568px){
+	.form-login {
+		margin-bottom:30px;
+	}
+}
+@media (max-width: 480px){
+}
+@media (max-width: 414px){
+	#dotor_1 >.row >.container >.row >.col-md-5 >form >p >input {
+		width:100%;
+	}
+	.form-login {
+		width:90%;
+		margin:auto;
+		float:inherit !important;
+		padding-top:1px;
+		margin-top:15px;
+		margin-bottom:30px;
+	}
+	.form-login input, .form-login select {
+		width:100%;
+	}
+	#user_2 .step_login {
+		font-size:17px;
+	}
+	#user_7 #menu2 >form >.col-md-12 >.row >.col-md-6 >p >input[type=password] {
+		width:100%;
+	}
+}
+@media (max-width: 375px){
+}
+@media (max-width: 360px){
+
+}
+@media (max-width: 320px){
+}
