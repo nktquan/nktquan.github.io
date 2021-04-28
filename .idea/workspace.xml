@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a747b9b-0d68-4dec-898c-4d109095fecc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/img/portfolio/teliobooks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/portfolio/teliozalo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/CV.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/CV.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/img/CV.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="3a747b9b-0d68-4dec-898c-4d109095fecc" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,22 +12,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="nktquan.github.io" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="130" column="37" lean-forward="true" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,11 +72,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Personal\nktquan.github.io\img\portfolio" />
       <recent name="$PROJECT_DIR$/img/portfolio" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/newtech/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -140,6 +117,7 @@
       <workItem from="1573550997816" duration="1677000" />
       <workItem from="1573615086683" duration="109000" />
       <workItem from="1615105992015" duration="2344000" />
+      <workItem from="1619594516072" duration="1868000" />
     </task>
     <servers />
   </component>
