@@ -4,7 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <title>Crypto Friendly Prediction Ecosystem</title>
+    <link rel='shortcut icon' type='image/x-icon' href='./img/favicon.ico' />
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Crypto Friendly Prediction Ecosystem &raquo; Feed" href="https://efun.tech/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Crypto Friendly Prediction Ecosystem &raquo; Comments Feed" href="https://efun.tech/comments/feed/" />
+
     <link href="./css/style.css" rel="stylesheet">
+
+    <script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-210764829-1' id='google_gtagjs-js' async></script>
+    <script type='text/javascript' id='google_gtagjs-js-after'>
+        window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+        gtag('set', 'linker', {"domains":["efun.tech"]} );
+        gtag("js", new Date());
+        gtag("set", "developer_id.dZTNiMT", true);
+        gtag("config", "UA-210764829-1", {"anonymize_ip":true});
+        gtag("config", "G-BMP6FRKV80");
+    </script>
 </head>
 <body>
 
@@ -12,13 +31,25 @@
     <div class="d-flex justify-content-between align-items-center">
         <a href="#" class="logo"><img src="./img/logo.svg" alt=""/></a>
         <nav class="main-menu">
-            <ul>
+            <ul class="menu-pc">
                 <li><a href="#"><strong>EFUN</strong> Prediction</a></li>
                 <li><a href="#">Whitepaper</a></li>
                 <li><a href="#tokenomics">Tokenomics</a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#" class="btn btn-outline-primary">Buy Token</a></li>
+            </ul>
+            <ul class="menu-mb">
+                <li class="buy"><a href="#" class="btn btn-outline-primary">Buy Token</a></li>
+                <li>
+                    <span class="menu_mb_btn" onclick="openMenu()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="2" rx="1" fill="white"/>
+                            <rect x="2" y="11" width="20" height="2" rx="1" fill="white"/>
+                            <rect x="2" y="19" width="20" height="2" rx="1" fill="white"/>
+                        </svg>
+                    </span>
+                </li>
             </ul>
         </nav>
     </div>
@@ -77,7 +108,9 @@
     </ul>
 </section>
 
-<section class="block_02">
+<section class="block_02" id="ecosystem">
+    <div class="parallax_bg"></div>
+    <div class="overlay"></div>
     <div class="text-center position-relative">
         <h3 class="block-title">EFUN Ecosystem For Sport-lover Community</h3>
         <img src="./img/ecosys.svg" alt="" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"/>
@@ -86,10 +119,10 @@
 
 <section class="block_03">
     <div class="text-center position-relative">
-        <h3 class="block-title">Using EFUN</h3>
-        <p>EFUN come with 100% on-chain prediction with reviewable smart contracts. This ensure that your crypto funds are always safe on a transparent, fairplay games.  You can invite your friends and start adding fun to the sport games with some single clicks.</p>
-
         <div class="container">
+            <h3 class="block-title">Using EFUN</h3>
+            <p>EFUN come with 100% on-chain prediction with reviewable smart contracts. This ensure that your crypto funds are always safe on a transparent, fairplay games.  You can invite your friends and start adding fun to the sport games with some single clicks.</p>
+
             <div class="using-list">
                 <div class="item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
                     <div class="item-box">
@@ -248,6 +281,8 @@
 </section>
 
 <section class="block_08" id="roadmap">
+    <div class="parallax_bg"></div>
+    <div class="overlay"></div>
     <h3 class="block-title text-center position-relative" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">Roadmap</h3>
     <div class="roadmap" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
         <img src="./img/roadmap.svg" alt=""/>
@@ -269,39 +304,49 @@
         <div class="team-list swiper teamSwiper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="img"><img src="./img/team.jpg" alt=""/></div>
-                    <div class="name">John Cena</div>
-                    <div class="job-title">CEO / Founder</div>
+                    <div class="img"><img src="./img/team/Tony_CEO.jpg" alt=""/></div>
+                    <div class="name">Tony</div>
+                    <div class="job-title">CEO</div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img"><img src="./img/team.jpg" alt=""/></div>
-                    <div class="name">John Cena</div>
-                    <div class="job-title">CTO / CO-Founder</div>
+                    <div class="img"><img src="./img/team/Jiminezt_CFO.jpg" alt=""/></div>
+                    <div class="name">Jiminezt</div>
+                    <div class="job-title">CFO</div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img"><img src="./img/team.jpg" alt=""/></div>
-                    <div class="name">John Cena</div>
-                    <div class="job-title">UI/UX Designer</div>
+                    <div class="img"><img src="./img/team/Nick_CTO.jpg" alt=""/></div>
+                    <div class="name">Nick</div>
+                    <div class="job-title">CTO</div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img"><img src="./img/team.jpg" alt=""/></div>
-                    <div class="name">John Cena</div>
-                    <div class="job-title">Fullstack Developer</div>
+                    <div class="img"><img src="./img/team/Dan_CMO.jpg" alt=""/></div>
+                    <div class="name">Dan</div>
+                    <div class="job-title">CMO</div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img"><img src="./img/team.jpg" alt=""/></div>
-                    <div class="name">John Cena</div>
-                    <div class="job-title">CTO / CO-Founder</div>
+                    <div class="img"><img src="./img/team/Henry_COO.jpg" alt=""/></div>
+                    <div class="name">Henry</div>
+                    <div class="job-title">COO</div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img"><img src="./img/team.jpg" alt=""/></div>
-                    <div class="name">John Cena</div>
-                    <div class="job-title">UI/UX Designer</div>
+                    <div class="img"><img src="./img/team/Mike_Product_Manager.jpg" alt=""/></div>
+                    <div class="name">Mike</div>
+                    <div class="job-title">Product Manager</div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img"><img src="./img/team.jpg" alt=""/></div>
-                    <div class="name">John Cena</div>
-                    <div class="job-title">Fullstack Developer</div>
+                    <div class="img"><img src="./img/team/Leo_Blockchain.jpg" alt=""/></div>
+                    <div class="name">Leo</div>
+                    <div class="job-title">Blockchain</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img"><img src="./img/team/Simon_Backend_developer.jpg" alt=""/></div>
+                    <div class="name">Simon</div>
+                    <div class="job-title">Backend Developer</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img"><img src="./img/team/Thomas_Frontend_developer.jpg" alt=""/></div>
+                    <div class="name">Thomas</div>
+                    <div class="job-title">Frontend Developer</div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -320,7 +365,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img src="./img/logo.svg" alt=""/>
+                <a href="#"><img src="./img/logo.svg" alt=""/></a>
                 <ul class="social">
                     <li>
                         <a href="#">
@@ -377,7 +422,7 @@
             </div>
             <div class="col-md-7">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-6">
                         <div class="footer-title">PRODUCTS</div>
                         <ul class="footer-link">
                             <li><a href="#">Home</a></li>
@@ -385,7 +430,7 @@
                             <li><a href="#">Using <strong>EFUN</strong></a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-6">
                         <div class="footer-title">INFORMATION</div>
                         <ul class="footer-link">
                             <li><a href="#">Team</a></li>
@@ -393,7 +438,7 @@
                             <li><a href="#">Term Condition</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-6">
                         <div class="footer-title">INTRODUCE</div>
                         <ul class="footer-link">
                             <li><a href="#">About Us</a></li>
@@ -408,10 +453,37 @@
     </div>
 </footer>
 
+<span class="go-top" id="scrollToTopBtn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.7589 16.2541C19.4667 16.5522 19.0095 16.5793 18.6873 16.3354L18.595 16.2541L12 9.52658L5.40503 16.2541C5.11283 16.5522 4.65558 16.5793 4.33338 16.3354L4.24106 16.2541C3.94887 15.956 3.9223 15.4896 4.16137 15.161L4.24106 15.0668L11.418 7.7459C11.7102 7.44784 12.1675 7.42074 12.4897 7.66461L12.582 7.7459L19.7589 15.0668C20.0804 15.3947 20.0804 15.9262 19.7589 16.2541Z" fill="white"/>
+    </svg>
+</span>
+
+<div class="menu-mb-box" id="menu-mb-box">
+    <span class="close" onclick="closeMenu()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.97675 22.0001C2.78357 22.0002 2.59473 21.9429 2.4341 21.8356C2.27347 21.7283 2.14828 21.5758 2.07435 21.3973C2.00042 21.2188 1.98108 21.0225 2.01877 20.833C2.05647 20.6435 2.14951 20.4695 2.28612 20.3329L20.333 2.28607C20.5162 2.1029 20.7646 2 21.0236 2C21.2827 2 21.5311 2.1029 21.7143 2.28607C21.8974 2.46923 22.0003 2.71766 22.0003 2.97669C22.0003 3.23573 21.8974 3.48415 21.7143 3.66732L3.66737 21.7142C3.57676 21.805 3.4691 21.877 3.35059 21.9261C3.23207 21.9751 3.10502 22.0003 2.97675 22.0001Z" fill="white"/>
+            <path d="M21.0236 22.0001C20.8953 22.0003 20.7683 21.9751 20.6498 21.9261C20.5313 21.877 20.4236 21.805 20.333 21.7142L2.28613 3.66732C2.10296 3.48415 2.00006 3.23573 2.00006 2.97669C2.00006 2.71766 2.10296 2.46923 2.28613 2.28607C2.46929 2.1029 2.71772 2 2.97675 2C3.23579 2 3.48421 2.1029 3.66738 2.28607L21.7142 20.3329C21.8509 20.4695 21.9439 20.6435 21.9816 20.833C22.0193 21.0225 21.9999 21.2188 21.926 21.3973C21.8521 21.5758 21.7269 21.7283 21.5663 21.8356C21.4056 21.9429 21.2168 22.0002 21.0236 22.0001V22.0001Z" fill="white"/>
+        </svg>
+    </span>
+    <ul>
+        <li><a href="#"><strong>EFUN</strong> Prediction</a></li>
+        <li><a href="#">Whitepaper</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#" class="btn btn-outline-primary">Buy Token</a></li>
+    </ul>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
 <script>
     AOS.init();
 
@@ -426,7 +498,61 @@
             el: ".swiper-pagination",
             clickable: true,
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            481: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+            }
+        }
     });
+
+    var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+    new ScrollMagic.Scene({triggerElement: "#ecosystem"})
+        .setTween("#ecosystem .parallax_bg", {y: "-40%", ease: Linear.easeNone})
+        .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#roadmap"})
+        .setTween("#roadmap .parallax_bg", {y: "-40%", ease: Linear.easeNone})
+        .addTo(controller);
+
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    var rootElement = document.documentElement;
+
+    function scrollToTop() {
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    scrollToTopBtn.addEventListener("click", scrollToTop);
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 800 || rootElement.scrollTop > 800) {
+
+            scrollToTopBtn.classList.add("show");
+        } else {
+
+            scrollToTopBtn.classList.remove("show");
+        }
+    }
+
+    var menuElement = document.getElementById("menu-mb-box");
+
+    function openMenu() {
+        menuElement.classList.add("open");
+    }
+
+    function closeMenu() {
+        menuElement.classList.remove("open");
+    }
 </script>
 </body>
 </html>
