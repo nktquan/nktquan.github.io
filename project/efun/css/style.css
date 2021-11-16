@@ -31,6 +31,9 @@ a {
   margin-top: 32px;
   padding-top: 20px;
   padding-bottom: 20px; }
+  @media (max-width: 1023px) {
+    .header {
+      margin-top: 12; } }
   .header .logo img {
     height: 44px; }
   .header .main-menu ul {
@@ -113,6 +116,9 @@ a {
     .block_01 {
       height: auto;
       padding: 80px 0 160px; } }
+  @media (max-width: 480px) {
+    .block_01 {
+      padding: 40px 0 160px; } }
   .block_01 h1 {
     font-weight: 600;
     font-size: 38px;
@@ -198,9 +204,12 @@ a {
       width: 100%; } }
   @media (max-width: 1023px) {
     .block_01 img {
-      width: 80%;
+      width: 90%;
       display: block;
-      margin: 40px auto 0; } }
+      margin: 0 auto; } }
+  @media (max-width: 480px) {
+    .block_01 img {
+      margin-bottom: 40px; } }
   .block_01 .social {
     display: flex;
     align-items: center;
@@ -647,6 +656,11 @@ a {
     height: 1500px;
     background: url("../img/bg_08.jpeg") no-repeat center center;
     background-size: cover; }
+    @media (max-width: 480px) {
+      .block_08 .parallax_bg {
+        margin-top: 80px;
+        background: url("../img/bg_08_mb.jpg") no-repeat center center;
+        background-size: cover; } }
   .block_08 .overlay {
     content: '';
     display: block;
