@@ -332,12 +332,16 @@ a {
     li {
       a {
         svg {
+          @include transition;
+
           rect, path {
             @include transition;
           }
         }
         &:hover {
           svg {
+            transform: translateY(-5px);
+
             rect {
               fill: #FBC02D;
             }
@@ -358,6 +362,10 @@ a {
 
   @include tablet {
     padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 60px 0;
   }
 
   .parallax_bg {
@@ -405,6 +413,10 @@ a {
     padding: 80px 0;
   }
 
+  @include mobile {
+    padding: 60px 0;
+  }
+
   &:before {
     content: '';
     display: block;
@@ -424,6 +436,32 @@ a {
     margin: 0 auto 80px;
     width: 100%;
     max-width: 800px;
+
+    @include mobile {
+      margin: 0 auto 60px;
+    }
+  }
+
+  .flow {
+    margin-bottom: 120px;
+
+    .pc {
+      @include tablet {
+        width: 90%;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .mb {
+      display: none;
+
+      @include mobile {
+        display: inline-block;
+      }
+    }
   }
 
   .using-list {
@@ -455,11 +493,6 @@ a {
       background: rgba(254, 254, 254, .2);
       position: relative;
 
-      @include mobile {
-        width: 160px;
-        height: 160px;
-      }
-
       &:before {
         content: '';
         display: block;
@@ -470,6 +503,7 @@ a {
         top: 0;
         left: -22px;
         @include transition;
+        z-index: 1;
       }
 
       &:after {
@@ -482,39 +516,61 @@ a {
         bottom: 0;
         right: -22px;
         @include transition;
+        z-index: 1;
       }
 
       .item-box {
         width: 100%;
-      }
+        position: relative;
+        overflow: hidden;
 
-      .icon {
-        display: inline-block;
+        .img {
+          position: relative;
 
-        svg {
-          @include mobile {
-            width: 40px;
-            height: 40px;
+          &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #212121;
+            opacity: 0.2;
+          }
+        }
+
+        .content {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          text-align: left;
+          padding: 20px 16px;
+          margin-bottom: -135px;
+          background: linear-gradient(180deg, rgba(33, 33, 33, 0) 0%, #212121 100%);
+          @include transition;
+
+          .game {
+            height: 44px;
+          }
+
+          .info {
+            height: 115px;
+            margin-top: 20px;
           }
         }
       }
 
-      label {
-        display: block;
-        width: 100%;
-        margin-top: 16px;
-
-        @include mobile {
-          margin-top: 4px;
-        }
-      }
-
       &:hover {
-        &:before {
-          left: 10px;
-        }
-        &:after {
-          right: 10px;
+        .item-box {
+          .content {
+            height: 100%;
+            margin-bottom: 0;
+            background: linear-gradient(180deg, rgba(33, 33, 33, 0.4) 0%, #212121 100%);
+            padding-top: 50px;
+          }
         }
       }
     }
@@ -570,6 +626,14 @@ a {
   position: relative;
   padding: 110px 0;
 
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 60px 0;
+  }
+
   .block-title {
     margin-bottom: 24px;
   }
@@ -618,18 +682,26 @@ a {
 .block_05 {
   padding: 110px 0;
 
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 60px 0;
+  }
+
   .block-title {
     margin-bottom: 24px;
-
-    @include tablet {
-      margin-top: 60px;
-    }
   }
 
   p {
     margin-bottom: 80px;
     width: 100%;
     max-width: 800px;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
   }
 
   .btn-white {
@@ -685,6 +757,10 @@ a {
       gap: 30px;
     }
 
+    @include mobile {
+      margin-top: 80px;
+    }
+
     .column {
       @include mobile {
         width: 40%;
@@ -714,6 +790,14 @@ a {
   background-size: cover;
   position: relative;
   padding: 110px 0;
+
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 60px 0;
+  }
 
   .block-title {
     margin-bottom: 24px;
@@ -772,8 +856,12 @@ a {
 .block_07 {
   padding: 110px 0;
 
-  @include mobile {
+  @include tablet {
     padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 60px 0;
   }
 
   .block-title {
@@ -784,6 +872,10 @@ a {
     margin-bottom: 80px;
     width: 100%;
     max-width: 800px;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
   }
 
   .btn-primary {
@@ -839,6 +931,10 @@ a {
       display: block;
       width: 60%;
       margin: 0 auto 80px;
+    }
+
+    @include mobile {
+      margin-top: 80px;
     }
   }
 }
@@ -969,6 +1065,14 @@ a {
     .job-title {
       font-size: 13px;
       color: #FBC02D;
+    }
+
+
+    .desc {
+      font-size: 13px;
+      font-style: italic;
+      margin-top: 12px;
+      margin-bottom: 0;
     }
 
     .swiper-pagination {
